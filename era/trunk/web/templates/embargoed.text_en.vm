@@ -1,0 +1,24 @@
+## Embargoed Item Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: embargoed.text_en.vm 5585 2012-09-27 22:11:57Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:	Item object contains fields: dcTitle, communities, collections...
+## $url:	Item handle URL.
+## $user:	User object contains fields: firstName, lastName, email.
+## $admin:	Admin email address.
+
+This is an automatically generated notice from ERA: Education and Research Archive.
+
+The restricted access period which was applied to your thesis/dissertation, $item.titles.get(0) has concluded.
+Community:  #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end
+
+#if($item.collections.size()>0)Collection: #foreach ($collection in $item.collections)#if($velocityCount>1), #end$collection.title#end#end
+
+Your thesis/dissertation is now available in ERA, the University of Alberta digital repository of scholarly work. The document has been assigned the following identifier $url. University of Alberta Libraries will now catalogue your thesis.
+
+An electronic version will now be collected by Library and Archives Canada for inclusion in the Theses Canada Portal and an electronic version will be supplied to ProQuest for archival microfilming and inclusion in its Dissertations and Theses Database.
+
+If you cite this item in the future, use this permalink: $url.
+
+If you have questions about this notice, please contact grad.services@ualberta.ca.

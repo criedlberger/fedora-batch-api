@@ -1,0 +1,15 @@
+## User Activation Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: activation.text_en.vm 5427 2012-07-12 20:30:12Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $url:	Item handle URL.
+## $user:	User object contains fields: firstName, lastName, email.
+## $admin:	Admin email address.
+
+Hello $user.getFirstName()! Welcome to ERA: Education and Research Archive.
+
+Your account has been activated. Click on $url and login to access your account.
+
+Thank you for using ERA: Education and Research Archive. If you have any questions or comments, please contact $admin.
+

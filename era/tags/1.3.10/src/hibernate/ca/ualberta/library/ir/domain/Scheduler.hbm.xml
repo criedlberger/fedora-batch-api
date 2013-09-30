@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3-Sep-2009 10:33:15 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Scheduler" table="scheduler">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" unique="true" />
+        </property>
+        <property name="startTime" type="timestamp">
+            <column name="start_time" length="19" />
+        </property>
+        <property name="stopTime" type="timestamp">
+            <column name="stop_time" length="19" />
+        </property>
+        <property name="hours" type="java.lang.Integer">
+            <column name="hours" />
+        </property>
+        <property name="minutes" type="java.lang.Integer">
+            <column name="minutes" />
+        </property>
+        <property name="seconds" type="big_decimal">
+            <column name="seconds" precision="3" scale="5" />
+        </property>
+    </class>
+</hibernate-mapping>

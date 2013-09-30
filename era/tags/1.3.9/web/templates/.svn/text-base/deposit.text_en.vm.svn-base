@@ -1,0 +1,21 @@
+## Deposit Item Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id$
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:	Item object contains fields: dcTitle, communities, collections...
+## $url:	Item handle URL.
+## $user:	User object contains fields: firstName, lastName, email.
+## $admin:	Admin email address.
+
+Hello $user.firstName! Welcome to ERA: Education and Research Archive.
+
+Your item, $item.titles.get(0) has been deposited to ERA. 
+Community:  #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end
+
+#if($item.collections.size()>0)Collection: #foreach ($collection in $item.collections)#if($velocityCount>1), #end$collection.title#end#end
+
+When you cite this item, use this permalink: $url.
+
+Thank you for using ERA: Education and Research Archive. If you have any questions or comments, please contact $admin.
+

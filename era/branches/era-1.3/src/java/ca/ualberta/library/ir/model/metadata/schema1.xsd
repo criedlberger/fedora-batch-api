@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="metadata" type="metadata"/>
+
+  <xs:complexType name="attribute">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="model" abstract="true">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="field">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:sequence>
+          <xs:element name="attribute" type="attribute" minOccurs="0"/>
+          <xs:element name="value" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="qualifier" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="metadata">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:sequence>
+          <xs:element name="field" type="field" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:simpleType name="name">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="xsi:type"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="value">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="dcterms:URI"/>
+      <xs:enumeration value="dcterms:IMT"/>
+      <xs:enumeration value="dcterms:W3CDTF"/>
+      <xs:enumeration value="eraterms:local"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="element">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="dc:creator"/>
+      <xs:enumeration value="dc:format"/>
+      <xs:enumeration value="dc:language"/>
+      <xs:enumeration value="dc:relation"/>
+      <xs:enumeration value="dc:source"/>
+      <xs:enumeration value="dc:subject"/>
+      <xs:enumeration value="dc:title"/>
+      <xs:enumeration value="dc:type"/>
+      <xs:enumeration value="dc:date"/>
+      <xs:enumeration value="dc:rights"/>
+      <xs:enumeration value="dcterms:abstract"/>
+      <xs:enumeration value="dcterms:alternative"/>
+      <xs:enumeration value="dcterms:created"/>
+      <xs:enumeration value="dcterms:dateaccepted"/>
+      <xs:enumeration value="dcterms:datesubmitted"/>
+      <xs:enumeration value="dcterms:description"/>
+      <xs:enumeration value="dcterms:extent"/>
+      <xs:enumeration value="dcterms:identifier"/>
+      <xs:enumeration value="dcterms:isversionof"/>
+      <xs:enumeration value="dcterms:spatial"/>
+      <xs:enumeration value="dcterms:temporal"/>
+      <xs:enumeration value="eraterms:graduationdate"/>
+      <xs:enumeration value="eraterms:specialization"/>
+      <xs:enumeration value="eraterms:ser"/>
+      <xs:enumeration value="thesis:contributor"/>
+      <xs:enumeration value="thesis:degree"/>
+      <xs:enumeration value="thesis:grantor"/>
+      <xs:enumeration value="thesis:level"/>
+      <xs:enumeration value="thesis:name"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="key">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="title"/>
+      <xs:enumeration value="creator"/>
+      <xs:enumeration value="type"/>
+      <xs:enumeration value="date"/>
+      <xs:enumeration value="description"/>
+      <xs:enumeration value="format"/>
+      <xs:enumeration value="extent"/>
+      <xs:enumeration value="identifier"/>
+      <xs:enumeration value="uuid"/>
+      <xs:enumeration value="dateSubmitted"/>
+      <xs:enumeration value="dateAccepted"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

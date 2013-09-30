@@ -1,0 +1,34 @@
+.waiting {
+	background-image:url('../images/waiting.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:white;
+	z-index: 500;
+}
+
+.bigWaiting {
+/*	background-image:url('../images/circle.gif');*/
+/*	background-image:url('../images/globe.gif');*/
+/*	background-image:url('../images/rounded.gif');*/
+	background-image:url('../images/flowing.gif');
+/*	background-image:url('../images/snowman.gif');*/
+/*	background-image:url('../images/bigWaiting.gif');*/
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:white;
+	z-index: 500;
+}
+
+.blackWaiting {
+	background-image:url('../images/blackWaiting.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:black;
+}
+
+.bigBlackWaiting {
+	background-image:url('../images/bigBlackWaiting.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:black;
+}

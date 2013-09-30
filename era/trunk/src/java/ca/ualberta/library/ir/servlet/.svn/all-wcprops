@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/servlet
+END
+AjaxHandlerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/servlet/AjaxHandlerServlet.java
+END
+ApplicationSessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/servlet/ApplicationSessionListener.java
+END
+ApplicationContextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/servlet/ApplicationContextListener.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/servlet/package.html
+END

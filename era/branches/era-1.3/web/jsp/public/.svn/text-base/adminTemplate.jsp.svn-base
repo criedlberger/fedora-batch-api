@@ -1,0 +1,48 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf"%>
+
+<stripes:layout-render name="/jsp/layout/standard.jsp" title="Home">
+	<stripes:layout-component name="contents">
+		<div class="search_filters">
+			<div class="right_narrow">
+			<ul><h2>Sidebar</h2>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+				<li><a>Item 1</a></li>
+			</ul>
+			</div>
+		</div>
+		<div>
+			<div style="float: left;">
+        	<h2 style="margin: 1em 0 1em 1em;">My Items</h2>
+			<div style="width: 100%; background-color: #fff;">
+				Results for "my items"
+			</div>
+			</div>
+	        <ol class="search_results">
+				<li class="record">
+					<div class="record_info">
+	                 		<h2><a href="${ctx}/public/view/${type}/${fld['PID']}" class="result_title">TEST ITEM</a></h2>	
+							<p class="result_author"><strong>by:</strong> Piyapong Charoenwattana </p>    
+	                   		<p class="result_subject">
+	                   			Item descriptions.
+							</p>
+					</div>
+					<div class="record_actions">
+					</div>
+				</li>
+	        </ol>
+		</div>
+	</stripes:layout-component>
+</stripes:layout-render>

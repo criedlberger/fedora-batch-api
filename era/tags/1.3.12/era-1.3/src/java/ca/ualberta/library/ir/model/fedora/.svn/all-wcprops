@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora
+END
+Model.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/Model.java
+END
+Datastream.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/Datastream.java
+END
+DublinCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/DublinCore.java
+END
+DublinCoreField.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/DublinCoreField.java
+END
+ContentModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/ContentModel.java
+END
+Properties.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/Properties.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/Item.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/model/fedora/package.html
+END

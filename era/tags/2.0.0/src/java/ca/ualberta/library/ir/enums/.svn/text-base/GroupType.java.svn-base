@@ -1,0 +1,21 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir
+ * $Id$
+ */
+package ca.ualberta.library.ir.enums;
+
+/**
+ * The Group class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca">Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum GroupType {
+	GUEST, ADMIN, SUPERVISOR, USER, DEPOSITOR, REVIEWER, LIBRARIEN;
+
+	public int getValue() {
+		return this.ordinal();
+	}
+}

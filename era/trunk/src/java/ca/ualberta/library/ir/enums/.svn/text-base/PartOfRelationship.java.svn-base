@@ -1,0 +1,32 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir
+ * $Id$
+ */
+package ca.ualberta.library.ir.enums;
+
+import org.fcrepo.common.Constants;
+
+/**
+ * The PartOf class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca">Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum PartOfRelationship {
+	CCID_AUTH, DARK_REPOSITORY, MANUAL_APPROVAL, EMBARGOED;
+
+	public String getPid() {
+		return ContentModel.NAMESPACE + ":" + this.toString();
+	}
+
+	public String getValue() {
+		return this.toString();
+	}
+
+	public String getURI() {
+		return Constants.FEDORA.uri + getPid();
+	}
+
+}

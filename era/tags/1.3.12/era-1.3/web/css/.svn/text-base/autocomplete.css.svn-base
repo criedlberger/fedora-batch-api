@@ -1,0 +1,28 @@
+/* scriptaculous autocompleter */
+div.autocomplete {
+  border:1px solid #c4c4c4;
+}
+
+/* highlight */
+div.autocomplete ul li.selected { 
+	background-color: #ffffcc;
+}
+
+div.autocomplete ul li {
+	font-size: 0.9em; 
+	height: 1.1em; 
+	overflow: hidden; 
+	line-height: 1.1em; 
+	border-bottom: thin dotted #D4D4D4;
+}
+
+/* item list */
+div.autocomplete ul li.item {
+	height: 2.2em;
+}
+
+div.autocomplete ul li.user {
+	font-size: 1em;
+	width: 22em;
+	min-height: 1em;
+}

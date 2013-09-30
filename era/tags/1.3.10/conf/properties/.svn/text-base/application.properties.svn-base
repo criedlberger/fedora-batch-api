@@ -1,0 +1,439 @@
+#------------------------------------------------------------------------------
+# Application Properties
+# $Id$
+# University of Alberta
+# Information Technology Services
+# Project: era
+# Author: Piyapong Charoenwattana
+# Version: $Revision$ $Date$
+#------------------------------------------------------------------------------
+
+# application name
+app.name 		= ERA: Education and Research Archive
+
+# language feature (true/false)
+app.language	= true
+
+# application context path (blank for root)
+app.context.path	=
+
+# application temp path
+app.temp.path	= ${app.tmp.path}
+
+# application thumbnail for facebook page
+app.thumbnail	= ERA-graphic.jpg
+
+# Server URLs
+# HTTPS enabled (true/false)
+https.enabled		= true
+http.server.url		= ${http.server.url}
+https.server.url 	= ${https.server.url}
+
+# UI configuration 
+ui.default.path 		= /jsp
+ui.default.contentType 	= text/html
+
+# ui.X.userAgent: RegEx pattern to match userAgent from request header
+# Desktop 
+ui.1.id = desktop
+ui.1.userAgent = Firefox|MSIE|Safari
+ui.1.contentType = text/html
+ui.1.path = /jsp
+
+# Use container JNDI datasource instead
+# Jdbc properties 
+jdbc.driverClassName = com.mysql.jdbc.Driver
+jdbc.url = ${jdbc.url}
+jdbc.username = ${jdbc.username}
+jdbc.password = ${jdbc.password}
+jdbc.testOnBorrow = true
+jdbc.validationQuery = select 1
+jdbc.removeAbandoned = true
+jdbc.logAbandoned = true
+jdbc.maxActive	= 8
+jdbc.maxIdle	= 8
+jdbc.minIdle	= 0
+
+# hibernate properties
+hibernate.dialect 				= org.hibernate.dialect.MySQL5InnoDBDialect
+hibernate.show_sql 				= false
+hibernate.generate_statistics 	= true
+# Automatically validate or export schema DDL to the database: validate | update | create | create-drop
+hibernate.hbm2ddl.auto			= update
+hibernate.default_schema		= ${hibernate.default_schema}
+
+# fedora service properties
+fedora.protocol = http
+fedora.host = ${fedora.host}
+fedora.port = ${fedora.port}
+fedora.username = ${fedora.username}
+fedora.password = ${fedora.password}
+fedora.access.service = /fedora/services/access
+fedora.management.service = /fedora/services/management
+fedora.risearch.service = /fedora/risearch
+fedora.rest.service = /fedora
+fedora.pidNamespace = uuid
+
+# fedora log message pattern
+# {0} - action url binding
+# {1} - userId
+# {2} - workflow state
+# {3} - messages
+fedora.logMessagePattern = ERA: Action[{0}] Username[{1}] WorkflowState[{2}] - {3}
+
+# solr service properties
+solr.protocol 	= http
+solr.host 		= ${solr.host}
+solr.port 		= ${solr.port}
+solr.service 	= ${solr.service}
+solr.username	= solr
+solr.password	= *******
+
+# JMS properties
+jms.broker.url = ${jms.broker.url}
+jms.updater.enabled = true
+
+# FedoraGSearch service properties
+gsearch.service.url	= ${gsearch.service.url}
+gsearch.username	= ${gsearch.username}
+gsearch.password	= ${gsearch.password}
+
+# handle system
+# handle feature (true/false)
+handle.enabled		= true
+# admin private key resource file (put it in WEB-INF/classes)
+handle.admpriv.bin	= admpriv.bin
+handle.server		= http://hdl.handle.net
+# prefix format ${handle}/${handle.ir.prefix}.${handleId}
+handle.prefix		= 10402
+handle.ir.prefix	= ${handle.ir.prefix}
+# password for private key encryption (optional)
+handle.password		= pcharoen
+
+# OAI Provider Service properties
+proai.enabled			= true
+proai.item.id			= oai:era.library.ualberta.ca:{0}
+proai.fedora.itemID 	= http://www.openarchives.org/OAI/2.0/itemID
+proai.fedora.setSpec 	= http://www.openarchives.org/OAI/2.0/setSpec
+proai.fedora.setName 	= http://www.openarchives.org/OAI/2.0/setName
+
+# metadata properties
+metadata.datastream.id	= DCQ
+metadata.datastream2metadata.xsl = dcq2metadata.xsl
+metadata.metadata2datastream.xsl = metadata2dcq.xsl
+
+# default user password
+default.password	= eranewpass
+
+# LDAP properties
+ldap.provider.url 	= ${ldap.provider.url}
+ldap.authentication = simple
+ldap.principles 	= ou=people,dc=ualberta,dc=ca
+
+# mail sender: javaMailSender, gmailTLSSender 
+mail.sender 	= javaMailSender
+#mail.sender 	= gmailTLSSender
+mail.debug		= true
+mail.output		= ${mail.output}
+
+# Java Mail Sender properties
+#mail.server		= mailgw.library.ualberta.ca
+mail.server		= smtp.srv.ualberta.ca
+
+# Gmail Sender properties
+#smtp.isSecure				= true
+#smtp.requiresAuthentication = true
+#smtp.host					= smtp.gmail.com
+#smtp.username				= eramailadm@gmail.com
+#smtp.password				= ******
+#smtp.port					= 465
+#mail.mime.address.strict	= false
+#mail.mime.charset			= UTF-8
+mail.username				= eramailadm@gmail.com
+mail.password				= ******
+
+# Mail admin
+#mail.admin		= piyapong.charoenwattana@ualberta.ca
+mail.admin		= eraadmi@ualberta.ca
+mail.bcc		= ${mail.bcc}
+#mail.bcc		= grad.services@ualberta.ca
+
+# Proquest Upload properties
+#proquest.ftp.host		= ftp.proquest.com
+#proquest.ftp.username	= alberta
+#proquest.ftp.password	= alberta0351
+#proquest.email			= dissepubl@il.proquest.com,lkreutzer@il.proquest.com,leah.vanderjagt@ualberta.ca,piyapong.charoenwattana@ualberta.ca
+proquest.ftp.host		= ${proquest.ftp.host}
+proquest.ftp.username	= ${proquest.ftp.username}
+proquest.ftp.password	= ${proquest.ftp.password}
+proquest.email			= ${proquest.email}
+# regular expression pattern for pdf content type to include in package
+proquest.pdf.pattern	= application/pdf|application/x-pdf|application/acrobat|applications/vnd.pdf
+proquest.instcode		= 0351
+proquest.externalId.pattern	= ualberta:{0,number,0000}
+
+# supported content types (regular expression to match datastream mimeType)
+supported.contentTypes = application/pdf|application/x-pdf|application/acrobat|applications/vnd.pdf|text/pdf|text/x-pdf|text/xml|text/plain|\
+	application/vnd.ms-excel|application/marc|image/jpeg|image/gif|image/png|image/tiff|audio/x-aiff|audio/basic|\
+	audio/wav|audio/x-wav|audio/wave|audio/x-pn-wav|audio/vnd.wave|\
+	audio/mpeg|video/mpeg|text/richtext|application/vnd.visio|application/x-filemaker|image/x-ms-bmp|application/x-photoshop|application/postscript|\
+	video/quicktime|audio/x-mpeg|application/vnd.ms-project|application/mathematica|application/x-latex|application/x-tex|application/x-dvi|\
+	application/sgml|application/wordperfect5.1|audio/x-pn-realaudio|image/x-photo-cd|image/pjpeg|image/x-png|application/msaccess|\
+	application/zip|application/x-gzip|application/x-tar|application/x-bzip|application/x-octet-stream|application/vnd.openxmlformats|\
+	text/html|application/msword|application/vnd.ms-powerpoint|application/vnd.openxmlformats-officedocument.wordprocessingml.document|\
+	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application/vnd.openxmlformats-officedocument.presentationml.presentation|\
+	application/octet-stream|application/x-unknown-application-pdf|application/file|application/ps|application/x-download
+
+# item metadata display fields (comma dilimited)
+# default form display fields
+default.metadata.fields = \
+	dcterms:identifier.xsi:type.dcterms:URI,\
+	dc:title,\
+	dc:creator,\
+	dc:contributor,\
+	dc:subject,\
+	dcterms:created,\
+	dc:type,\
+	dc:language.xsi:type.dcterms:ISO639-3,\
+	dc:format.xsi:type.dcterms:IMT,\
+	dcterms:extent,\
+	dcterms:temporal,\
+	dcterms:spatial,\
+	dc:description,\
+	dcterms:isversionof,\
+	dc:source,\
+	dc:relation
+
+# thesis form display fields
+thesis.metadata.fields = \
+	dcterms:identifier.xsi:type.dcterms:URI,\
+	dc:title,dc:creator,dcterms:alternative,\
+	dc:language.xsi:type.dcterms:ISO639-3,\
+	dc:subject,\
+	dcterms:dateaccepted.xsi:type.dcterms:W3CDTF,\
+	dc:type,\
+	dc:language.xsi:type.dcterms:ISO639-3,\
+	dc:format.xsi:type.dcterms:IMT,\
+	dcterms:extent,\
+	dcterms:abstract,\
+	dcterms:isversionof,\
+	thesis:degree.thesis:level,\
+	thesis:degree.thesis:name,\
+	thesis:degree.thesis:discipline,\
+	eraterms:specialization,\
+	eraterms:graduationdate,\
+	thesis:contributor.role.advisor,\
+	thesis:contributor.role.committeemember
+#	dcterms:datesubmitted.xsi:type.dcterms:W3CDTF,\
+	
+# ser form display fields
+ser.metadata.fields = \
+	dcterms:identifier.xsi:type.eraterms:ser,\
+	dcterms:identifier.xsi:type.dcterms:URI,\
+	dc:title,\
+	dc:creator,dc:contributor,\
+	dc:subject,\
+	dcterms:created,\
+	dc:type,\
+	dc:language.xsi:type.dcterms:ISO639-3,\
+	dc:format.xsi:type.dcterms:IMT,\
+	dcterms:extent,\
+	dcterms:temporal,\
+	dcterms:spatial,\
+	dc:description,\
+	dcterms:isversionof,\
+	dc:source,\
+	dc:relation
+
+# tr form display fields
+tr.metadata.fields = \
+	dc:date,\
+	dcterms:identifier.xsi:type.eraterms:trid,\
+	dcterms:identifier.xsi:type.dcterms:URI,\
+	dc:title,\
+	dc:creator,\
+	dc:description,\
+	dc:subject,\
+	dc:type,\
+	dc:language.xsi:type.dcterms:ISO639-3,\
+	dc:format.xsi:type.dcterms:IMT,\
+	dcterms:extent,\
+	dc:rights
+
+# Cron Expression
+# See http://www.quartz-scheduler.org/docs/api/1.8.1/index.html
+# second minute hour dayOfMonth month dayOfWeek year
+
+# Embargo Cron Expression
+embargo.enabled = true
+# Run every morning at 1 AM
+embargo.cronExpression	= 0 0 1 * * ?
+# Run every 3 minutes (for testing)
+#embargo.cronExpression	= 0 0/3 * * * ?
+
+# Subscription Cron Expression
+subscription.enabled = true
+# Run every morning at 1:30 AM
+subscription.cronExpression	= 0 30 1 * * ?
+# Run every 3 minutes (for testing)
+#subscription.cronExpression= 0 0/3 * * * ?
+
+# IndexBuilder Cron Expression 
+indexBuilder.enabled = false
+# Ex: every Sunday at 1:30 AM : 0 30 1 ? * 1
+# do not start until 2099
+indexBuilder.cronExpression 	= 0 30 1 ? * 1 2099
+indexBuilder.deleteIndex		= true
+indexBuilder.optimizeIndex		= true
+indexBuilder.fedoraIndex		= true
+indexBuilder.bookmarkIndex		= true
+indexBuilder.favoriteIndex		= true
+indexBuilder.subscriptionIndex	= true
+
+# Proquest Upload Cron Expresion
+proquest.enabled = false
+# Run every morning at 2:00 AM
+proquest.cronExpression = 0 0 2 * * ?
+
+# input-forms.xml loading scheduler
+inputforms.enabled = true
+inputforms.cronExpression	= 0 0 9,16 * * ?
+
+# features feeds (true/false)
+features.feed		= false
+features.feed.count	= 1
+features.feed.url.1_en	= http://ir-features.blogspot.com/feeds/posts/default
+features.feed.url.1_fr	= http://ir-features-fr.blogspot.com/feeds/posts/default
+# number of feature feed items on home page
+features.feed.items	= 3
+
+# facebook page publisher services
+facebook.enabled 		= false
+facebook.access.token	= 160262230689288|ad5767b62ec44977eca86480.1-708505562|D2qk43H3iMORx4V3HPJf7FTbuMM
+facebook.page.id 		= 127736240629318
+# Facebook Publisher Schedule for today feature item
+#facebook.cronExpression	= 0 0 4 * * ?
+# do not start until 2099
+facebook.cronExpression	= 0 0 4 * * ? 2099
+
+# number of what's new on home page
+new.item.rows 			= 3
+new.collection.rows		= 3
+new.community.rows		= 3
+new.subscription.rows 	= 3
+
+# categories box on home page (true/false)
+home.categories			= false
+
+# tag cloud box on home page (true/false)
+home.tagCloud			= false
+
+# login box on home page (true/false)
+home.login				= false
+
+# admin box on home page (true/false)
+home.admin				= false
+
+# account summary box on home page (true/false)
+home.account.summary	= false
+
+# account stats box on home page (true/false)
+home.account.stats		= false
+
+# search suggestion count
+search.suggestion.count	= 10
+
+# narrow search item shown
+narrow.item.count  		= 10
+
+# number of item shown on more link
+narrow.more.count		= 10
+
+# default request number of rows, number of result per page (20)
+default.rows = 20
+
+# number of pages shown on page bookmarks (20)
+bookmark.page.pages	= 20
+
+# more like this item count
+mlt.item.count 		= 5
+
+# spellcheck suggestion count
+spellcheck.count	= 10
+
+# number of item shown on page (see more link)
+browse.item.count		= 10
+
+# number of item shown on more link
+browse.more.count		= 100
+
+# tag cloud item limit on home page (-1 - all items)
+home.tagCloud.limit		= 50
+
+# tag cloud item limit on bookmark page (-1 - all tags)
+bookmark.tagCloud.limit	= -1
+
+# number of tags shown on bookmark page
+bookmark.tags.limit		= 20
+
+# number of related tags shown on bookmark page
+realated.tags.limit		= 20
+
+# number of items per page on community page
+community.rows		= 20
+
+# number of items per page on collection page
+collection.rows		= 20
+
+# RSS feeds
+# Feed Type: rss_0.9, rss_0.91, rss_0.92, rss_0.93, rss_0.94, rss_1.0, rss_2.0, atom_0.3, atom_1.0
+feed.type	= rss_2.0
+# number of feed rows
+feed.rows 	= 20
+
+# Auto generated thumbnail size Width and Height in pixels
+thumbnail.width = 200
+thumbnail.height = 200
+
+# AddThis bookmark
+addthis.bookmark	= true
+# AddThis bookmark username
+addthis.username	= pcharoen
+
+# AddToAny bookmark
+addtoany.bookmark	= false
+
+# shopping cart
+# maximum number of items in cart
+cart.item.limit		= 5
+
+# upload file size (in megabyte: 512.0)
+upload.file.size = 1024
+
+# regular expression for web crawler user-agent, ip filter (ip sample: 206\.75\.\d{1,3}\.\d{1,3})
+webcrawler.filter	= Googlebot|bingbot|msnbot|Yahoo|bot|Crawler|Worm|spider
+
+# maximum download size of item (in megabyte: 10.0)  
+download.file.size	= 10
+
+# download item filename format
+# 0 - file number
+# 1 - item title (30 characters)
+# 2 - datastream id
+# 3 - datastream label (30 characters)
+# 4 - file extension  
+download.item.filename.pattern	= era-{0}-{1}-{2}-{3}.{4}
+
+# checkout zip filename format, excluded file extension
+# also use as temporary directory name
+# 0 - action: checkout
+# 1 - user id
+# 2 - timestamp
+download.zip.filename.pattern	= era-{0}-{1}-{2}
+
+# Google Analytics
+google.analytics.enabled	= true
+
+#------------------------------------------------------------------------------
+# $Id$
+#------------------------------------------------------------------------------

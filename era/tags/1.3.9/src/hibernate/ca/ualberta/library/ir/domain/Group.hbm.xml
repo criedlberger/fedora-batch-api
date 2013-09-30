@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4-Jul-2008 10:10:03 PM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Group" table="group">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="32" not-null="true" unique="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <set name="users" inverse="true">
+            <key>
+                <column name="group_id" not-null="true" />
+            </key>
+            <one-to-many class="ca.ualberta.library.ir.domain.User" />
+        </set>
+        <set name="groupPermissions" inverse="true" lazy="false">
+            <key>
+                <column name="group_id" not-null="true" />
+            </key>
+            <one-to-many class="ca.ualberta.library.ir.domain.GroupPermission" />
+        </set>
+    </class>
+</hibernate-mapping>

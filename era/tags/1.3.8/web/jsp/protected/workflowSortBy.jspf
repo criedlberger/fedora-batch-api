@@ -1,0 +1,15 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/tags/1.3.8/web/jsp/protected/workflowSortBy.jspf $
+   $Id: workflowSortBy.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<stripes:option value="sort.title asc"><fmt:message key="sort.title" /></stripes:option>
+<stripes:option value="sort.author asc"><fmt:message key="sort.author" /></stripes:option>
+<stripes:option value="sort.subject asc"><fmt:message key="sort.subject" /></stripes:option>
+<stripes:option value="sort.datesubmitted desc"><fmt:message key="sort.submittedDateDescending" /></stripes:option>
+<stripes:option value="sort.datesubmitted asc"><fmt:message key="sort.submittedDateAscending" /></stripes:option>
+<stripes:option value="sort.workflowState asc, sort.workflowDate desc"><fmt:message key="sort.workflowStateDescending" /></stripes:option>
+<stripes:option value="sort.workflowState asc, sort.workflowDate asc"><fmt:message key="sort.workflowStateAscending" /></stripes:option>
+<stripes:option value="sort.workflowDate desc"><fmt:message key="sort.workflowDateDescending" /></stripes:option>
+<stripes:option value="sort.workflowDate asc"><fmt:message key="sort.workflowDateAscending" /></stripes:option>

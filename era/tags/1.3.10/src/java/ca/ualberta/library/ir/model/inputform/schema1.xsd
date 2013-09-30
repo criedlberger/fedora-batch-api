@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="input-forms" type="inputForms"/>
+
+  <xs:complexType name="attribute">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="model" abstract="true">
+    <xs:all/>
+  </xs:complexType>
+
+  <xs:complexType name="dateRange">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all>
+          <xs:element name="date-start" type="xs:dateTime"/>
+          <xs:element name="date-end" type="xs:dateTime"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="field">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all>
+          <xs:element name="dc-element" type="xs:string" minOccurs="0"/>
+          <xs:element name="dc-qualifier" type="xs:string" minOccurs="0"/>
+          <xs:element name="attribute" type="attribute" minOccurs="0"/>
+          <xs:element name="repeatable" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="display" type="xs:int" minOccurs="0"/>
+          <xs:element name="label" type="label" minOccurs="0"/>
+          <xs:element name="indent" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="style" type="xs:string" minOccurs="0"/>
+          <xs:element name="input-type" type="inputType"/>
+          <xs:element name="hint" type="label" minOccurs="0"/>
+          <xs:element name="validate" type="validate" minOccurs="0"/>
+          <xs:element name="value" type="label" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="label">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="inputType">
+    <xs:simpleContent>
+      <xs:extension base="value">
+        <xs:attribute name="value-pairs-name" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="validate">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all>
+          <xs:element name="required" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="minlength" type="xs:int" minOccurs="0"/>
+          <xs:element name="maxlength" type="xs:int" minOccurs="0"/>
+          <xs:element name="minvalue" type="xs:double" minOccurs="0"/>
+          <xs:element name="maxvalue" type="xs:double" minOccurs="0"/>
+          <xs:element name="dateformat" type="xs:string" minOccurs="0"/>
+          <xs:element name="email" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="url" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="isbn" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="regexp" type="xs:string" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="form">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:sequence>
+          <xs:element name="field" type="field" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="enabled" type="xs:boolean" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="inputForms">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all>
+          <xs:element name="form-map" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="name-map" type="nameMap" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="form-definitions" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="form" type="form" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="form-value-pairs" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value-pairs" type="valuePairs" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="nameMap">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all/>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="form-name" type="xs:string" use="required"/>
+        <xs:attribute name="item-type" type="xs:string"/>
+        <xs:attribute name="regexp" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="valuePairs">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:sequence>
+          <xs:element name="pair" type="pair" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="value-pairs-name" type="xs:string" use="required"/>
+        <xs:attribute name="dc-term" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="pair">
+    <xs:complexContent>
+      <xs:extension base="model">
+        <xs:all>
+          <xs:element name="displayed-value" type="label"/>
+          <xs:element name="stored-value" type="xs:string"/>
+          <xs:element name="date-range" type="dateRange" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="inputFormsXmlBinder">
+    <xs:all/>
+  </xs:complexType>
+
+  <xs:simpleType name="value">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="checkbox"/>
+      <xs:enumeration value="daterange_value"/>
+      <xs:enumeration value="dropdown"/>
+      <xs:enumeration value="hidden"/>
+      <xs:enumeration value="label"/>
+      <xs:enumeration value="qualdrop_value"/>
+      <xs:enumeration value="readonly"/>
+      <xs:enumeration value="text"/>
+      <xs:enumeration value="textarea"/>
+      <xs:enumeration value="file"/>
+      <xs:enumeration value="message"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="name">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="default"/>
+      <xs:enumeration value="thesis"/>
+      <xs:enumeration value="ser"/>
+      <xs:enumeration value="tr"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/WEB-INF
+END
+urlrewrite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/WEB-INF/urlrewrite.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/WEB-INF/web.xml
+END

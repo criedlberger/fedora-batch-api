@@ -1,0 +1,74 @@
+<%-- tag libraries  --%>
+<%@ taglib prefix="stripes" uri="http://stripes.sourceforge.net/stripes.tld" %>
+<%@ taglib prefix="security" uri="http://stripes.sourceforge.net/stripes-security.tld" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="ir" tagdir="/WEB-INF/tags/ir" %>
+<%@ taglib prefix="fnx" uri="http://era.library.ualberta.ca/jsp/functions" %>
+
+<%@ page import="org.apache.commons.logging.*" %>
+<%@ page import="ca.ualberta.library.ir.enums.*" %>
+<%@ page import="java.net.URLEncoder" %>
+<%@ page import="ca.ualberta.library.ir.action.BaseActionBean" %>
+<%@ page import="net.sourceforge.stripes.controller.StripesConstants" %>
+<%@ page import="ca.ualberta.library.ir.model.inputform.Form" %>
+
+<%-- declare logger --%>
+<%! Log log = LogFactory.getLog(this.getClass()); %>
+
+<%-- export variables --%>
+<% pageContext.setAttribute("ADMIN_GROUP", GroupType.ADMIN.getValue()); %>
+
+<%-- shorthand variables --%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<c:set var="context" value="${actionBean.context}" />
+<c:set var="event" value="${context.eventName}" />
+
+<%-- top navigator bar --%>
+<c:set var="navbarHome" value="1" />
+<c:set var="navbarBrowse" value="2" />
+<c:set var="navbarDeposit" value="3" />
+<c:set var="navbarCommunity" value="4" />
+<c:set var="navbarResearcher" value="5" />
+<c:set var="navbarMyAccount" value="6" />
+<c:set var="navbarAdmin" value="7" />
+<c:set var="navbarHelp" value="8" />
+
+<%-- admin side bar --%>
+<c:set var="adminDark" value="1" />
+<c:set var="adminEmbargo" value="2" />
+<c:set var="adminApproval" value="3" />
+<c:set var="adminDeleted" value="4" />
+<c:set var="adminCollection" value="5" />
+<c:set var="adminCommunity" value="6" />
+<c:set var="adminUser" value="7" />
+<c:set var="adminGroup" value="8" />
+<c:set var="adminSubscriptionNotifier" value="9" />
+<c:set var="adminEmbargoedPublisher" value="10" />
+<c:set var="adminIndexBuilder" value="11" />
+
+<%-- set language --%>
+<fmt:setLocale value="${pageContext.request.locale}" />
+
+<%-- what's new title length --%>
+<c:set var="whatsnewDescLength" value="100" />
+
+<%-- buttons --%>
+<fmt:message key="button.search" var="btnSearch" />
+<fmt:message key="button.browse" var="btnBrowse" />
+<fmt:message key="button.startOver" var="btnStartOver" />
+<fmt:message key="button.next" var="btnNext" />
+<fmt:message key="button.previous" var="btnPrevious" />
+<fmt:message key="button.finish" var="btnFinish" />
+<fmt:message key="button.create" var="btnCreate" />
+<fmt:message key="button.save" var="btnSave" />
+<fmt:message key="button.delete" var="btnDelete" />
+<fmt:message key="button.login" var="btnLogin" />
+<fmt:message key="button.cancel" var="btnCancel" />
+<fmt:message key="button.clear" var="btnClear" />
+<fmt:message key="button.activate" var="btnActivate" />
+<fmt:message key="button.back" var="btnBack" />
+<fmt:message key="button.close" var="btnClose" />
+<fmt:message key="button.execute" var="btnExecute" />
+

@@ -1,0 +1,23 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf" %>
+
+<stripes:layout-render name="/jsp/layout/standard.jsp" title="Unauthorized">
+    <stripes:layout-component name="contents">
+		<div class="full_box global_error">
+	     	<div class="errors"><h2><fmt:message key="errors.unauthorized.header" /></h2>
+	     		<ul>
+			    	<li><fmt:message key="errors.unauthorized.messages" /></li>
+	     		</ul>
+	     	</div>
+			<br style="clear: both;" />
+			<div style="margin-top: 1em;">
+				<fmt:message key="errors.unauthorized.footer"><fmt:param>${adminEmail}</fmt:param></fmt:message>
+			</div>
+		</div>		
+	</stripes:layout-component>
+</stripes:layout-render>	

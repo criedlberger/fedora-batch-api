@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata
+END
+dcq2metadata.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/dcq2metadata.xsl
+END
+metadata2dcq.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/metadata2dcq.xsl
+END
+Metadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/Metadata.java
+END
+Model.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/Model.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/Attribute.java
+END
+Field.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/Field.java
+END
+MetadataTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/MetadataTransformer.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/package-info.java
+END
+jaxb.index
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/jaxb.index
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/package.html
+END
+schema1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/model/metadata/schema1.xsd
+END

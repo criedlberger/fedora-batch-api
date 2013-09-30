@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+$HeadURL: https://code.library.ualberta.ca/svn/repos/era/tags/2.0.0/web/schema/definitions.xsd $
+$Id: definitions.xsd 5447 2012-07-19 15:59:56Z pcharoen $
+$Revision: 5447 $
+Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://era.library.ualberta.ca/schema/definitions.xsd"
+	xmlns:tns="http://era.library.ualberta.ca/schema/definitions.xsd" elementFormDefault="qualified">
+	<element name="version" type="string"></element>
+	<element name="developerId" type="string"></element>
+	<element name="userId" type="string"></element>
+	<element name="submitterId" type="string"></element>
+	<element name="embargoedDate" type="dateTime"></element>
+	<element name="workflowState" type="string"></element>
+	<element name="workflowDate" type="dateTime"></element>
+	<element name="comments" type="string"></element>
+	<element name="sort" type="string"></element>
+	<element name="metaDescription" type="boolean"></element>
+	<element name="formName" type="string"></element>
+</schema>

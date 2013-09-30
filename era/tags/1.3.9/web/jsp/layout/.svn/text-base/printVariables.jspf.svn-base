@@ -1,0 +1,49 @@
+<%-- print page variables --%>
+<%--@ include file="/jsp/layout/taglibs.jspf" --%>
+
+<%--@ page contentType="text/html; charset=utf-8" pageEncoding="UTF-8"--%>
+<%@ page import="ca.ualberta.library.ir.action.BaseActionBean"%>
+<%@ page import="java.lang.reflect.Method"%>
+<%@ page import="org.apache.commons.lang.WordUtils"%>
+<%@ page import="java.lang.reflect.Modifier"%>
+
+<c:if test="${printVars}">
+<hr />
+<h1>ERA: Variables</h1>
+
+<h2>Context Variables:</h2>
+<c:forEach var="name" items="${pageContext.servletContext.attributeNames}">
+	<b><c:out value="${name}"></c:out></b>: <%=application.getAttribute((String) pageContext.getAttribute("name"))%>
+	<br />
+</c:forEach>
+
+<h2>Session Variables:</h2>
+<c:forEach var="name" items="${pageContext.session.attributeNames}">
+	<b><c:out value="${name}"></c:out></b>: <%=session.getAttribute((String) pageContext.getAttribute("name"))%>
+	<br />
+</c:forEach>
+
+<h2>Request Variables:</h2>
+<c:forEach var="name" items="${pageContext.request.attributeNames}">
+	<b><c:out value="${name}"></c:out></b>: <%=request.getAttribute((String) pageContext.getAttribute("name"))%>
+	<br />
+</c:forEach>
+
+<h2>ActionBean Variables:</h2>
+<h3><c:out value="${actionBean}"></c:out></h3>
+<%
+	Object action = request.getAttribute("actionBean");
+	Method[] methods = action.getClass().getMethods();
+	for (int i = 0; i < methods.length; i++) {
+		if (methods[i].getName().startsWith("get") && !methods[i].isVarArgs() && methods[i].getModifiers() == Modifier.PUBLIC) {
+			try {
+				Object obj = methods[i].invoke(action);
+				out.println("<b>" + WordUtils.uncapitalize(methods[i].getName().substring(3)) + "</b>: " + obj + "<br />");
+			} catch (Exception e) {
+				log.error("Could not invoke method!", e);
+			}
+		}
+	}
+%>
+<hr />
+</c:if>

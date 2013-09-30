@@ -1,0 +1,32 @@
+## New Task Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id$
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:			Item object of class ca.ualberta.library.ir.model.solr.Item.
+## $url:			Task in the Pool URL.
+## $viewItemUrl:	Item handle URL.
+## $user:			User object contains fields: firstName, lastName, email.
+## $admin:			Admin email address.
+
+Welcome to ERA: Education and Research Archive.
+
+A new item has been submitted:
+
+Title:        $item.titles.get(0)
+Community:    #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end
+
+#if($item.collections.size()>0)
+Collection:   #foreach ($collection in $item.collections)#if($velocityCount>1), #end$collection.title#end
+#end
+
+#if($item.thesisDegreeDisciplines.size()>0)
+Department:   #foreach ($department in $item.thesisDegreeDisciplines)#if($velocityCount>1), #end$department#end
+#end
+
+URL:          $viewItemUrl
+Submitted by: $user.firstName $user.lastName ($user.email)
+
+The submission must be checked before inclusion in the archive.
+
+To claim this task, please visit your "myERA" page:  $url

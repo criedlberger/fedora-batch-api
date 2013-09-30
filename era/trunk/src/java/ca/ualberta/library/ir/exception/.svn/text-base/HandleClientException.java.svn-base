@@ -1,0 +1,51 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir
+ * $Id$
+ */
+package ca.ualberta.library.ir.exception;
+
+/**
+ * The HandleClientException class.
+ *
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca">Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public class HandleClientException extends Exception {
+
+	private static final long serialVersionUID = -8931491878304096649L;
+
+	/**
+	 * The HandleClientException class constructor.
+	 */
+	public HandleClientException() {
+		super();
+	}
+
+	/**
+	 * The HandleClientException class constructor.
+	 * @param message
+	 */
+	public HandleClientException(String message) {
+		super(message);
+	}
+
+	/**
+	 * The HandleClientException class constructor.
+	 * @param cause
+	 */
+	public HandleClientException(Throwable cause) {
+		super(cause);
+	}
+
+	/**
+	 * The HandleClientException class constructor.
+	 * @param message
+	 * @param cause
+	 */
+	public HandleClientException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+}

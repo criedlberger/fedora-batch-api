@@ -1,0 +1,35 @@
+## Rejected Item Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: reject.text_en.vm 5603 2012-10-05 18:51:26Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:	Item object.
+## $url:	Item handle URL.
+## $user:	User object contains fields: firstName, lastName, email.
+## $admin:	Admin email address.
+
+Dear $user.firstName :
+
+You submitted: $item.titles.get(0)
+Community:  #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end
+
+#if($item.collections.size()>0)Collection: #foreach ($collection in $item.collections)#if($velocityCount>1), #end$collection.title#end#end
+
+The Faculty of Graduate Studies and Research requires revisions to your submission with the following explanation:
+
+$!comments
+
+ATTENTION: 
+Your submission has not been deleted.  You can access it from your "myERA" page: $url
+
+IF YOUR THESIS REQUIRES REVISIONS DO *NOT* START A NEW SUBMISSION. LOG IN TO ERA, CLICK ON “MyERA” IN THE TOP-RIGHT CORNER, CLICK ON ‘MY PENDING ITEMS’, AND *EDIT YOUR EXISTING SUBMISSION*
+
+IF YOU ARE UPDATING YOUR PDF, *REMOVE* THE FILE YOU FIRST SUBMITTED, THEN ATTACH THE REPLACED, CORRECTED VERSION, AND RESUBMIT.
+
+IF YOUR THESIS WAS NOT APPROVED BECAUSE OF MISSING DOCUMENTATION, AFTER YOU PROVIDE THE REQUIRED DOCUMENTATION TO THE FACULTY OF GRADUATE STUDIES, LOG IN TO ERA, CLICK ON “myERA” IN THE  TOP-RIGHT CORNER, CLICK ON ‘MY PENDING ITEMS’, SCROLL TO THE BOTTOM OF THE FORM, AND CLICK ‘SUBMIT’. 
+
+This is an auto-generated email, DO NOT REPLY TO IT. If you have questions about this requested revision, write to grad.services@ualberta.ca.
+
+If you have questions about thesis/dissertation submission in ERA, please refer to the Thesis/Dissertation submission FAQ - link at https://era.library.ualberta.ca/jsp/public/contactUs.jsp - first before contacting the ERA Helpdesk.
+
+

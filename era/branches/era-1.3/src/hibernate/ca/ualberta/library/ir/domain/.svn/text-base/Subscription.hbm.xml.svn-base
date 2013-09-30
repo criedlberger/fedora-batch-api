@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9-Sep-2008 10:20:18 AM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Subscription" table="subscription">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="ca.ualberta.library.ir.domain.User" fetch="select" lazy="false" foreign-key="fk_subscription">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <property name="type" type="int">
+            <column name="type" not-null="true" />
+        </property>
+        <property name="pid" type="string">
+            <column name="pid" length="64" not-null="true" />
+        </property>
+        <property name="notification" type="boolean">
+            <column name="notification" not-null="true" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="created_date" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

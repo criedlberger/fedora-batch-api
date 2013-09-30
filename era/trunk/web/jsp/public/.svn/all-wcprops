@@ -1,0 +1,389 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public
+END
+community.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/community.jsp
+END
+howtoDeposit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/howtoDeposit.jsp
+END
+httpError.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/httpError.jsp
+END
+errorMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5585/era/trunk/web/jsp/public/errorMessage.jsp
+END
+advancedSearchAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/advancedSearchAjax.jsp
+END
+applicationMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/applicationMessage.jsp
+END
+supportedFileTypes.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/supportedFileTypes.jsp
+END
+browseInitial.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/browseInitial.jsp
+END
+authorHome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/authorHome.jsp
+END
+unauthorized.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/unauthorized.jsp
+END
+cartPopupMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/cartPopupMessage.jsp
+END
+featuresAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/featuresAjax.jsp
+END
+tagBookmarks.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/tagBookmarks.jsp
+END
+register.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/register.jsp
+END
+message.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/message.jsp
+END
+tagBookmarksAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/tagBookmarksAjax.jsp
+END
+home.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/home.jsp
+END
+loginPopup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/loginPopup.jsp
+END
+homeAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/homeAjax.jsp
+END
+searchResults.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/searchResults.jspf
+END
+whyDeposit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/whyDeposit.jsp
+END
+browse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/browse.jsp
+END
+aboutFaq.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/aboutFaq.jsp
+END
+contactUs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/contactUs.jsp
+END
+search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/search.jsp
+END
+browseAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/browseAjax.jsp
+END
+checkout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/checkout.jsp
+END
+browseCommunity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/browseCommunity.jsp
+END
+activationMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/activationMessage.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/login.jsp
+END
+logout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/logout.jsp
+END
+searchAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/searchAjax.jsp
+END
+checkoutAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/checkoutAjax.jsp
+END
+bookmarkAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/bookmarkAjax.jsp
+END
+favoriteAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/favoriteAjax.jsp
+END
+feeds.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/feeds.jsp
+END
+subscriptionAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/subscriptionAjax.jsp
+END
+forgotPasswordMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/forgotPasswordMessage.jsp
+END
+mode.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/mode.jspf
+END
+downloadStatsAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/downloadStatsAjax.jsp
+END
+item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/item.jsp
+END
+tagCloud.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/tagCloud.jsp
+END
+publishingServices.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/publishingServices.jsp
+END
+read.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/read.jsp
+END
+searchSortBy.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/searchSortBy.jspf
+END
+forgotPassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/forgotPassword.jsp
+END
+adminTemplate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/adminTemplate.jsp
+END
+newFeatures.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/newFeatures.jsp
+END
+registerMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/registerMessage.jsp
+END
+cart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/cart.jsp
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/error.jsp
+END
+collection.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/collection.jsp
+END
+cartAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5606/era/trunk/web/jsp/public/cartAjax.jsp
+END
+whatsNew.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/whatsNew.jsp
+END
+advancedFields.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/advancedFields.jspf
+END
+register2.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/register2.jsp
+END
+exceptionError.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5585/era/trunk/web/jsp/public/exceptionError.jsp
+END
+advancedOperators.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/advancedOperators.jspf
+END
+downloadAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5429/era/trunk/web/jsp/public/downloadAjax.jsp
+END
+viewMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/viewMessage.jsp
+END
+test.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/test.jsp
+END
+researcherList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/researcherList.jsp
+END
+loginHelp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/loginHelp.jsp
+END
+loginError.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5427/era/trunk/web/jsp/public/loginError.jsp
+END

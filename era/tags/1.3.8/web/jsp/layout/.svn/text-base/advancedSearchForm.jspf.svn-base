@@ -1,0 +1,76 @@
+	<div id="advanced" style="${event == 'advanced' && not empty context.validationErrors ? '' : 'display: none;'}">
+		<h2><fmt:message key="search.advanced.header" /></h2>
+		<div class="subheader">
+			<p><fmt:message key="search.advanced.subheader"></fmt:message></p>
+		</div>
+		<c:if test="${event == 'advanced'}">
+			<div><stripes:messages /><stripes:errors /></div>
+		</c:if>
+		<stripes:form action="/public/search" id="advancedForm" focus="advancedTerms[0]" method="post">
+			<ul class="adv_search">
+				<li>
+					<stripes:hidden name="operators[0]" value="-" />
+					<ir:advancedFields index="0" value="dc.title" />
+					<stripes:text id="advTerms.0" name="advancedTerms[0]" />
+					<security:secure roles="/admin/item">
+						<stripes:label for="State.label" />
+						<stripes:select name="state">
+							<stripes:option value="A"><fmt:message key="State.A" /></stripes:option>
+							<stripes:option value="I"><fmt:message key="State.I" /></stripes:option>
+							<stripes:option value="D"><fmt:message key="State.D" /></stripes:option>
+						</stripes:select>
+					</security:secure>
+				</li>
+				<li>
+					<ir:advancedOperators index="1" />
+					<ir:advancedFields index="1" />
+					<stripes:text id="advTerms.1" name="advancedTerms[1]"/>
+				</li>
+				<li>
+					<ir:advancedOperators index="2" />
+					<ir:advancedFields index="2" />
+					<stripes:text id="advTerms.2" name="advancedTerms[2]"/>
+				</li>
+				<li>
+					<ir:advancedOperators index="3" />
+					<ir:advancedFields index="3" />
+					<stripes:text id="advTerms.3" name="advancedTerms[3]"/>
+				</li>
+			</ul>
+			<ul class="adv_search">
+				<li><b><fmt:message key="advanced.filter.header" /></b></li>
+				<li>
+					<div style="float: left; margin-right: 5px;">
+						<div><stripes:label for="advanced.filter.contentModel" style="margin-left: 2px;" /></div>
+						<div id="allContentModels">
+							<stripes:select id="contentModelFilter" name="contentModelFilter" multiple="true" style="width: 18em; height: 8em; overflow: auto;">
+								<stripes:options-collection collection="${types}" value="name" label="name" />
+							</stripes:select>
+						</div>
+						<div><a href="#" onclick="clearSelectedElements($('contentModelFilter')); return false;" style="margin-left: 2px; font-weight: bold;">${btnClear}</a></div>
+					</div>
+					<div style="float: left; margin-right: 5px;">
+						<div><stripes:label for="advanced.filter.community" style="margin-left: 2px;" /></div>
+						<div id="allCommunities">
+							<stripes:select id="communityFilter" name="communityFilter" style="width: 18em; height: 8em; overflow: auto;" multiple="multiple">
+								<stripes:options-collection collection="${communities}" value="title" label="title" />
+							</stripes:select>
+						</div>
+						<div><a href="#" onclick="clearSelectedElements($('communityFilter')); return false;" style="margin-left: 2px; font-weight: bold;">${btnClear}</a></div>
+					</div>
+					<div style="float: left;">
+						<div><stripes:label for="advanced.filter.collection" style="margin-left: 2px;" /></div>
+						<div id="allCollections">
+							<stripes:select id="collectionFilter" name="collectionFilter" style="width: 18em; height: 8em; overflow: auto;" multiple="multiple">
+								<stripes:options-collection collection="${collections}" value="title" label="title" />
+							</stripes:select>
+						</div>
+						<div><a href="#" onclick="clearSelectedElements($('collectionFilter')); return false;" style="margin-left: 2px; font-weight: bold;">${btnClear}</a></div>
+					</div>
+					<br style="clear: both;" />
+				</li>
+			</ul>
+			<input type="submit" name="advanced" value="${btnSearch}" class="save_button" />
+			<a href="#" class="cancel_link" onclick="toggleAdvancedSearch();">${btnClose}</a>
+		</stripes:form>
+	</div>

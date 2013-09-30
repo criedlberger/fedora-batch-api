@@ -1,0 +1,25 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/branches/era-1.3/web/jsp/public/searchSortBy.jspf $
+   $Id: searchSortBy.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%-- options for search results sorting --%>
+<stripes:option value="sort.title asc"><fmt:message key="sort.title" /></stripes:option>
+<stripes:option value="sort.author asc"><fmt:message key="sort.author" /></stripes:option>
+<stripes:option value="sort.subject asc"><fmt:message key="sort.subject" /></stripes:option>
+<stripes:option value="sort.date desc"><fmt:message key="sort.dateDescending" /></stripes:option>
+<stripes:option value="sort.date asc"><fmt:message key="sort.dateAscending" /></stripes:option>
+<security:secure roles="/admin/deleted">
+<c:if test="${event == 'deleted'}">
+	<stripes:option value="fo.lastModifiedDate_dt desc"><fmt:message key="sort.deletedDateDescending" /></stripes:option>
+	<stripes:option value="fo.lastModifiedDate_dt asc"><fmt:message key="sort.deletedDateAscending" /></stripes:option>
+</c:if>
+</security:secure>
+<security:secure roles="/admin/embargoed">
+<c:if test="${event == 'embargoed'}">
+	<stripes:option value="era.embargoedDate_dt asc"><fmt:message key="sort.embargoedDateDescending" /></stripes:option>
+	<stripes:option value="era.embargoedDate_dt desc"><fmt:message key="sort.embargoedDateAscending" /></stripes:option>
+</c:if>
+</security:secure>
+<stripes:option value="score desc"><fmt:message key="sort.relevance" /></stripes:option>

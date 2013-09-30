@@ -1,0 +1,43 @@
+<fmt:message key="application.name" var="appname" />
+<fmt:message key="button.yes" var="yes" />
+<fmt:message key="button.no" var="no" />
+
+<!-- reload inputforms.xml modalbox -->
+<div id="confirmReload" class="popup_box" style="display: none;">
+	<h2><fmt:message key="admin.reload.header" /></h2>
+	<p>
+		<fmt:message key="admin.reload.prompt" />
+	</p>
+	<div class="actions">
+		<input type="button" class="save_button" onclick="Modalbox.hide(); bigWaiting(); location.href = '${ctx}/action/admin/reload';" value="${yes}" /> 
+		<input type="button" class="save_button" onclick="Modalbox.hide();" value="${no}" /> 
+	</div>
+</div>
+
+<!-- post facebook message modalbox -->
+<div id="confirmFacebook" class="popup_box" style="display: none;">
+	<h2><fmt:message key="admin.facebook.header" /></h2>
+	<p>
+		<fmt:message key="admin.facebook.prompt" />
+	</p>
+	<div class="actions">
+		<input type="button" class="save_button" onclick="Modalbox.hide(); bigWaiting(); location.href = '${ctx}/action/admin/facebook';" value="${yes}" /> 
+		<input type="button" class="save_button" onclick="Modalbox.hide();" value="${no}" /> 
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('reload').observe('click', confirmReload);
+	$('facebook').observe('click', confirmFacebook);
+	$('reload_popup').observe('click', confirmReload);
+	$('facebook_popup').observe('click', confirmFacebook);
+
+	function confirmReload(event) {
+		Modalbox.show($('confirmReload'), {title: '${appname}', width: 400});
+		return false;
+	}
+	function confirmFacebook(event) {
+		Modalbox.show($('confirmFacebook'), {title: '${appname}', width: 400});
+		return false;
+	}
+</script>

@@ -1,0 +1,29 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: era
+ * $Id$
+ */
+
+package ca.ualberta.library.ir.facebook;
+
+import com.restfb.types.Page;
+
+import ca.ualberta.library.ir.exception.ServiceException;
+import ca.ualberta.library.ir.model.solr.Item;
+
+/**
+ * The FacebookService class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public interface FacebookService {
+
+	public String postMessage(Item item, String message, String language) throws ServiceException;
+
+	public Page getPage() throws ServiceException;
+
+	public int removeAllPosts() throws ServiceException;
+
+}

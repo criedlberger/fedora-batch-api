@@ -1,0 +1,18 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: era-web
+ * $Id$
+ */
+
+package ca.ualberta.library.ir.scheduling;
+
+/**
+ * The ProquestUpload class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public interface ProquestUpload extends Schedule {
+
+}

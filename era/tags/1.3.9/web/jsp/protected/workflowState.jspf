@@ -1,0 +1,10 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/tags/1.3.9/web/jsp/protected/workflowState.jspf $
+   $Id: workflowState.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<stripes:option value=""><fmt:message key="WorkflowState.All" /></stripes:option>
+<stripes:option value="Submit"><fmt:message key="WorkflowState.Submit" /></stripes:option>
+<stripes:option value="Review"><fmt:message key="WorkflowState.Review" /></stripes:option>
+<stripes:option value="Reject"><fmt:message key="WorkflowState.Reject" /></stripes:option>

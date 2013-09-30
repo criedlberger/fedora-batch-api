@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	University of Alberta Libraries
+	Information Technology Services
+	****************************************************************************
+	$Id: build.xml 1225 2012-08-21 20:39:41Z pcharoen $
+	Project: ERA
+	Description: Education and Research Archive 
+	Author: Piyapong Charoenwattana
+	Version: $Revision: 1225 $ $Date: 2012-08-21 14:39:41 -0600 (Tue, 21 Aug 2012) $
+-->
+<project name="era-svn">
+	<description>Education and Research Archive</description>
+
+	<!-- properties -->
+	<property environment="env" />
+	<property file="build.properties" />
+
+	<!-- project classpath -->
+	<path id="project.classpath">
+		<fileset dir="${web.lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!--
+		Build application.properties
+		- Edit conf/properties/variable.properties and set appropriate values to all variables.
+		- Run ant build-application.properties.
+		- The application.properties will be set all variables and copy to
+		  web/WEB-INF/classes.
+	-->
+	<target name="build-application.properties" description="Replace application.properties variables.">
+		<copy file="${conf}/properties/application.properties" todir="${web.classes}" overwrite="true" />
+		<echo message="Replacing application.properties variables..." />
+		<replace file="${web.classes}/application.properties" replacefilterfile="${conf}/properties/variable.properties"></replace>
+	</target>
+
+	<!-- 
+		Compile updateFoxmlToSolr.xslt
+		- Edit build.properties and set project.dir to working dirctory full path.
+		- Run ant fedoragsearch-xsltc.
+		- Copy lib/fedoragsearch.jar to ${tomcat}/webapps/fedoragsearch/WEB-INF/lib.
+		- Restart the fedoragsearch application.  
+	-->
+	<target name="fedoragsearch-xsltc" description="Compile updateFoxmlToSolr.xslt...">
+		<mkdir dir="${build}/fedoragsearch" />
+		<echo message="Cleaning output directory..." />
+		<delete dir="${build}/fedoragsearch" file="**" />
+		<echo message="Compiling updateFoxmlToSolr.xslt..." />
+		<java classname="org.apache.xalan.xsltc.cmdline.Compile" classpathref="project.classpath">
+			<arg line="-o UpdateFoxmlToSolr -d ${build}/fedoragsearch -p ca.ualberta.library.fedoragsearch.translet -x -u file:///${project.dir}/conf/fedoragsearch/updateFoxmlToSolr.xslt" />
+		</java>
+		<jar destfile="${lib}/fedoragsearch.jar" basedir="${build}/fedoragsearch" />
+	</target>
+</project>

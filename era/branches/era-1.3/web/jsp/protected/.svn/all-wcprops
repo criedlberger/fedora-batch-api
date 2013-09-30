@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected
+END
+myCollections.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myCollections.jsp
+END
+community.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/community.jsp
+END
+communityAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/communityAjax.jsp
+END
+metadataInputForm.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/metadataInputForm.jspf
+END
+myPendingItems.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myPendingItems.jsp
+END
+darkItemList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/darkItemList.jsp
+END
+myBookmarks.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myBookmarks.jsp
+END
+embargoedItemList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/embargoedItemList.jsp
+END
+editMyInformation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editMyInformation.jsp
+END
+activation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/activation.jsp
+END
+editCollectionMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editCollectionMessage.jsp
+END
+submitMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/submitMessage.jsp
+END
+editItemMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editItemMessage.jsp
+END
+adminSummaryAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/adminSummaryAjax.jsp
+END
+depositMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/depositMessage.jsp
+END
+indexBuilder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/indexBuilder.jsp
+END
+maintenance.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/maintenance.jsp
+END
+userAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/userAjax.jsp
+END
+subscriptionNotifier.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/subscriptionNotifier.jsp
+END
+editUser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editUser.jsp
+END
+approval.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/approval.jsp
+END
+myAccountStatsAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myAccountStatsAjax.jsp
+END
+proquestUpload.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/proquestUpload.jsp
+END
+collectionList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/collectionList.jsp
+END
+sortBy.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/sortBy.jspf
+END
+approvalAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/approvalAjax.jsp
+END
+editGroup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editGroup.jsp
+END
+submit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/submit.jsp
+END
+activationMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/activationMessage.jsp
+END
+submitAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/submitAjax.jsp
+END
+deposit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/deposit.jsp
+END
+changePassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/changePassword.jsp
+END
+depositAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/depositAjax.jsp
+END
+editBookmark.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editBookmark.jsp
+END
+editMyProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editMyProfile.jsp
+END
+communityList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/communityList.jsp
+END
+workflowState.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/workflowState.jspf
+END
+myAccountSummaryAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myAccountSummaryAjax.jsp
+END
+myItems.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myItems.jsp
+END
+maintenanceForms.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/maintenanceForms.jsp
+END
+editCommunity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editCommunity.jsp
+END
+myInformation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myInformation.jsp
+END
+reviewList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/reviewList.jsp
+END
+activationList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/activationList.jsp
+END
+editCommunityMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editCommunityMessage.jsp
+END
+myCommunities.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myCommunities.jsp
+END
+embargoedPublisher.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/embargoedPublisher.jsp
+END
+editItem.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editItem.jsp
+END
+myFavorites.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myFavorites.jsp
+END
+mySavedItems.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/mySavedItems.jsp
+END
+userList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/userList.jsp
+END
+myAccountHome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myAccountHome.jsp
+END
+itemListInfo.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/itemListInfo.jspf
+END
+approvalList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/approvalList.jsp
+END
+deletedItemList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/deletedItemList.jsp
+END
+workflowSortBy.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/workflowSortBy.jspf
+END
+approvalMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/approvalMessage.jsp
+END
+editMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editMessage.jsp
+END
+collection.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/collection.jsp
+END
+collectionAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/collectionAjax.jsp
+END
+adminHome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/adminHome.jsp
+END
+editCollection.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editCollection.jsp
+END
+myProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myProfile.jsp
+END
+adminCollectionAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/adminCollectionAjax.jsp
+END
+transactions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/transactions.jsp
+END
+myAccountSortBy.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/myAccountSortBy.jspf
+END
+editGroupPermission.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/editGroupPermission.jsp
+END
+mySubscriptions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/mySubscriptions.jsp
+END
+test.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/web/jsp/protected/test.jsp
+END

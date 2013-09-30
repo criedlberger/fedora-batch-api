@@ -1,0 +1,21 @@
+<%@ taglib prefix="stripes" uri="http://stripes.sourceforge.net/stripes.tld" %>
+<%@ taglib prefix="security" uri="http://stripes.sourceforge.net/stripes-security.tld" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="ir" tagdir="/WEB-INF/tags/ir" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fnx" uri="http://era.library.ualberta.ca/jsp/functions" %>
+
+<%@ tag pageEncoding="UTF-8" %>
+<%@ tag import="java.net.URLEncoder" %>
+<%@ tag import="ca.ualberta.library.ir.enums.*" %>
+<%@ tag import="ca.ualberta.library.ir.action.ActionConstants" %>
+
+<% jspContext.setAttribute("ADMIN_GROUP", GroupType.ADMIN.getValue()); %>
+<% jspContext.setAttribute("DEPOSITOR_GROUP", GroupType.DEPOSITOR.getValue()); %>
+<% jspContext.setAttribute("W3CDTFDatePattern", ActionConstants.W3CDTFDatePattern); %>
+<% jspContext.setAttribute("dateFormat", ActionConstants.dateFormat); %>
+
+<c:set var="context" value="${actionBean.context}" />
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<fmt:setLocale value="${context.language}" />

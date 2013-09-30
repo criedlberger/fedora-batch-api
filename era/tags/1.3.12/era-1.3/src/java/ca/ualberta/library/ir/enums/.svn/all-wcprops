@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums
+END
+ObjectPermissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/ObjectPermissions.java
+END
+DatastreamID.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/DatastreamID.java
+END
+AuthType.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/AuthType.java
+END
+AccessType.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/AccessType.java
+END
+Definitions.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/Definitions.java
+END
+WorkflowState.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/WorkflowState.java
+END
+PartOfRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/PartOfRelationship.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/package.html
+END
+UserState.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/UserState.java
+END
+State.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/State.java
+END
+SystemPermissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/SystemPermissions.java
+END
+FedoraRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/FedoraRelationship.java
+END
+Language.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/Language.java
+END
+LicenseType.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/LicenseType.java
+END
+AuthorProfileType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/AuthorProfileType.java
+END
+SubscriptionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/SubscriptionType.java
+END
+DublinCoreLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/DublinCoreLanguage.java
+END
+ContentModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/ContentModel.java
+END
+HandleType.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/HandleType.java
+END
+ControlGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/ControlGroup.java
+END
+GroupType.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/enums/GroupType.java
+END

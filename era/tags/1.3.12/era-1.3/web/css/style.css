@@ -1,0 +1,2564 @@
+@charset "UTF-8";
+/* 	$Id: style.css 5603 2012-10-05 18:51:26Z pcharoen $1 */
+/* 	
+	CSS Document
+    Authored by Natasha Nunn
+    Created in October and November 2009
+    Modified by Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+ 	$HeadURL: https://code.library.ualberta.ca/svn/repos/era/tags/1.3.12/era-1.3/web/css/style.css $
+*/
+/* CAN I GET A RESET!! Thanks Meyerweb.com v1.0 | 20080212 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin : 0;
+	padding : 0;
+	border : 0;
+	outline : 0;
+	font-size : 100%;
+	vertical-align : baseline;
+	background : transparent;
+}
+
+body {
+	line-height : 1;
+}
+
+label {
+	font-weight : bold;
+	/*padding-right: 0.5em;*/
+}
+
+ol,
+ul {
+	list-style : none;
+}
+
+blockquote,
+q {
+	quotes : none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content : '';
+	content : none;
+}
+
+:focus {
+	outline : 0;
+}
+
+ins {
+	text-decoration : none;
+}
+
+del {
+	text-decoration : line-through;
+}
+
+table {
+	border-collapse : collapse;
+	border-spacing : 0;
+	float : left;
+}
+
+/* START OF CUSTOM ERA STYLESHEET written by Natasha Nunn */
+/* my own reset of existing tags */
+
+a {
+	font-family : verdana, arial, helvetica, sans-serif;
+	text-decoration : none;
+	font-size : 0.9em;
+}
+
+a:visited {
+	font-family : verdana, arial, helvetica, sans-serif;
+	text-decoration : none;
+	font-size : 0.9em;
+	color : #600;
+}
+
+h1 {
+	width : 100%;
+}
+
+h2 {
+	font-size : 1.2em;
+	color : #030;
+}
+
+h3 {
+	color : #a65100;
+	margin : 0.5em 0 0 0;
+	font-weight : bold;
+	font-size : 1.1em;
+}
+
+em {
+	font-weight : bold;
+}
+
+/*styles used across multiple tags (mainly floats and text size)*/
+
+h1,
+.footerwrap,
+.eraheader,
+.navbar,
+.search_field,
+.footerbox,
+#advanced form,
+.home_subheader,
+.howitworks,
+.featuredinfo,
+.subheader,
+.results_subheader,
+.search_filters,
+.browse,
+.search_results,
+.login_box,
+.popup_box,
+.record_info,
+.record_actions,
+.itemlist_info,
+.itemlist_collection,
+.itemlist_actions,
+.record,
+.full_box,
+#advanced,
+.eratag,
+.workflow,
+.workflow_info,
+.workflow_title,
+.global_error,
+.error_box,
+.a_subject,
+.a_community,
+.a_collection,
+.register,
+.thumb,
+.description,
+h2.collectionlist,
+a.browsebutton,
+a.rssbutton,
+.collections_toolbar div,
+.deposit_metadata,
+.home_subheader p,
+ul.help_contact,
+.browse_column,
+.choose,
+.floater1,
+.floater2,
+.errors,
+ul.researcher_list li,
+ul.researcher_list li img,
+.author_box,
+ul.item_info,
+.items,
+h2.collections,
+.item_toolbar,
+.full_info,
+.edit_message,
+.author_subjects,
+.title_actions h2,
+.edit_profile,
+.author_info,
+.item_title,
+.profile_info,
+ul.myaccount_info,
+.edit_profile textarea,
+.edit_profile label,
+.deposit_metadata ul select,
+.edit_button,
+.delete_button,
+ol.my_items,
+a.advanced_link,
+.popup_wrap,
+.ua_footer ul,
+a.add_button,
+.browse p,
+.checkboxes,
+.itemlist {
+	float : left;
+}
+
+.pages,
+.logo,
+.object_logo,
+.extra_instructions,
+a.create_button,
+.collections_toolbar,
+.researcher_toolbar,
+.edit_profile p,
+.profile_thumb,
+img.item_view_thumb,
+.popup_links,
+.cart_actions {
+	float : right;
+}
+
+.content {
+	float : none;
+}
+
+.subheader,
+.results_subheader,
+.search_filters,
+.browse,
+.search_results,
+.login_box,
+.popup_box,
+.itemlist {
+	font-size : 0.85em;
+	line-height : 1.4em;
+}
+
+.popup_box {
+	width : 100%;
+	/*min-height: 9em;*/
+}
+
+div.popup_box input.save_button {
+	margin-left : 0em;
+	height : 2em;
+	width : 3em;
+	text-align : center;
+}
+
+div.popup_box .actions {
+	text-align : center;
+	margin-top : 1em;
+}
+
+div.popup_box p {
+	background-color : #ffebab;
+	margin-top : 0.5em;
+}
+
+.contentmodel,
+.publisher,
+.language,
+.coverage,
+.contributor,
+.source,
+.browse .author,
+.browse .subject,
+.ownerid,
+.eratag span,
+.myeratag span,
+.fakefile,
+.relation,
+.rights {
+	display : none;
+}
+/*hacky way to get rid of original icon image*/
+
+.subscription img,
+.collections_toolbar br {
+	display : none;
+}
+/* main layout and wrappers */
+
+html,
+body {
+	height : 100%;
+}
+
+body {
+	font-size : 100%;
+	font-family : georgia, "times new roman", times, serif;
+	color : #454545;
+	background : #dcdcdc url("../images/mainback.jpg") repeat;
+}
+
+.content {
+	width : 100%;
+	margin : 0 auto;
+	padding : 0;
+}
+
+.wrapper {
+	min-height : 100%;
+	height : auto !important;
+	height : 100%;
+/*	margin : 0 auto -26em;*/
+}
+
+.headerwrap {
+	background-image : url("../images/topheadback.jpg");
+	background-repeat : repeat-x;
+}
+
+.footerwrap {
+	background-image : url("../images/footerback.jpg");
+	background-repeat : repeat-x;
+	width : 100%;
+	height : 18em;
+	margin-top : 3em;
+	clear : both;
+}
+
+.main {
+	line-height : 1.4em;
+}
+
+.full_box {
+	width : 60.4em;
+	/*margin-bottom: 1em;*/
+}
+
+.login_box,
+.full_box {
+	background-color : #f5f4df;
+	padding : 1em 0.5em 1em 1em;
+}
+
+#advanced {
+	background-color : #d9dfd1;
+	padding : 1em 0.5em 1em 1em;
+	width : 60.4em;
+	margin : 0 0 1em 0;
+}
+
+.login_link {
+	margin-left : 1em;
+	font-size : 0.8em !important;
+}
+
+.popup_wrap {
+	padding : 0 0.5em 1em 1em;
+}
+
+.top_info,
+.main,
+.header {
+	width : 64em;
+	margin : auto;
+}
+
+.top_info {
+	width : 100%;
+	color : #fff;
+	height : 2em;
+}
+
+.logo {
+	margin : 1.2em 2em 1.2em 0;
+	width : 12em;
+	text-align : left;
+}
+
+.eraheader {
+	width : 40.5em;
+	margin : 1.2em 0;
+}
+
+.subheader {
+	width : 100%;
+	margin-top : 0.4em;
+	font-size : 1em;
+}
+
+.navbar,
+.search_field {
+	height : 3.9em;
+	background-image : url("../images/menubarback.png");
+	background-repeat : no-repeat;
+}
+
+.navbar {
+	width : 50%;
+}
+
+.search_box {
+	background-image : url("../images/search_back.png");
+	background-repeat : no-repeat;
+	width : 16em;
+	height : 3em;
+	float : left;
+	margin : 0.6em 0 0 5em;
+}
+
+.search_field {
+	width : 49%;
+	background-position : top right;
+	padding : 0;
+}
+
+.pages {
+	width : 18em;
+}
+
+.bot {
+	width : 99%;
+	background-color : #fff;
+	padding : 0.5em 0.5em 0.5em 0;
+	text-align : right;
+}
+
+.ua_footer_wrap {
+	width : 100%;
+	background-image : url("../images/copyright_back.jpg");
+	background-repeat : repeat-x;
+	background-color : #fff;
+	color : #000;
+	padding : 4em 0 1.8em 0;
+	font-size : 0.7em;
+	float : left;
+}
+
+.ua_footer {
+	width : 950px;
+	margin : auto;
+	height : 9em;
+}
+
+.copyright {
+	width : 950px;
+	border-top : 1px dotted #999;
+	text-align : right;
+	padding-top : 0.3em;
+	margin : auto;
+}
+
+.push {
+	height : 26em;
+}
+
+.footer {
+	color : #fff;
+	line-height : 1em;
+	margin : auto;
+	width : 64em;
+}
+
+.footerbox {
+	width : 32.9%;
+	height : 4.5em;
+	padding : 3.5em 0 5em 0;
+	text-align : center;
+	background-image : url("../images/footerbackcenter.jpg");
+	background-repeat : repeat-x;
+	font-family : verdana, arial, helvetica, sans-serif;
+	font-size : 0.9em;
+}
+
+.account_info {
+	position : absolute;
+	top : 0;
+	right : 1em;
+	background-image : url("../images/accountback.png");
+	background-position : bottom;
+	background-repeat : no-repeat;
+	width : 22em;
+	height : 3em;
+	padding : 0 0 0.5em 1em;
+}
+
+div.errors {
+	background-color : #fcc;
+	padding : 0.3em;
+	width : 59em;
+}
+
+div.errors ul {
+	text-indent : 1em;
+}
+
+.error_message {
+	float : left;
+}
+
+.field_error {
+	font-size : 0.85em;
+	color : red;
+}
+
+/*more page specific/less common layout styles*/
+
+.home_subheader {
+	width : 39%;
+	text-align : left;
+	line-height : 2.5em;
+	margin : 3% 6% 3% 0;
+	font-size : 1.25em;
+	font-weight : bold;
+	color : #030;
+}
+
+#stats h3 {
+	float : left;
+	width : 9em;
+	white-space : nowrap;
+}
+
+.howitworks {
+	width : 230px;
+	margin : 3% 3% 3% 0;
+	line-height : 1.5em;
+	background-repeat : no-repeat;
+	padding : 10px;
+	height : 241px;
+	background-image : url("../images/notepaper.png");
+}
+
+.featuredinfo {
+	width : 23%;
+	margin : 3% 3% 3% 0;
+	line-height : 1.5em;
+	background-repeat : no-repeat;
+	height : 241px;
+	padding : 0.5%;
+	background-image : url("../images/notepaper3.png");
+}
+
+.middle {
+	background : none;
+}
+
+.record_info {
+	width : 46em;
+}
+
+.record_actions {
+	width : 9em;
+	padding-left : 1em;
+}
+
+.itemlist_info {
+	width : 28em;
+}
+
+.itemlist_collection {
+	width : 24em;
+	padding-left : 1em;
+	border-left : dotted 1px #d4d4d4;
+}
+
+.itemlist_actions {
+	width : 12em;
+	padding-left : 1em;
+	border-left : dotted 1px #d4d4d4;
+}
+
+.itemlist .record_info {
+	width : 48em;
+}
+
+.itemlist .record_actions {
+	width : 17em;
+}
+
+.itemlist_collection a {
+	font-family : georgia, "times new roman", times, serif;
+}
+
+.itemlist_actions a {
+	font-family : georgia, "times new roman", times, serif;
+}
+
+.itemlist_add_button {
+	width : auto !important;
+	float : right !important;
+	margin-right : 3em !important;
+}
+
+.result_author,
+.result_subject,
+.result_others {
+	padding-left : 2em;
+}
+
+.result_others a {
+	font-family : georgia, "times new roman", times, "serif !important";
+}
+
+.sorter {
+	margin-left : 3em;
+}
+
+.search_filters {
+	width : 13em;
+	padding : 0 1em;
+	background-color : #cad3be;
+	margin-bottom : 3em;
+}
+
+.username,
+.pass {
+	height : 3em;
+}
+
+.username .input_text,
+.pass .input_text {
+	width : 10em;
+}
+
+.forgot {
+	float : left;
+	width : 15em;
+	font-size : 0.8em;
+}
+
+.results_subheader,
+.itemlist {
+	background-color : #fff;
+	font-size : 0.8em;
+	padding : 1em 0 0 1em;
+	min-height : 2em;
+	width : 76.5em;
+}
+
+div.itemlist {
+	background-color : #f4edda;
+}
+
+div.itemlist ol {
+	width : 100%;
+	font-size : 1.1em;
+}
+
+.cancel {
+	float : right;
+	width : 10em;
+}
+
+.title_actions {
+	width : 100%;
+	float : left;
+	clear : both;
+}
+
+.author_subjects {
+	width : 30em;
+}
+
+.a_community,
+.a_collection {
+	background : url("../images/notepaper2.jpg");
+	background-repeat : no-repeat;
+	width : 20%;
+	height : 9em;
+	padding : 1em;
+	margin : 1em 0.5em 0 0.5em;
+	font-size : 0.8em;
+	float : left;
+}
+
+.a_community div.title,
+.a_collection div.title {
+	height : 4em;
+	overflow : hidden;
+}
+
+.collections_toolbar,
+.researcher_toolbar {
+	font-size : 0.75em;
+	padding-right : 1em;
+	width : 30em;
+}
+
+.register div {
+	padding : 0.5em;
+	text-align : right;
+	clear : both;
+}
+
+.registersubmit {
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.description {
+	width : 80%;
+	padding : 1.5em 0 0.5em 0;
+}
+
+.deposit_metadata {
+	width : 90%;
+	padding : 1em 0;
+	margin : 0 3.5em;
+}
+
+.deposit_metadata div {
+	margin-top : 0.2em;
+}
+
+.browse_column {
+	width : 30em;
+}
+
+.browse_count {
+	font-size : smaller;
+	margin-left : 0.5em;
+	color : #666;
+}
+
+.thumb {
+	padding-right : 1em;
+}
+
+.deposit_metadata div.choose {
+	margin : 1em 1em 1em 2em;
+}
+
+.deposit_metadata div.menus { /*height: 2.5em;*/
+	margin-top : 0;
+	padding : 0;
+	width : 100%;
+}
+
+.deposit_metadata div.list {
+	height : auto;
+	margin-top : 0.5em;
+	padding : 0;
+}
+
+.deposit_metadata div.list ul {
+	width : 100% !important;
+}
+
+.deposit_metadata div.extra_instructions {
+	width : 23em;
+}
+
+.deposit_metadata div.coverage_date {
+	width : 41em;
+}
+
+.deposit_metadata div.license_menu {
+	height : 2.5em;
+	margin-top : 0;
+	padding : 0;
+	width : 100%;
+}
+
+.item_toolbar {
+	text-align : right;
+	width : 16em;
+	margin : 0.5em 0 0 0;
+	float : right;
+}
+
+.author_box {
+	float : right;
+	width : 25em;
+	background-color : #fff;
+	border : 1px solid #600;
+	padding : 1em;
+	margin : 1em;
+	-moz-border-radius : 5px;
+}
+
+.view_box {
+	float : right;
+	width : 25em;
+	background-color : #fff;
+	border : 1px solid #600;
+	padding : 1em;
+	margin : 0 1em 1em 1em;
+	-moz-border-radius : 5px;
+}
+
+.full_info {
+	width : 100%;
+	margin-top : 1em;
+}
+
+div.items {
+	width : 30em;
+}
+
+.profile_edit {
+	width : 40em;
+}
+
+.item_title {
+	width : 40em;
+}
+
+.item_title label {
+	padding-right : 0.5em;
+}
+
+.download_div {
+	margin : 0.5em 0;
+	font-size : 0.8em;
+}
+
+.cart_actions {
+	width : 15em;
+}
+
+.cart_form_actions {
+	clear : both;
+	float : right;
+	margin : 1em 1em;
+}
+
+.cart_itemlist {
+	width : 74em;
+	margin-top : 1em;
+}
+
+.cart_itemlist_actions {
+	width : 10em;
+}
+
+.admin_button,
+.user_sum {
+	float : right;
+	background : #fff !important;
+	color : #000;
+	padding : 0.5em;
+	margin-right : 0.5em;
+	-moz-border-radius : 5px;
+	font-size : 0.9em;
+}
+
+.user_sum span {
+	padding-left : 0.5em;
+}
+
+.object_logo {
+	margin : 0.5em 0.5em 0.5em 0.5em;
+}
+
+.profile_thumb {
+	width : 10em;
+	margin : 0.5em 0.5em 0.5em 0.5em;
+}
+
+.admin_options {
+	width : 70%;
+	float : left;
+}
+
+.edit_message {
+	width : 100%;
+	margin-top : 1em;
+}
+
+.atffc {
+	display : none;
+}
+
+.edit_profile {
+	width : 56em;
+}
+
+.edit_profile_button {
+	width : 11em !important;
+	white-space : nowrap;
+}
+
+.embargo {
+	width : 17em;
+	float : right;
+	background-color : #fff;
+	padding : 1em;
+	-moz-border-radius : 5px;
+}
+/*extra classes used for general styles throughout the site*/
+
+.left_pad {
+	padding-left : 0.5em;
+}
+
+.last {
+	margin : 3% 0;
+}
+
+.eratag {
+	background-image : url("../images/erawm.png");
+	background-repeat : no-repeat;
+	background-position : top;
+	width : 3.8em;
+	height : 1.5em;
+	margin-top : 0.2em;
+}
+
+.small {
+	font-size : 0.75em;
+}
+
+.required {
+	background-image : url("../images/star.jpg");
+	background-repeat : no-repeat;
+	background-position : right top;
+	color : #600;
+	padding-right : 0.4em;
+}
+
+.lower_pad {
+	padding-bottom : 1em;
+}
+
+.bigbold {
+	font-size : 1.2em;
+	font-weight : bold;
+}
+
+h2.items {
+	width : 23em;
+}
+
+.checkboxes {
+	width : 30em;
+}
+
+/* custom links - remember sitewide links have already been styled above */
+
+.main a,
+#advanced a,
+.popup_box a {
+	color : #600;
+}
+
+.main a:hover,
+#advanced a:hover,
+.popup_box a:hover {
+	color : #960;
+	text-decoration : underline;
+}
+
+.top_info a {
+	color : #ccc;
+	font-size : 0.8em;
+}
+
+.navbar a,
+.search_field a {
+	color : #333;
+	font-size : 0.85em;
+	padding : 1.16em 0.9em;
+}
+
+.navbar a {
+	border-color : #f6e8bd;
+	border-style : solid;
+	border-width : 0 1px;
+	display : block;
+	float : left;
+	font-weight : bold;
+}
+
+.navbar a:hover {
+	background-color : #f6e8bd;
+}
+
+.navbar li.active a {
+	background-image : url("../images/activeback.png");
+	background-repeat : repeat-x;
+}
+
+.home_subheader a {
+	font-family : georgia, "times new roman", times, serif;
+	color : #6d4332;
+}
+
+.featuredinfo a,
+.howitworks a {
+	font-size : 0.8em;
+}
+
+.featuredinfo h2 a,
+.howitworks h2 a {
+	font-weight : bold;
+	font-family : georgia, "times new roman", times, serif;
+	font-size : 1em;
+}
+
+.footer a {
+	color : #fff;
+	font-size : 0.8em;
+}
+
+.footer a:hover {
+	text-decoration : underline;
+	color : #fffce5;
+}
+
+a.read_more {
+	font-size : 0.65em;
+	font-weight : normal;
+	color : #6d4332;
+}
+
+.forgot a {
+	margin : 1em 0 1em 0;
+	float : left;
+}
+
+.pages a {
+	font-family : georgia, "times new roman", times, serif;
+}
+
+.pages .active {
+	font-weight : bold;
+}
+
+.pages_bottom {
+	float : right;
+}
+
+a.read,
+a.download,
+.favorite a,
+.cartbutton a,
+.morebutton a,
+a.edit_button,
+a.delete_button,
+.a_favorite a,
+a.add_button,
+a.addthis,
+a.subscribe,
+a.email,
+a.rssbutton,
+a.browsebutton {
+	color : #000;
+	padding : 0.25em 0.25em 0.25em 1.5em;
+	margin-bottom : 0.2em;
+	background-repeat : no-repeat;
+	background-position : center left;
+	font-family : georgia, "times new roman", times, serif;
+	font-weight : bold;
+	text-transform : lowercase;
+	border : none;
+	font-size : 0.9em;
+	background-color : #cad3be;
+	-moz-border-radius : 5px;
+	cursor : pointer;
+}
+
+.favorite a:hover,
+.cartbutton a:hover,
+.morebutton a:hover,
+.a_favorite a:hover,
+a:hover.add_button {
+	background-color : #c5d1c9;
+}
+
+.favorite a {
+	background-image : url("../images/favorite.jpg");
+}
+
+a.email {
+	background-image : url("../images/email.png");
+}
+
+.a_favorite a {
+	float : left;
+}
+
+.cartbutton a {
+	background-image : url("../images/cartbutton.jpg");
+}
+
+a.download {
+	background-image : url("../images/download.jpg");
+	background-color : #f7e09d;
+}
+
+a.read {
+	background-image : url("../images/view_small.png");
+	background-color : #f7e09d;
+}
+
+a.addthis {
+	background-image : url("../images/addthis-plus.gif");
+	background-color : #dfdfdf;
+}
+
+a.edit_button {
+	background-image : url("../images/edit_button.jpg");
+	background-color : #d5dae6;
+}
+
+a.delete_button {
+	background-image : url("../images/delete_button.jpg");
+	background-color : #f9c7c1;
+}
+
+a.add_button {
+	background-image : url("../images/addbutton.jpg");
+	margin-left : 1em;
+}
+
+a:hover.edit_button {
+	background-color : #c3cde4;
+}
+
+a:hover.delete_button {
+	background-color : #f8b9b2;
+}
+
+a:hover.download {
+	background-color : #fada82;
+}
+
+a:hover.addthis {
+	background-color : #cfcfcf;
+}
+
+.morebutton a {
+	font-size : 0.85em;
+	-moz-border-radius : 5px;
+	padding : 0.3em 0.5em;
+	margin-top : 1em;
+	cursor : pointer;
+}
+
+.record_actions a {
+	display : block;
+}
+
+.item_toolbar .cartbutton a,
+.item_toolbar .favorite a,
+.item_toolbar .morebutton a,
+.item_toolbar a.download,
+a.read,
+.item_toolbar a.edit_button,
+.author_subjects a.download,
+.a_favorite a,
+a.edit_button,
+a.delete_button,
+a.add_button,
+a.addthis,
+a.subscribe,
+a.rssbutton,
+a.email,
+a.browsebutton {
+	padding : 0 0.5em 0 1.5em;
+	-moz-border-radius : 5px;
+	margin : 0.25em;
+	font-size : 0.8em;
+	font-style : normal;
+	display : block;
+	width : 7.5em;
+}
+
+.auto_width {
+	width : auto !important;
+}
+
+.cart_actions a.download {
+	width : 11em;
+	margin-bottom : 1em;
+	display : block;
+}
+
+.view_box a.download,
+.author_box a.download,
+.view_box a.edit_button {
+	padding : 0 0.5em 0 1.5em;
+	-moz-border-radius : 5px;
+	margin : 0.25em;
+	font-size : 0.8em;
+	font-style : normal;
+	display : block;
+	width : 10em;
+}
+
+a.morebutton {
+	padding : 0 0.3em;
+	-moz-border-radius : 5px;
+	background : #fff;
+	font-size : 0.9em;
+	font-weight : bold;
+}
+
+ul.user_links li a {
+	float : left;
+	border-right : 1px solid #dae9cf;
+	font-size : 0.8em;
+	display : block;
+	padding : 0.7em 0.5em 0.5em 0.5em;
+	color : #25562c;
+	font-size : 0.8em;
+	text-align : right;
+}
+
+ul.user_links li a.name {
+	max-width : 7.5em;
+	text-align : left;
+}
+
+ul.user_links li a.cart {
+	width : 4.5em;
+	text-align : left;
+	border : none;
+}
+
+ul.user_links li.create_own a {
+	font-weight : bold;
+	border : none;
+	color : #369;
+}
+
+ul.user_links li a:hover,
+a.admin_button:hover {
+	color : #000 !important;
+	background-color : #f3fae0 !important;
+}
+
+ul.user_links li.create_own a:hover {
+	background : none;
+}
+
+ul.help_contact {
+	margin-top : 0.3em;
+}
+
+ul.help_contact li a {
+	font-size : 0.75em;
+	padding : 0;
+}
+
+ul.help_contact li a:hover {
+	background-color : #f6e8bd;
+}
+
+.subscription a,
+a.browsebutton,
+a.rssbutton,
+a.deletbutton,
+a.editbutton,
+a.create_button {
+	background-color : #f6e8bd;
+	background-repeat : no-repeat;
+	background-position : 0.3em;
+	padding : 0 0.6em 0 1.5em;
+	font-weight : bold;
+	display : block;
+	color : #000;
+	text-transform : lowercase;
+	font-size : 0.9em;
+	margin : 0.1em 0.5em 0 0;
+	-moz-border-radius : 5px;
+}
+
+a.create_button {
+	font-weight : normal;
+	padding : 0.5em 0.6em 0.5em 1.5em;
+	margin-top : 0.5em;
+}
+
+a.admin_button {
+	font-weight : bold;
+	padding : 0.5em 0.6em 0.5em 0.6em;
+	margin-top : 0.5em;
+	font-size : 0.8em;
+	color : #25562c !important;
+}
+
+a.rssbutton {
+	background-image : url("../images/rss.png");
+}
+
+a.browsebutton {
+	background-image : url("../images/browse.png");
+}
+
+.subscription a {
+	background-image : url("../images/notify.png");
+	width : 7.5em;
+}
+
+.reviewer a {
+	width : 100% !important;
+	white-space : nowrap;
+}
+
+a.create_button {
+	background-image : url("../images/create.png");
+}
+
+.subscription a:hover,
+a.browsebutton:hover,
+a.rssbutton:hover,
+a:hover.create_button {
+	background-color : #ffc;
+	text-decoration : none;
+}
+
+h3 a,
+h3 a:visited {
+	font-size : 0.8em;
+}
+
+a.advanced_link {
+	color : #003584;
+	font-size : 0.7em;
+	font-weight : bold;
+	padding : 1.4em 0.5em 0.8em 0;
+	background-image : url("../images/advanced.png");
+	background-repeat : no-repeat;
+	background-position : bottom center;
+}
+
+a.addmore {
+	margin-bottom : 0;
+	margin-left : 0.2em;
+	font-size : 0.85em;
+	color : #a65100;
+	font-family : georgia, "times new roman", times, serif;
+	white-space : nowrap;
+	float : left;
+	clear : both;
+}
+
+a.remove {
+	margin-bottom : 0;
+	margin-left : 0.2em;
+	font-size : 0.85em;
+	color : #a65100;
+	font-family : georgia, "times new roman", times, serif;
+	white-space : nowrap;
+}
+
+.browse_more a {
+	color : #812339;
+	background-color : #fff;
+	font-weight : bold;
+	font-size : 1.1em;
+	padding : 0.1em 0.3em;
+	-moz-border-radius : 5px;
+	display : block;
+	width : 5em;
+	margin-top : 0.5em;
+}
+
+.a_collection a,
+.a_community a {
+	font-weight : bold;
+	font-size : 1em;
+}
+
+.item_toolbar a {
+	float : left;
+}
+
+a.myeratag {
+	float : left;
+	background-image : url("../images/myeratag.jpg");
+	background-repeat : no-repeat;
+	background-position : bottom;
+	width : 6.5em;
+	height : 2.3em;
+	padding : 0.3em 0 0 0.8em;
+}
+
+a:hover.myeratag {
+	background-image : url("../images/myeratag_down.jpg");
+}
+
+.ua_footer h2 a {
+	color : #000;
+	font-size : 0.9em;
+}
+
+.ua_footer ul li a {
+	color : #666;
+	font-size : 1em;
+}
+
+.ua_footer a:hover {
+	color : #000;
+	text-decoration : underline;
+}
+
+a.wecan {
+	font-weight : bold;
+	float : right;
+	padding : 1.3em 0.8em;
+	margin : -0.5em 20em 0 0;
+	width : 7em;
+	background-image : url("../images/wecan.jpg");
+	background-repeat : no-repeat;
+	font-size : 0.8em;
+	text-align : center;
+	line-height : 1.3em;
+	vertical-align : middle;
+}
+
+a.licencehelp {
+	font-weight : bold;
+	float : right;
+	padding : 1.3em 0.8em;
+	width : 7em;
+	background-image : url("../images/wecan.jpg");
+	background-repeat : no-repeat;
+	font-size : 0.8em;
+	text-align : center;
+	line-height : 1.3em;
+}
+
+a:hover.wecan,
+a:hover.licencehelp {
+	background-image : url("../images/wecan_down.jpg");
+}
+/*headers*/
+
+h2 em {
+	font-size : 1.3em;
+}
+
+.footer h2 {
+	color : #fff;
+	font-weight : bold;
+}
+
+.right_articles h2 {
+	text-align : center;
+	font-size : 1em;
+}
+
+.footerbox h2 {
+	text-align : left;
+	margin-left : 4.4em;
+	font-size : 0.9em;
+}
+
+h2 label {
+	float : left;
+	margin-top : 0.8em;
+}
+
+.search_filters h1 {
+	font-size : 0.9em;
+	margin : 0 0 0.5em 0;
+	font-family : verdana, arial, helvetica, sans-serif;
+}
+
+.author_subjects h2 {
+	margin : 1em 0 0.5em 0;
+	font-size : 1em;
+}
+
+h2.collectionlist {
+	width : 100%;
+	color : #a65100;
+	font-size : 1em;
+}
+
+.author_subjects h4 {
+	font-size : 1em;
+	margin : 0.5em 0;
+	font-style : italic;
+}
+
+.author_box h4 {
+	margin-top : 1em;
+}
+
+.deposit_metadata h3 {
+	font-weight : bold;
+	font-size : 1.1em;
+}
+
+.a_community h3 {
+	font-size : 1.3em;
+}
+
+ul.browse_field h3 {
+	font-size : 1.8em;
+	color : #030;
+	margin : 0.5em 0;
+}
+
+h4.license_choose {
+	padding : 0;
+	margin-top : 2em;
+	width : 9em;
+	color : #600;
+	clear : both;
+}
+
+.author_info {
+	width : 38em;
+}
+
+.author_info h2 {
+	width : 100%;
+}
+
+.item_title h2 {
+	width : 100%;
+}
+
+div.errors h2 {
+	font-size : 1em;
+}
+
+.ua_footer h2 {
+	width : 100%;
+	border-bottom : 1px dotted #999;
+	padding-bottom : 0.5em;
+}
+
+h2.advanced_filters {
+	font-size : 0.9em;
+	margin : 0.5em 0;
+}
+
+.admin_button h2,
+.user_sum h2 {
+	font-size : 0.9em;
+}
+/*paragraphs and spans*/
+
+.top_info p {
+	padding : .8em;
+	text-align : right;
+}
+
+#cartitemcount {
+	font-size : 0.9em;
+	padding-left : 0.2em;
+}
+
+.deposit_metadata p,
+.edit_profile p,
+.profile_info p,
+.item_info p {
+	display : inline;
+	background-color : #f6e2a6;
+	line-height : normal;
+	font-size : 0.85em;
+	padding : 0.4em;
+	margin : 0 0 0 0.5em;
+	vertical-align : text-top;
+	-moz-border-radius : 5px;
+}
+
+.edit_profile p,
+.item_info p {
+	display : block;
+	margin-left : 0.5em;
+	width : 32em;
+}
+
+.edit_profile p.hint {
+	width : 16em;
+}
+
+.deposit_metadata p.regular {
+	width : 100%;
+	float : left;
+	background-color : transparent;
+	padding-left : 0;
+	font-size : 1em;
+	width : 85%;
+	line-height : 1.5em;
+}
+
+.deposit_metadata p.coverage_question {
+	width : 100%;
+	float : left;
+	background-color : transparent;
+	margin : 1em 0 0 0;
+	font-size : 1em;
+}
+
+.deposit_metadata .extra_instructions p {
+	display : block;
+	width : 16em;
+}
+
+.deposit_metadata div.license_menu p {
+	margin-left : 0.5em;
+}
+
+p.small_text {
+	font-size : 0.75em;
+	float : left;
+	width : 100%;
+}
+
+.item_title p {
+	width : 100%;
+	float : left;
+	margin-bottom : 0.7em;
+}
+
+.item_title span {
+	float : left;
+}
+
+.explanations p {
+	line-height : 1.5em;
+	width : 90%;
+	margin-top : 0.5em;
+}
+
+.browse p {
+	font-size : 1.2em;
+	font-weight : bold;
+}
+
+.browse p.bottom {
+	clear : both;
+	width : 100%;
+}
+
+.right_narrow p {
+	font-weight : bold;
+	margin-top : 1em;
+	font-size : 1.2em;
+}
+
+div #loading {
+	padding : 1em;
+}
+
+img.edit_item {
+	cursor : pointer;
+	vertical-align : text-bottom;
+	padding-left : 2px;
+}
+
+img.item_view_thumb {
+	margin-right : 0.5em;
+}
+
+.howitworks img {
+	margin-top : 1em;
+}
+
+.favorite img {
+	margin-right : 0.2em;
+}
+/*lists*/
+
+ul.user_links {
+	display : inline;
+}
+
+ul.user_links li {
+	display : inline;
+}
+
+.navbar ul {
+	display : inline;
+}
+
+.navbar ul li {
+	display : inline;
+}
+
+.footerbox ul {
+	text-align : left;
+	margin-left : 4em;
+}
+
+ol.search_results,
+ol.my_items,
+ol.itemlist {
+	background-color : #f4edda;
+	width : 58em;
+	padding-top : 0.5em;
+}
+
+ol.my_items {
+	width : 45em;
+}
+
+ol.my_items li {
+	padding : 1em;
+	border-bottom : solid 1px #fff;
+}
+
+li.record {
+	border-bottom : dotted 1px #600;
+	padding : 1em 0 1em 2em;
+}
+
+.search_filters ul {
+	margin : 1.5em 0 0 0;
+}
+
+.search_filters ul.narrow_field {
+	margin : 0;
+}
+
+ul.help_contact li.line {
+	margin-bottom : 0.2em;
+}
+
+ul.browse_field {
+	float : left;
+	width : 30em;
+	min-height : 23em;
+	overflow : hidden;
+	border : 1px solid #b3baa7;
+	margin : 1em;
+	padding : 1em;
+}
+
+ul.initial\.author,
+ul.initial\.subject {
+	min-height : 12em;
+}
+
+ul.initial_list {
+	width : 20em;
+}
+
+ul.initial_title {
+	width : 40em;
+}
+
+ul.browse_field li {
+	font-size : 1.1em;
+	margin : 0.2em 0;
+}
+
+ul.browse_field li p {
+	font-size : 1em;
+	margin : 0.2em 0 0 0.5em;
+	white-space : nowrap;
+	font-weight : normal;
+}
+
+ul.browse_field li span {
+	font-size : 0.75em;
+}
+
+.deposit_metadata ul {
+	line-height : normal;
+	margin : 0 0 1em 2em;
+	float : left;
+}
+
+.deposit_metadata .where {
+	margin-bottom : 1em;
+	width : 100%;
+	clear : both;
+}
+
+.deposit_metadata .where ul {
+	margin-bottom : 0;
+	padding-bottom : 0;
+}
+
+.deposit_metadata ul label {
+	font-weight : bold;
+}
+
+.deposit_metadata ul li {
+	padding-top : 1em;
+}
+
+.deposit_metadata ul li.indented,
+.indented {
+	padding-left : 4em;
+}
+
+.deposit_metadata ul li.floater1 {
+	margin-bottom : 1.5em;
+	width : 21.5em;
+}
+
+.deposit_metadata ul li.floater2 {
+	margin-bottom : 1.5em;
+	width : 29em;
+}
+
+.deposit_metadata ul li.floater3 {
+	padding : 0 0 0 0;
+	margin : 0 0 0.3em 0;
+	width : 48em;
+}
+
+.deposit_metadata ul li.where_menus {
+	float : left;
+	width : 21em;
+	padding-right : 0.5em;
+}
+
+.deposit_metadata div.hint {
+	display : inline;
+	float : right;
+	width : 31em;
+	padding : 0 0 0 0;
+	margin : 0 0 0 0;
+}
+
+.deposit_metadata div.hint p {
+	display : block;
+}
+
+.deposit_metadata div.field {
+	clear : both;
+}
+
+ul.item_info {
+	line-height : normal;
+	margin : 0;
+	/*width: 30em;*/ /*min-height: 35em;*/
+}
+
+ul.item_info img.checkbox {
+	margin-right : 2px;
+	vertical-align : text-bottom;
+}
+
+ul.profile_info {
+	margin : 1em 0 0 2em;
+	width : 56em;
+}
+
+ul.item_info label,
+ul.profile_info label {
+	font-weight : bold;
+	margin-bottom : 0.6em;
+}
+
+ul.item_info li,
+ul.profile_info li {
+	margin-bottom : 0.8em;
+	line-height : 1.4em;
+}
+
+ul.item_info li label {
+	font-style : normal;
+	/*text-transform:lowercase;*/
+	padding-right : 0.5em;
+}
+
+.view_box textarea.comments {
+	width : 68em;
+	height : 12em;
+	font-size : 0.8em;
+	font-family : verdana, arial, helvetica, sans-serif;
+	margin-top : 0.5em;
+}
+
+div.morelikethis {
+	width : 74em;
+	padding-bottom : 1em;
+	background-color : #d9dfd1 !important;
+}
+
+.explanations ol {
+	list-style : decimal;
+	padding-left : 3em;
+}
+
+ul.researcher_list li {
+	width : 30em;
+	height : 22em;
+	overflow : hidden;
+	border : 1px solid #600;
+	/*min-height: 10em;*/
+	margin : 1em;
+	padding : 1em;
+}
+
+ul.researcher_list li img {
+	margin-right : 1em;
+	width : 10em;
+}
+
+ul.researcher_list li p {
+	font-size : 1.1em;
+}
+
+div.researcher_link {
+	margin-top : 1em;
+}
+
+div.researcher_link {
+	font-family : georgia, "times new roman", times, serif;
+}
+
+div.researcher_link label {
+	font-size : 1.2em;
+	font-weight: normal;
+	margin-right: 1em;
+}
+
+div.researcher_link a {
+	font-size : 1.2em;
+	font-family : georgia, "times new roman", times, serif;
+	font-weight : bold;
+	text-decoration : none;
+	margin-left : 0.5em;
+}
+
+div.researcher_link a:hover {
+	text-decoration : none;
+}
+
+div.researcher_link span {
+	font-size : 1.2em;
+	margin-left : 0.3em;
+}
+
+div.initial_link {
+	font-family : georgia, "times new roman", times, serif;
+}
+
+div.initial_link span {
+	margin-left : 0.3em;
+}
+
+div.initial_link a {
+	font-size : 1em;
+	font-weight : bold;
+	text-decoration : none;
+	margin-left : 0.3em;
+	font-family : georgia, "times new roman", times, serif;
+}
+
+.author_subjects ul {
+	margin-left : 1em;
+}
+
+.author_box ul {
+	list-style : disc;
+	margin-left : 1.5em;
+}
+
+.author_subjects ul li ul li {
+	border-bottom : 1px #fff solid;
+	padding : 0 0 1em 0;
+}
+
+.edit_profile ul {
+	float : left;
+	width : 100%;
+	margin-top : 1em;
+}
+
+.edit_profile ul li {
+	min-height : 2em;
+	margin : .5em 0;
+	float : left;
+	width : 100%;
+}
+
+ul.edit_field li {
+	min-height : 1.5em;
+	margin : .3em 0 0;
+	float : left;
+	width : 100%;
+}
+
+ul.edit_field li.addfield {
+	margin : 0 0 .8em;
+}
+
+ul.myaccount_info {
+	width : 60em;
+}
+
+ul.myaccount_info li { /*margin: 1em 1em;*/
+}
+
+ul.myaccount_info li div {
+	float : left;
+	width : 27.5em;
+	height : 4.5em;
+	overflow : hidden;
+	margin : 10px 0 0 10px;
+	padding : 0 10px 5px 10px;
+	border : solid 1px #cfcfcf;
+}
+
+ul.myaccount_info li div.last {
+	float : left;
+	width : 27.5em;
+	height : 4.5em;
+	overflow : hidden;
+	margin : 10px 0 0 10px;
+	padding : 0 10px 5px 10px;
+	border : solid 1px transparent;
+}
+
+ul.myaccount_info li div span.count {
+	float : left;
+	font-size : 3em;
+	color : #8f8f8f;
+	text-align : center;
+	width : 1em;
+	height : 1em;
+	line-height : 1.2em;
+	vertical-align : text-top;
+}
+
+ul.myaccount_info li div span.desc {
+	float : left;
+	margin-left : 0.5em;
+	width : 23em;
+}
+
+ul.myaccount_info li img {
+	display : none;
+}
+
+ul.messages {
+	float : left;
+	background-color : #ffebab;
+	font-weight : bold;
+}
+
+ul.admin_message {
+	float : left;
+	background-color : #ffebab;
+	font-weight : bold;
+	border : 1px solid #ffbe0f;
+	width : 61.9em;
+	text-align : left;
+	margin-bottom : 1em;
+}
+
+ul.admin_message li {
+	margin : 10px 10px 10px 10px;
+	color : #660000;
+	line-height : 1.2em;
+}
+
+ul.system {
+	border : 1px solid #660000;
+	background-color : #fcc;
+}
+
+.ua_footer ul {
+	width : 9em;
+	margin : 0.5em 0;
+}
+
+.ua_footer ul li {
+	padding : 0.2em;
+}
+
+#admin ul {
+	float : left;
+}
+
+ul.adv_search {
+	margin-left : 4em;
+}
+
+ul.adv_search li {
+	margin : 0.8em;
+}
+
+ul.adv_search li.first {
+	margin-left : 5.55em;
+}
+/*forms*/
+
+.login_box label,
+.register label {
+	width : 20em;
+	text-align : right;
+	float : left;
+	font-weight : bold;
+	padding-right : 0.3em;
+}
+
+.register div input {
+	float : left;
+}
+
+.popup_box label {
+	width : 6.5em;
+	text-align : right;
+	float : left;
+	font-weight : bold;
+}
+
+.login_button,
+.registerbutton,
+.deposit_metadata form input.deposit_button,
+.save_button,
+.another_button {
+	background-repeat : no-repeat;
+	background-color : transparent;
+	border : 0;
+	font-size : 1.1em;
+	font-weight : bold;
+	font-family : georgia, "times new roman", times, serif;
+	color : #fff;
+	cursor : pointer;
+	text-align : left;
+	padding-left : 0.5em;
+}
+
+.login_button {
+	background-image : url("../images/login.png");
+	height : 3em;
+	width : 9.5em !important;
+	margin-left : 23em;
+}
+
+form.popup_form input.login_button {
+	margin-left : 7em;
+}
+
+.deposit_metadata form input.deposit_button {
+	background-image : url("../images/login.png");
+	height : 2.5em;
+	width : 8em;
+	margin : 1em 0 0 16em;
+	padding : 0 0 0.3em 0.8em;
+}
+
+.registerbutton {
+	background-image : url("../images/register.png");
+	height : 2em;
+	width : 6.3em !important;
+	float : none !important;
+}
+
+.registerbutton:hover {
+	background-image : url("../images/register_down.png");
+	color : #ccc;
+}
+
+.login_button:hover,
+.deposit_metadata form input.deposit_button:hover {
+	background-image : url("../images/login_down.png");
+	color : #ccc;
+}
+
+.edit_profile input.save_button,
+.adv_search input.save_button,
+.save_button,
+#advanced input.save_button {
+	background-color : #364d39;
+	-moz-border-radius : 5px;
+	margin-left : 27em;
+	height : 2.5em;
+	width : 5em;
+}
+
+.another_button {
+	background-color : #364d39;
+	-moz-border-radius : 5px;
+	margin-left : 27em;
+	height : 2em;
+	width : 12em;
+}
+
+.edit_profile input.save_button:hover {
+	background-color : #72816c;
+}
+
+.register input {
+	margin-left : 0.3em;
+	width : 20em;
+}
+
+.deposit_metadata fieldset {
+	width : 100%;
+	border-top : 2px #fff solid;
+	padding-bottom : 1em;
+}
+
+.deposit_metadata fieldset.upload_item {
+	border-bottom : none;
+}
+
+.deposit_metadata ul label.required {
+	background-image : url("../images/star.jpg");
+	background-repeat : no-repeat;
+	background-position : right top;
+	color : #600;
+	padding-right : 0.4em;
+}
+
+.deposit_metadata ul label.hidden {
+	display : none;
+}
+
+.deposit_metadata ul input,
+.deposit_metadata ul textarea {
+	width : 20.5em;
+	margin : 0;
+	font-family : arial, helvetica, sans-serif;
+	font-size : 1em;
+}
+
+.deposit_metadata ul textarea {
+	height : 7.5em;
+}
+
+.deposit_metadata ul select {
+	margin : 0.2em 0 0 0.2em;
+	font-size : 0.9em;
+}
+
+.deposit_metadata ul input.small {
+	width : 16.5em;
+}
+
+.deposit_metadata ul input.smaller {
+	font-size : 1em;
+	width : 10em;
+	font-family : verdana, arial, helvetica, sans-serif;
+}
+
+.deposit_metadata ul input.option {
+	width : 1em;
+}
+
+.deposit_metadata ul label input {
+	width : 1em;
+}
+
+.deposit_metadata ul div.checkboxes label {
+	padding-right : 2em;
+}
+
+.deposit_metadata ul input.check {
+	width : 1em;
+}
+
+.deposit_metadata ul input.file {
+	width : 16em;
+}
+
+.checklist {
+	border : 1px solid #ccc;
+	list-style : none;
+	height : 7em;
+	overflow : auto;
+	width : 21em;
+	float : left;
+	background : #fff;
+}
+
+.checklist,
+.checklist li {
+	margin : 0;
+	padding : 0;
+}
+
+.checklist label {
+	display : block;
+	padding-left : 1em;
+	text-indent : -0.5em;
+}
+
+.checklist label:hover {
+	background : #f6e2a6;
+}
+
+.license_text {
+	width : 20em;
+	margin-top : 1em;
+	font-size : 1.2em;
+}
+
+.edit_profile label {
+	width : 20em;
+	text-align : right;
+	display : block;
+	font-weight : bold;
+	margin-right : 0.5em;
+}
+
+.edit_profile ul.bookmark label {
+	width : 20em;
+}
+
+.edit_profile ul.bookmark li div {
+	display : block;
+	width : 30em;
+	text-align : left;
+	float : left;
+}
+
+.edit_profile input {
+	width : 20em;
+	float : left;
+	font-size : 1em;
+}
+
+.password input {
+	width : 10em;
+}
+
+.password label {
+	width : 28em;
+}
+
+.edit_profile textarea {
+	width : 20em;
+	height : 7em;
+	font-size : 1em;
+	padding : 0.2em;
+	font-family : verdana, arial, helvetica, sans-serif;
+}
+
+.edit_profile input.checkbox {
+	width : 1em;
+	/*margin-left: 20em;*/
+}
+
+.edit_profile label.checkbox {
+	width : 7em;
+	margin : 0;
+	padding : 0;
+}
+
+.edit_profile select {
+	margin : 0;
+	font-size : 0.9em;
+}
+
+.search_box input {
+	float : left;
+	padding : 0;
+	margin : 6px 0 0 6px;
+	border : 0;
+	width : 163px;
+	background : none;
+	font-size : 0.9em;
+}
+
+.search_box input.search_submit {
+	float : left;
+	margin : 0;
+	width : 79px;
+	height : 27px;
+	background-image : url("../images/searchbutton.png");
+}
+
+.search_box input.search_submit:hover {
+	background-image : url("../images/searchbuttondown.png");
+}
+
+form.popup_form {
+	margin-top : 1em;
+}
+
+.view_box label {
+	font-weight : bold;
+	display : block;
+}
+
+ul.adv_search li input,
+ul.adv_search li select {
+	margin : 0 0.3em;
+	font-size : 0.9em;
+}
+
+ul.adv_search li input {
+	width : 24.5em;
+}
+/*tables*/
+
+table.display {
+	width : 100%;
+	/*margin-top: 1em;*/
+}
+
+table.display tr { /*border-bottom: 1px dotted;*/
+}
+
+table.display tr.first {
+	border-bottom : none;
+}
+
+table.display th {
+	text-align : left;
+}
+
+table.display td {
+	padding : 0.5em 0 0.5em 1em;
+}
+
+td.toolbox a.add_button {
+	display : none;
+}
+
+a.cancel_link {
+	margin-left : 1em;
+	font-weight : bold;
+	cursor : pointer;
+}
+/* Auto Complete */
+
+div.autocomplete {
+	position : absolute;
+	width : 250px;
+	background-color : white;
+	border : 1px solid #888;
+	margin : 0;
+	padding : 0;
+}
+
+div.autocomplete ul {
+	list-style-type : none;
+	margin : 0;
+	padding : 0;
+}
+
+div.autocomplete ul li.selected {
+	background-color : #ffb;
+}
+
+div.autocomplete ul li {
+	list-style-type : none;
+	display : block;
+	margin : 0;
+	padding : 2px;
+	height : 1.1em;
+	cursor : pointer;
+}
+
+.removed {
+	text-decoration : line-through;
+}
+
+.approve_buttons {
+	margin-top : 1em;
+	text-align : center;
+	float : left;
+	font-size : 1em;
+}
+
+.approve_buttons input.save_button {
+	margin-left : 0.2em;
+	height : 2em;
+	width : 5em;
+}
+
+div.modal_box {
+	text-align : center;
+}
+
+div.modal_box div.message {
+	margin : 1em 1em 1em 1em;
+	line-height : 1.2em;
+	color : #454545;
+}
+
+div.modal_box input.save_button {
+	margin-left : 0em;
+	height : 2em;
+	width : 3em;
+	text-align : center;
+}
+
+a.handle {
+	white-space : nowrap;
+}
+
+select.reject {
+	margin-top : 0.5em;
+	font-family : verdana, arial, helvetica, sans-serif;
+}
+
+input.e-thesis {
+	margin-left : 6em;
+	height : 3em;
+	width : 20em;
+	white-space : normal;
+	text-align : center;
+	vertical-align : middle;
+}
+
+div.default_subheader {
+	width : 14em;
+	display : inline;
+	height : 2.5em;
+	white-space : normal !important;
+	text-align : left;
+	float : left;
+}
+
+label.no_result {
+	background-color : #fcc;
+	padding : 0.1em 0.3em 0.1em 0.3em;
+}
+
+div.thesis_message {
+	color : #FF0000;
+	font-weight : bold;
+	margin : 1em 1em 1em 1em;
+}
+
+h1.noscript {
+	color : #ffffff;
+	margin : 0.5em 2em 0 2em;
+}
+
+h1.noscript a {
+	font-family : georgia, "times new roman", times, serif;
+	font-size : 100%;
+	color : #00FF00;
+}
+
+h1.noscript a:visited {
+	font-family : georgia, "times new roman", times, serif;
+	font-size : 100%;
+	color : #00FF00;
+}
+

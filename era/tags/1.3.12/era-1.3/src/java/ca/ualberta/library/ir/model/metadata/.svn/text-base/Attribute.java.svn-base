@@ -1,0 +1,140 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: era
+ * $Id$
+ */
+
+package ca.ualberta.library.ir.model.metadata;
+
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
+
+/**
+ * The Attribute class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+@XmlType
+public class Attribute extends Model {
+
+	public enum Name {
+
+		@XmlEnumValue("xsi:type")
+		xsi_type;
+
+		/**
+		 * 
+		 * @see java.lang.Enum#toString()
+		 */
+		@Override
+		public String toString() {
+			return super.toString().replace('_', ':');
+		}
+	}
+
+	public enum Value {
+		@XmlEnumValue("dcterms:URI")
+		dcterms_URI,
+
+		@XmlEnumValue("dcterms:IMT")
+		dcterms_IMT,
+
+		@XmlEnumValue("dcterms:W3CDTF")
+		dcterms_W3CDTF,
+
+		@XmlEnumValue("eraterms:local")
+		eraterms_local;
+
+		/**
+		 * 
+		 * @see java.lang.Enum#toString()
+		 */
+		@Override
+		public String toString() {
+			return super.toString().replace('_', ':');
+		}
+	}
+
+	@XmlAttribute(name = "name", required = true)
+	private String name;
+
+	@XmlAttribute(name = "value", required = true)
+	private String value;
+
+	/**
+	 * The Attribute class constructor.
+	 */
+	public Attribute() {
+		super();
+	}
+
+	/**
+	 * The Attribute class constructor.
+	 * 
+	 * @param name
+	 */
+	public Attribute(String name) {
+		super();
+		this.name = name;
+	}
+
+	/**
+	 * The Attribute class constructor.
+	 * 
+	 * @param name
+	 * @param value
+	 */
+	public Attribute(String name, String value) {
+		super();
+		this.name = name;
+		this.value = value;
+	}
+
+	/**
+	 * The getName getter method.
+	 * 
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * The setName setter method.
+	 * 
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * The getValue getter method.
+	 * 
+	 * @return the value
+	 */
+	public String getValue() {
+		return value;
+	}
+
+	/**
+	 * The setValue setter method.
+	 * 
+	 * @param value the value to set
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	/**
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Attribute [name=" + name + ", value=" + value + "]";
+	}
+}

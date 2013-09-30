@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!-- 
+	University of Alberta Libraries
+	Information Technology Services
+	****************************************************************************
+	Project: era
+	Author: Piyapong Charoenwattana
+	Version: $Revision: 381 $ $Date: 2009-12-24 11:26:47 -0700 (Thu, 24 Dec 2009) $
+	$Id: log4j.xml 381 2009-12-24 18:26:47Z pcharoen $
+-->
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="Append" value="true"/>
+		<param name="File" value="/usr/share/tomcat6/logs/era.log"/>
+		<param name="DatePattern" value="'_'yyyy-MM-dd'.log'"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p - %C{1}.%M(%L): %m%n"/>
+		</layout>
+	</appender>
+	<appender name="STRIPES" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="Append" value="false"/>
+		<param name="File" value="/usr/share/tomcat6/logs/stripes.log"/>
+		<param name="DatePattern" value="'_'yyyy-MM-dd'.log'"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p - %C{1}.%M(%L): %m%n"/>
+		</layout>
+	</appender>
+	<appender name="SPRING" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="Append" value="false"/>
+		<param name="File" value="/usr/share/tomcat6/logs/spring.log"/>
+		<param name="DatePattern" value="'_'yyyy-MM-dd'.log'"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p - %C{1}.%M(%L): %m%n"/>
+		</layout>
+	</appender>
+	<logger name="ca.ualberta.library.ir">
+		<level value="INFO"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="net.sourceforge.stripes">
+		<level value="ERROR"/>
+		<appender-ref ref="STRIPES"/>
+	</logger>
+	<logger name="org.springframework">
+		<level value="ERROR"/>
+		<appender-ref ref="SPRING"/>
+	</logger>
+</log4j:configuration>
+	

@@ -1,0 +1,232 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/branches/era-1.3/web/jsp/protected/metadataInputForm.jspf $
+   $Id: metadataInputForm.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+	<h3><fmt:message key="item.workflow.step1" /></h3>
+	<ul>
+	<c:forEach items="${actionBean.inputFields}" var="fld" varStatus="status">
+		<li style="clear: both;${fld.inputType.value == 'hidden' ? ' display: none;' : ''}" class="${fld.indent ? 'indented' : ''}">
+			<c:set var="key" value="${fld.dcElement}${not empty fld.dcQualifier ? '.' : ''}${fld.dcQualifier}${not empty fld.attribute ? '.' : ''}${fld.attribute.name}${not empty fld.attribute ? '.' : ''}${fld.attribute.value}" />
+			<c:set var="fields" value="${actionBean.fieldMap[key]}" />
+			<label class="${fld.validate.required ? 'required' : ''}${fld.inputType.value == 'hidden' ? ' hidden' : ''}"><ir:label label="${fld.label}" /></label>
+			<c:choose>
+			<c:when test="${fld.inputType.value == 'textarea'}">
+				<c:choose>
+				<c:when test="${empty fields}">
+				<div id="field.${status.index}00" class="field">
+					<div><stripes:errors field="fields[${status.index}00].value" /></div>
+					<stripes:hidden name="fields[${status.index}00].fieldName" value="fields[${status.index}00].value" />
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.value" value="${fld.attribute.value}" />
+					<stripes:textarea name="fields[${status.index}00].value" value="${fld.value}" />
+					<ir:hint label="${fld.hint}" />
+				</div>
+				</c:when>
+				<c:otherwise>
+				<c:forEach items="${fields}" var="field" varStatus="sts">
+				<fmt:formatNumber var="i" pattern="00" value="${sts.index}" />
+				<div id="field.${status.index}${i}" class="field">
+				<div>
+					<div><stripes:errors field="fields[${status.index}${i}].value" /></div>
+					<stripes:hidden name="fields[${status.index}${i}].fieldName" value="fields[${status.index}${i}].value" />
+					<stripes:hidden name="fields[${status.index}${i}].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}${i}].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.value" value="${fld.attribute.value}" />
+					<stripes:textarea name="fields[${status.index}${i}].value" value="${field.value}" />
+					<c:if test="${sts.index == 0}"><ir:hint label="${fld.hint}" /></c:if>
+					<c:if test="${sts.index > 0}">
+						<a href="" onclick="$(this).up().remove(); return false;" class="addmore">
+							<fmt:message key="item.dublinCore.remove" />
+						</a>
+					</c:if>
+				</div>
+				</c:forEach>
+				</c:otherwise>
+				</c:choose>
+			</c:when>
+			<c:when test="${fld.inputType.value == 'dropdown'}">
+				<c:choose>
+				<c:when test="${empty fields}">
+				<div id="field.${status.index}00" class="menus field">
+					<div><stripes:errors field="fields[${status.index}00].value" /></div>
+					<stripes:hidden name="fields[${status.index}00].fieldName" value="fields[${status.index}00].value" />
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.value" value="${fld.attribute.value}" />
+					<stripes:select name="fields[${status.index}00].value" value="${fld.value}">
+					<c:forEach items="${actionBean.valuePairsMap[fld.inputType.valuePairsName].pairs}" var="pair">
+						<stripes:option value="${pair.storedValue}"><ir:label label="${pair.displayedValue}" /></stripes:option>
+					</c:forEach>
+					</stripes:select>
+					<ir:hint label="${fld.hint}" />
+				</div>
+				</c:when>
+				<c:otherwise>
+				<c:forEach items="${fields}" var="field" varStatus="sts">
+				<fmt:formatNumber var="i" pattern="00" value="${sts.index}" />
+				<div id="field.${status.index}${i}" class="menus field">
+					<div><stripes:errors field="fields[${status.index}${i}].value" /></div>
+					<stripes:hidden name="fields[${status.index}${i}].fieldName" value="fields[${status.index}${i}].value" />
+					<stripes:hidden name="fields[${status.index}${i}].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}${i}].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.value" value="${fld.attribute.value}" />
+					<stripes:select name="fields[${status.index}${i}].value" value="${field.value}">
+					<c:forEach items="${actionBean.valuePairsMap[fld.inputType.valuePairsName].pairs}" var="pair">
+						<stripes:option value="${pair.storedValue}"><ir:label label="${pair.displayedValue}" /></stripes:option>
+					</c:forEach>
+					</stripes:select>
+					<c:if test="${sts.index == 0}"><ir:hint label="${fld.hint}" /></c:if>
+					<c:if test="${sts.index > 0}">
+						<a href="" onclick="$(this).up().remove(); return false;" class="addmore">
+							<fmt:message key="item.dublinCore.remove" />
+						</a>
+					</c:if>
+				</div>
+				</c:forEach>
+				</c:otherwise>
+				</c:choose>
+			</c:when>
+			<c:when test="${fld.inputType.value == 'qualdrop_value'}">
+				<c:choose>
+				<c:when test="${empty fields}">
+				<div id="field.${status.index}00" class="field">
+					<div><stripes:errors field="fields[${status.index}00].value" /></div>
+					<stripes:hidden name="fields[${status.index}00].fieldName" value="fields[${status.index}00].value" />
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${actionBean.valuePairsMap[fld.inputType.valuePairsName].dcTerm}" />
+					<stripes:select style="margin-top: 0;" name="fields[${status.index}00].attribute.value" value="${fld.value}">
+					<c:forEach items="${actionBean.valuePairsMap[fld.inputType.valuePairsName].pairs}" var="pair">
+						<stripes:option value="${pair.storedValue}"><ir:label label="${pair.displayedValue}" /></stripes:option>
+					</c:forEach>
+					</stripes:select>
+					<div><stripes:text style="margin-left: 3px;" name="fields[${status.index}00].value" /></div>
+					<ir:hint label="${fld.hint}" />
+				</div>
+				</c:when>
+				<c:otherwise>
+				<c:forEach items="${fields}" var="field" varStatus="sts">
+				<fmt:formatNumber var="i" pattern="00" value="${sts.index}" />
+				<div id="field.${status.index}${i}" class="field">
+					<div><stripes:errors field="fields[${status.index}${i}].value" /></div>
+					<stripes:hidden name="fields[${status.index}${i}].fieldName" value="fields[${status.index}${i}].value" />
+					<stripes:hidden name="fields[${status.index}${i}].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}${i}].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.name" value="${actionBean.valuePairsMap[fld.inputType.valuePairsName].dcTerm}" />
+					<stripes:select style="margin-top: 0;" name="fields[${status.index}${i}].attribute.value" value="${fld.value}">
+					<c:forEach items="${actionBean.valuePairsMap[fld.inputType.valuePairsName].pairs}" var="pair">
+						<stripes:option value="${pair.storedValue}"><ir:label label="${pair.displayedValue}" /></stripes:option>
+					</c:forEach>
+					</stripes:select>
+					<div><stripes:text style="margin-left: 3px;" name="fields[${status.index}${i}].value" /></div>
+					<ir:hint label="${fld.hint}" />
+				</div>
+				</c:forEach>
+				</c:otherwise>
+				</c:choose>
+			</c:when>
+			<c:when test="${fld.inputType.value == 'hidden'}">
+				<c:choose>
+				<c:when test="${empty fields}">
+				<div id="field.${status.index}00">
+					<stripes:hidden name="fields[${status.index}00].fieldName" value="fields[${status.index}00].value" />
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.value" value="${fld.attribute.value}" />
+					<stripes:hidden name="fields[${status.index}00].value" value="${fld.value}" />
+				</div>
+				</c:when>
+				<c:otherwise>
+				<c:forEach items="${fields}" var="field" varStatus="sts">
+				<fmt:formatNumber var="i" pattern="00" value="${sts.index}" />
+				<div id="field.${status.index}${i}">
+					<stripes:hidden name="fields[${status.index}${i}].fieldName" value="fields[${status.index}${i}].value" />
+					<stripes:hidden name="fields[${status.index}${i}].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}${i}].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.value" value="${fld.attribute.value}" />
+					<stripes:hidden name="fields[${status.index}${i}].value" value="${field.value}" />
+				</div>
+				</c:forEach>
+				</c:otherwise>
+				</c:choose>
+			</c:when>
+			<c:when test="${fld.inputType.value == 'readonly'}">
+				<div id="field.${status.index}00">
+					<div><stripes:errors field="fields[${status.index}00].value" /></div>
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.value" value="${fld.attribute.value}" />
+					<stripes:hidden name="fields[${status.index}00].value" value="${fld.value}" />${fld.value}
+					<ir:hint label="${fld.hint}" />
+				</div>
+			</c:when>
+			<c:when test="${fld.inputType.value == 'daterange_value'}">
+				<div id="field.${status.index}00">
+					<div><stripes:errors field="fields[${status.index}00].value" /></div>
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.value" value="${fld.attribute.value}" />
+					<ir:formDateRange var="pair" valuePairs="${actionBean.valuePairsMap[fld.inputType.valuePairsName]}" />
+					<stripes:hidden name="fields[${status.index}00].value" value="${pair.storedValue}" />
+					<ir:label label="${pair.displayedValue}" />
+					<ir:hint label="${fld.hint}" />
+				</div>
+			</c:when>
+			<c:when test="${fld.inputType.value == 'label'}">
+			</c:when>
+			<c:otherwise>
+				<c:choose>
+				<c:when test="${empty fields}">
+				<div id="field.${status.index}00" class="field">
+					<div><stripes:errors field="fields[${status.index}00].value" /></div>
+					<stripes:hidden name="fields[${status.index}00].fieldName" value="fields[${status.index}00].value" />
+					<stripes:hidden name="fields[${status.index}00].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}00].qualifier" value="${fld.dcQualifier}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}00].attribute.value" value="${fld.attribute.value}" />
+					<stripes:text name="fields[${status.index}00].value" value="${fld.value}" class="${fld.indent ? 'small' : ''}" />
+					<ir:hint label="${fld.hint}" />
+				</div>
+				</c:when>
+				<c:otherwise>
+				<c:forEach items="${fields}" var="field" varStatus="sts">
+				<fmt:formatNumber var="i" pattern="00" value="${sts.index}" />
+				<div id="field.${status.index}${i}" class="field">
+					<div><stripes:errors field="fields[${status.index}${i}].value" /></div>
+					<stripes:hidden name="fields[${status.index}${i}].fieldName" value="fields[${status.index}${i}].value" />
+					<stripes:hidden name="fields[${status.index}${i}].name" value="${fld.dcElement}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.name" value="${fld.attribute.name}" />
+					<stripes:hidden name="fields[${status.index}${i}].attribute.value" value="${fld.attribute.value}" />
+					<stripes:hidden name="fields[${status.index}${i}].qualifier" value="${fld.dcQualifier}" />
+					<stripes:text name="fields[${status.index}${i}].value" value="${field.value}" class="${fld.indent ? 'small' : ''}" />
+					<c:if test="${sts.index == 0}"><ir:hint label="${fld.hint}" /></c:if>
+					<c:if test="${sts.index > 0}">
+						<a href="" onclick="$(this).up().remove(); return false;" class="addmore">
+							<fmt:message key="item.dublinCore.remove" />
+						</a>
+					</c:if>
+				</div>
+				</c:forEach>
+				</c:otherwise>
+				</c:choose>
+			</c:otherwise>
+			</c:choose>
+			<c:if test="${fld.repeatable}">
+				<a href="" id="addmore" class="addmore" onclick="addMetadataField(this); return false;"><fmt:message key="item.editDublinCore.add" /></a>
+			</c:if>
+		</li>
+	</c:forEach>
+	</ul>
+</fieldset>
+<!-- metadata input form end -->

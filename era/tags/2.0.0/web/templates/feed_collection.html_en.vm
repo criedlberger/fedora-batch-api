@@ -1,0 +1,18 @@
+## Collection Feed Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: feed_collection.html_en.vm 5615 2012-10-16 18:20:47Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $collection:	Collection object.
+## $thumbnail:	Thumbnail URL.
+## $creator:	Creator user object.
+<p>
+	#if($thumbnail)<img src="$thumbnail" />#end
+	<ul>
+    	<li><label>Author or Creator: </label>$creator.lastName, $creator.firstName</li>
+		<li><label>Date Created: </label>$DateFormatUtils.format($collection.created, "yyyy/MM/dd h:mm a z")</li>
+		<li><label>Date Updated: </label>$DateFormatUtils.format($collection.modified, "yyyy/MM/dd h:mm a z")</li>
+    	<li><label>Description: </label>$!collection.description</li>
+    	<li><label>Permanent link to this page: </label><a href="$!collection.handle">$!collection.handle</a></li>
+	</ul>
+</p>

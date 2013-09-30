@@ -1,0 +1,24 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/tags/1.3.11/web/jsp/public/advancedFields.jspf $
+   $Id: advancedFields.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<select name="fields">
+	<option value="all"><stripes:label for="advanced.field.all" /></option>
+	<option value="dc.title"><stripes:label for="dublinCore.title" /></option>
+	<option value="dc.creator"><stripes:label for="dublinCore.creator" /></option>
+	<option value="dc.subject"><stripes:label for="dublinCore.subject" /></option>
+	<option value="dc.description"><stripes:label for="dublinCore.description" /></option>
+	<option value="dc.publisher"><stripes:label for="dublinCore.publisher" /></option>
+	<option value="dc.contributor"><stripes:label for="dublinCore.contributor" /></option>
+	<option value="dc.date"><stripes:label for="dublinCore.date" /></option>
+	<option value="dc.type"><stripes:label for="dublinCore.type" /></option>
+	<option value="dc.format"><stripes:label for="dublinCore.format" /></option>
+	<option value="dc.source"><stripes:label for="dublinCore.source" /></option>
+	<option value="dc.language"><stripes:label for="dublinCore.language" /></option>
+	<option value="dc.relation"><stripes:label for="dublinCore.relation" /></option>
+	<option value="dc.coverage"><stripes:label for="dublinCore.coverage" /></option>
+	<option value="dc.rights"><stripes:label for="dublinCore.rights" /></option>
+</select>
+

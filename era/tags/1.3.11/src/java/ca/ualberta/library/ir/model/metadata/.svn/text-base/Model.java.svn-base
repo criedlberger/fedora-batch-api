@@ -1,0 +1,24 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: era
+ * $Id$
+ */
+
+package ca.ualberta.library.ir.model.metadata;
+
+/**
+ * The Model class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public abstract class Model {
+
+	/**
+	 * The Model class constructor.
+	 */
+	public Model() {
+		super();
+	}
+}

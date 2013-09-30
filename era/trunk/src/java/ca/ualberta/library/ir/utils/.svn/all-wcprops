@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils
+END
+ApplicationProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/ApplicationProperties.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/FileUtils.java
+END
+ThreadPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/ThreadPool.java
+END
+ContentModelComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/ContentModelComparator.java
+END
+ZipUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/ZipUtils.java
+END
+ProcessDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/ProcessDuration.java
+END
+PDFUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/PDFUtils.java
+END
+UIProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/UIProperties.java
+END
+Compress.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/Compress.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/utils/package.html
+END

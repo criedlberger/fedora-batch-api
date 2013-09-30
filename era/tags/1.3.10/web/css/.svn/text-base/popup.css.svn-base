@@ -1,0 +1,65 @@
+/*
+ popup.js
+*/
+div.popup {
+  width: 320px;
+  /*max-width: 320px;*/
+  border: 1px solid #DAE9CF;
+  padding: 10px;
+  background-color: #fff;
+  /* The following properties should not be changed */
+  position: absolute;
+}
+
+#popup_overlay {
+  background-color: #fff;
+  /* The following properties should not be changed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}
+
+span.popup_link, a.popup_link {
+  cursor: pointer;
+  border-bottom: 1px dotted;
+  color: #25562C;
+}
+
+.popup_draghandle {
+  cursor: move;
+}
+
+.popup p {
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+
+.popup ul li {
+  font-size: 0.8em;
+  color: #8F8F8F;
+  line-height: 1.2em;
+  margin-top: 0.2em;
+  border-bottom: 1px dotted #DAE9CF;
+  padding: 2px 4px 2px 4px;
+}
+
+.popup ul li:hover {
+	background-color: #F3FAE0;
+}
+
+.popup ul li .count {
+  color: #454545;
+}
+
+.popup ul li a {
+  color: #25562C;
+}
+
+.popup ul li a:hover {
+  /*color: #000;*/
+  font-weight: bold;
+  background-color: #F3FAE0;
+}
+

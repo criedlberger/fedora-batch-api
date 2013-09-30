@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir
+END
+sidebar.tag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/sidebar.tag
+END
+workflow.tag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/workflow.tag
+END
+qrcode.tag
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/qrcode.tag
+END
+user.tag
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/user.tag
+END
+formatQuery.tag
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/formatQuery.tag
+END
+label.tag
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/label.tag
+END
+searchPages.tag
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/searchPages.tag
+END
+dublinCore.tag
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/dublinCore.tag
+END
+menubar.tag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/menubar.tag
+END
+toolbarSecurity.tag
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/toolbarSecurity.tag
+END
+collection.tag
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/collection.tag
+END
+pages.tag
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/pages.tag
+END
+addtoany.tag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/addtoany.tag
+END
+cartItemList.tag
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/cartItemList.tag
+END
+addToCart.tag
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/addToCart.tag
+END
+fileSize.tag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/fileSize.tag
+END
+formDateRange.tag
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/formDateRange.tag
+END
+metadata.tag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/metadata.tag
+END
+addThis.tag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/addThis.tag
+END
+encodeURL.tag
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/encodeURL.tag
+END
+inputForm.tag
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/inputForm.tag
+END
+community.tag
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/community.tag
+END
+dateRangeValue.tag
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/dateRangeValue.tag
+END
+readingPages.tag
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/readingPages.tag
+END
+listItem.tag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/listItem.tag
+END
+taglibs.tagf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/taglibs.tagf
+END
+handle.tag
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/handle.tag
+END
+advancedFields.tag
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/advancedFields.tag
+END
+item.tag
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/item.tag
+END
+toolbar.tag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/toolbar.tag
+END
+hint.tag
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/hint.tag
+END
+advancedOperators.tag
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/web/WEB-INF/tags/ir/advancedOperators.tag
+END

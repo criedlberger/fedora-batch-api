@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout
+END
+system.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/system.jsp
+END
+advancedSearchForm.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/advancedSearchForm.jspf
+END
+dublinCore.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/dublinCore.jsp
+END
+help.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/help.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/header.jsp
+END
+googleAnalytics.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/googleAnalytics.jspf
+END
+printVariables.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/printVariables.jspf
+END
+taglibs.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/taglibs.jspf
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/footer.jsp
+END
+searchForm.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/searchForm.jspf
+END
+standard.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/standard.jsp
+END
+author.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/author.jsp
+END
+popup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/popup.jsp
+END
+calendarPopup.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/calendarPopup.jspf
+END
+noscript.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/noscript.jspf
+END
+head.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/head.jspf
+END
+sidebar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/sidebar.jsp
+END
+authorHeader.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/authorHeader.jsp
+END
+authorFooter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/web/jsp/layout/authorFooter.jsp
+END

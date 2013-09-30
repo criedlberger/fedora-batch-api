@@ -1,0 +1,25 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf" %>
+
+<stripes:layout-render name="/jsp/layout/standard.jsp" title="Application Errors" active="0">
+    <stripes:layout-component name="contents">
+		<div class="full_box global_error">
+			<stripes:errors globalErrorsOnly="true">
+			     <stripes:errors-header>
+			     	<div class="errors"><h2><fmt:message key="errors.exception.header" /></h2><ul>
+			     </stripes:errors-header>
+			     <li><stripes:individual-error /></li>
+			     <stripes:errors-footer>
+			     	</ul></div>
+					<br style="clear: both;" />
+					<div style="margin-top: 1em;"><fmt:message key="errors.exception.footer" /></div>
+			     </stripes:errors-footer>
+			</stripes:errors>
+		</div>		
+	</stripes:layout-component>
+</stripes:layout-render>	

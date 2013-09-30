@@ -1,0 +1,28 @@
+## Subscription Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: subscription.text_en.vm 5427 2012-07-12 20:30:12Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $items:	Item object of class ca.ualberta.library.ir.model.solr.Item.
+## $url:	Item handle URL.
+## $user:	User object contains fields: firstName, lastName, email.
+## $admin:	Admin email address.
+
+Hi $user.firstName! Welcome to ERA: Education and Research Archive.
+
+New items are available in the collections, communities and researchers you have subscribed to: 
+#foreach ($item in $items)
+
+$item.titles.get(0)
+  Community:  #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end
+
+  #if($item.collections.size()>0)Collection: #foreach ($collection in $item.collections)#if($velocityCount>1), #end$collection.title#end#end
+
+  #if($item.thesisDegreeDisciplines.size()>0)Department: #foreach ($department in $item.thesisDegreeDisciplines)#if($velocityCount>1), #end$department#end
+  
+  #end
+URL:        $item.handle
+#end
+
+Thank you for using ERA: Education and Research Archive. If you have any questions or comments, please contact $admin.
+

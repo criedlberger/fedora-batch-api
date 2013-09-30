@@ -1,0 +1,88 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/tags/1.3.9/web/jsp/public/searchResults.jspf $
+   $Id: searchResults.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+		<div class="search_filters">
+		<c:if test="${actionBean.resultRows > 0}">
+			<div class="right_narrow" id="loading"><img src="${ctx}/images/loading_narrow.gif" />${' '}<fmt:message key="loading" /></div>
+			<div class="right_narrow" id="narrowSearch" style="display: none;"></div>
+		</c:if>
+		</div>
+        <ol class="search_results">
+			<c:forEach items="${actionBean.results}" var="result" varStatus="status">
+            	<c:set var="fld" value="${result.fieldValueMap}" />
+				<c:set var="flds" value="${result.fieldValuesMap}" />
+				<c:set var="type" value="${fld['fo.contentModel'] == 'COMMUNITY' || fld['fo.contentModel'] == 'COLLECTION' ? fn:toLowerCase(fld['fo.contentModel']) : 'item'}" />
+				<li class="record">
+					<div class="record_info">
+						<h2><a href="${ctx}/public/view/${type}/${fld['PID']}" class="result_title">${fld['dc.title']}</a></h2>
+						<p class="result_author">
+							<c:if test="${not empty fld['dc.creator']}"><strong><fmt:message key="by" /></strong> ${fld['dc.creator']}</c:if>
+						</p>
+						<c:choose>
+							<c:when test="${not empty fld['dc.description']}">
+								<c:set var="description" value="${fld['dc.description']}" />
+							</c:when>
+							<c:otherwise>
+								<c:set var="description" value="${fld['dcterms.abstract']}" />
+							</c:otherwise>
+						</c:choose>
+						<p class="result_subject">${fnx:trim(description, 120)}</p>
+					</div>
+					<div class="record_actions">
+						<c:forEach items="${flds['dsm.ids']}" var="dsId" varStatus="sts">
+							<c:set var="controlGroup" value="dsm.${sts.count}.controlGroup" />
+							<c:set var="location" value="dsm.${sts.count}.location" />
+							<c:if test="${properties['google.analytics.enabled'] && (fn:endsWith(fn:toLowerCase(flds['dsm.labels'][sts.index]), '.pdf')||fn:contains(fn:toLowerCase(flds['dsm.mimeTypes'][sts.index]), 'pdf'))}">
+								<c:set var="onclick" value="_gaq.push(['_trackEvent', 'File Download', 'download', 'pdf']); return true;" />
+							</c:if>
+							<c:choose>
+								<c:when test="${sts.index == 0}">
+									<a href="${actionBean.datastreamUrl}/get/${fld['PID']}/${dsId}" target="Download"  
+										onclick="${onclick}" class="download"><fmt:message key="checkout.header" /></a>
+								</c:when>
+								<c:otherwise>
+									<a href="${actionBean.datastreamUrl}/get/${fld['PID']}/${dsId}" target="Download" 
+										onclick="${onclick}" class="download"><fmt:message key="attached.item.header" /></a>
+								</c:otherwise>
+							</c:choose>
+          				</c:forEach>
+						<span id="bookmark.${status.index}" class="favorite"></span>
+						<c:if test="${not empty actionBean.terms}"><c:set var="terms" value="?terms=${actionBean.terms}" /></c:if>
+						<c:set var="bookmarkStatusUrl" value="${ctx}/public/search?q=${actionBean.q}&fq=${actionBean.fq}&sort=${actionBean.sort}&start=${actionBean.start}" />
+						<script type="text/javascript">
+							new Ajax.Updater('bookmark.${status.index}', '${ctx}/action/bookmark/getBookmarkStatus', { 
+								parameters: { 
+									pid: '${fld["PID"]}', 
+									next: '${fnx:encodeUrl(bookmarkStatusUrl)}' 
+								} 
+							});
+						</script>
+                  		<span class="cartbutton">
+                    		<ir:addToCart pid="${fld['PID']}" itemIndex="0" />
+                   		</span> 
+					</div>
+				</li>
+			</c:forEach>
+			<c:if test="${actionBean.numFound > 0}">
+				<li>
+					<div class="pages">
+						<ir:searchPages numFound="${actionBean.numFound}" start="${actionBean.start}" sortBy="${actionBean.sort}" 
+							rows="${actionBean.rows}"	numPages="${actionBean.numPages}" path="${ctx}/public/search?q=${q}&fq=${fq}" pagesClass="pagesbot" />
+					</div>
+				</li>
+			</c:if>
+		</ol>
+        <c:if test="${actionBean.resultRows > 0}">
+        	<script type="text/javascript">
+	            new Ajax.Request('${ctx}/public/search/getNarrowSearch?q=${q}&fq=${fq}&sort=${actionBean.sort}', {
+	             	onSuccess: function(transport) {
+	             		$('narrowSearch').innerHTML = transport.responseText;
+	             		$('loading').hide(); 
+		            	Effect.BlindDown('narrowSearch', { duration: 2.0 });
+	                } 
+	            });
+        	</script>
+		</c:if>

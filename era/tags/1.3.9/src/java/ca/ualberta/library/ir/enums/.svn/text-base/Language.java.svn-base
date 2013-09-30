@@ -1,0 +1,27 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir-2.0
+ * $Id$
+ */
+package ca.ualberta.library.ir.enums;
+
+/**
+ * The Language class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum Language {
+	en("English")/* , fr("Française"), it("Italiano"), de("Deutsch") , th("Thai") */;
+
+	private String name;
+
+	private Language(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+}

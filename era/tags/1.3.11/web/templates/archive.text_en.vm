@@ -1,0 +1,104 @@
+## Archive Item Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: archive.text_en.vm 5427 2012-07-12 20:30:12Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:			Item object contains fields: dcTitle, communities, collections...
+## $embargoed: 		Embargoed flag (true/false)
+## $embargoedDate: 	Embargoed date (java.util.Date object)
+## $url:			Item handle URL.
+## $user:			User object contains fields: firstName, lastName, email.
+## $admin:			Admin email address.
+## $DateFormatUtils: org.apache.commons.lang.time.DateFormatUtils class
+##   Ex: $DateFormatUtils.format($embargoedDate, 'yyyy/MM/dd')
+
+Hello $user.getFirstName() :
+
+You submitted: $item.titles.get(0)
+
+Community:  #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end
+
+#if($item.collections.size()>0)Collection: #foreach ($collection in $item.collections)#if($velocityCount>1), #end$collection.title#end#end
+
+##if(!$item.isEmbargoed())
+#if(!$embargoed)
+## -------------------------------
+## Archive Item Email Template
+## -------------------------------
+Your electronic thesis submission has been approved by the Faculty of Graduate Studies and Research.
+
+Congratulations on the completion of your graduate program and on the outstanding achievement that recognizes.
+
+Your thesis is now accessible in ERA, the University of Alberta digital repository of scholarly work, and has been assigned the following identifier $url. University of Alberta Libraries will catalogue your thesis in its collection in the coming months.
+
+An electronic version will be collected by Library and Archives Canada for inclusion in the Theses Canada Portal and an electronic version will be supplied to ProQuest for archival microfilming and inclusion in its Dissertations and Theses Database.
+
+
+Next Steps for Graduation
+
+1.  Apply for Graduation
+Proceed immediately to Bear Tracks and apply for graduation if you haven’t done so already.
+All applications for graduation are subject to review and approval by the Faculty of Graduate Studies and Research, but you must complete this step in order to convocate.
+See https://www.beartracks.ualberta.ca
+
+
+2.  Pay your Microfilming Fee
+A Microfilming fee of $44.10* has been posted to your students fees account in Bear Tracks.
+
+You are required to pay this fee either online at http://www.financial.ualberta.ca/student.cfm or in-person at Financial Services (3rd Floor Administration Building). Cash, debit or indent accepted.
+
+Failure to pay this fee may result in withholding of student services (eg. Transcripts, receipt of parchment).
+
+*Microfilming Fee is subject to change.
+
+
+3.  Check for Outstanding Fees
+You should also check Bear Tracks for other outstanding fees. You were required to be registered when you submitted your thesis, so there may be fee implications. 
+See https://www.beartracks.ualberta.ca
+
+
+4.  Complete our Exit Survey
+The Faculty of Graduate Studies and Research wants to hear about your graduate student experience. Please complete our Graduate Student Exit Survey at: http://www.gradstudies.ualberta.ca/examsconvo/exitsurvey.htm
+
+When you cite this item, use this permalink: $url.
+
+#else
+## -------------------------------
+## Embargoed Item Email Template
+## -------------------------------
+Your thesis/dissertation is in ERA, the University of Alberta digital repository of scholarly work. The document has been assigned the following identifier $url. University of Alberta Libraries will catalogue your thesis in its collection once the restricted access period expires.
+
+Also, once the thesis/dissertation is no longer under restricted access, an electronic version will be collected by Library and Archives Canada for inclusion in the Theses Canada Portal and an electronic version will be supplied to ProQuest for archival microfilming and inclusion in its Dissertations and Theses Database.
+
+Next Steps for Graduation
+
+1.  Apply for Graduation
+Proceed immediately to Bear Tracks and apply for graduation if you haven’t done so already.
+All applications for graduation are subject to review and approval by the Faculty of Graduate Studies and Research, but you must complete this step in order to convocate.
+See https://www.beartracks.ualberta.ca
+
+
+2.  Pay your Microfilming Fee
+A Microfilming fee of $44.10* has been posted to your students fees account in Bear Tracks.
+
+You are required to pay this fee either online at http://www.financial.ualberta.ca/student.cfm or in-person at Financial Services (3rd Floor Administration Building). Cash, debit or indent accepted.
+
+Failure to pay this fee may result in withholding of student services (eg. Transcripts, receipt of parchment).
+
+*Microfilming Fee is subject to change.
+
+
+3.  Check for Outstanding Fees
+You should also check Bear Tracks for other outstanding fees. You were required to be registered when you submitted your thesis, so there may be fee implications. 
+See https://www.beartracks.ualberta.ca
+
+
+4.  Complete our Exit Survey
+The Faculty of Graduate Studies and Research wants to hear about your graduate student experience. Please complete our Graduate Student Exit Survey at: http://www.gradstudies.ualberta.ca/examsconvo/exitsurvey.htm
+
+If you cite this item in the future, use this permalink: $url.
+
+Congratulations on the completion of your graduate program and on the outstanding achievement that recognizes.
+
+
+#end

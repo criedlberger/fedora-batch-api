@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception
+END
+ServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/ServiceException.java
+END
+UnauthorizedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/UnauthorizedException.java
+END
+MailServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/MailServiceException.java
+END
+StripesExceptionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/StripesExceptionHandler.java
+END
+FedoraAPIException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/FedoraAPIException.java
+END
+HandleClientException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/HandleClientException.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/exception/package.html
+END

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9-Feb-2011 4:00:42 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Author" table="author">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="ca.ualberta.library.ir.domain.User" fetch="select" lazy="false" foreign-key="fk_author" unique="true">
+            <column name="user_id" not-null="true" unique="true" />
+        </many-to-one>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="institution" type="string">
+            <column name="institution" length="65535" not-null="true" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" />
+        </property>
+        <property name="picture" type="binary">
+            <column name="picture" />
+        </property>
+        <property name="cv" type="binary">
+            <column name="cv" />
+        </property>
+        <property name="filename" type="string">
+            <column name="filename" length="100" />
+        </property>
+        <property name="published" type="java.lang.Boolean">
+            <column name="published" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="created_date" length="19" not-null="true" />
+        </property>
+        <property name="modifiedDate" type="timestamp">
+            <column name="modified_date" length="19" not-null="true" />
+        </property>
+        <set name="authorProfiles" inverse="true" cascade="all,delete-orphan" lazy="false" order-by="type, id">
+            <key>
+                <column name="author_id" not-null="true" />
+            </key>
+            <one-to-many class="ca.ualberta.library.ir.domain.AuthorProfile" />
+        </set>
+    </class>
+</hibernate-mapping>

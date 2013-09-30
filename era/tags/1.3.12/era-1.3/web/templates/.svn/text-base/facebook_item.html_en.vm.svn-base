@@ -1,0 +1,16 @@
+## Facebook Post Item Description Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id$
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:		Item object.
+
+Author or Creator: #foreach ($author in $item.creators)#if($velocityCount>1), #end$author#end<br/> 
+Type of Item: $!item.type<br/> 
+Date Created: $DateFormatUtils.format($item.createdDate, "yyyy/MM/dd h:mm a z")<br/>
+Subject/Keyword: #foreach ($subject in $item.subjects)#if($velocityCount>1), #end$subject#end<br/>
+#foreach ($description in $item.descriptions)#if($velocityCount==1)Description: #else, #end$description#end<br/>
+#foreach ($abstract in $item.abstracts)#if($velocityCount==1)Abstract: #else, #end$abstract#end<br/>
+Community: #foreach ($community in $item.communities)#if($velocityCount>1), #end$community.title#end<br/>
+#foreach ($collection in $item.collections)#if($velocityCount==1), Collection: #else, #end$collection.title#end
+

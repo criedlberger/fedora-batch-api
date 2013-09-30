@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5-Apr-2011 3:00:12 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Transaction" table="transaction">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="ca.ualberta.library.ir.domain.User" fetch="select" foreign-key="fk_transaction" lazy="false">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <property name="type" type="string">
+            <column name="type" length="10" not-null="true" />
+        </property>
+        <property name="pid" type="string">
+            <column name="pid" length="64" not-null="true" />
+        </property>
+        <property name="dcqCreatedDate" type="string">
+            <column name="dcq_created_date" length="32" not-null="true" />
+        </property>
+        <property name="relsCreatedDate" type="string">
+            <column name="rels_created_date" length="32" not-null="true" />
+        </property>
+        <property name="workflowState" type="string">
+            <column name="workflow_state" length="8" not-null="true" />
+        </property>
+        <property name="workflowDate" type="timestamp">
+            <column name="workflow_date" length="19" not-null="true" />
+        </property>
+        <property name="comments" type="string">
+            <column name="comments" length="1024" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="created_date" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+## Community Feed Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id$
+## ---------------------------------------------------------------------
+## Template Variables
+## $community:	Community object.
+## $thumbnail:	Thumbnail URL.
+## $creator:	Creator user object.
+<p>
+	#if($thumbnail)<img src="$thumbnail" />#end
+	<ul>
+    	<li><label>Author or Creator: </label>$creator.lastName, $creator.firstName</li>
+		<li><label>Date Created: </label>$DateFormatUtils.format($community.created, "yyyy/MM/dd h:mm a z")</li>
+		<li><label>Date Updated: </label>$DateFormatUtils.format($community.modified, "yyyy/MM/dd h:mm a z")</li>
+    	<li><label>Description: </label>$!community.description</li>
+    	<li><label>Permanent link to this page: </label><a href="$!community.handle">$!community.handle</a></li>
+	</ul>
+</p>

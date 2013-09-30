@@ -1,0 +1,13 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf" %>
+
+<stripes:layout-render name="/jsp/layout/standard.jsp" title="Logout" active="${navbarHome}">
+    <stripes:layout-component name="contents">
+		<fmt:message key="logout.message" />
+    </stripes:layout-component>
+</stripes:layout-render>

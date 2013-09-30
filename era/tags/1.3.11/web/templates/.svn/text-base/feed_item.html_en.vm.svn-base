@@ -1,0 +1,20 @@
+## Item Feed Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id$
+## ---------------------------------------------------------------------
+## Template Variables
+## $item:		Item object.
+## $thumbnail:	Thumbnail URL.
+<p>
+	#if($thumbnail)<img src="$thumbnail" />#end
+	<ul>
+    	<li><label>Author or Creator: </label>#foreach ($author in $item.creators)#if($velocityCount>1), #end$author#end</li>
+    	<li><label>Type of Item: </label>$!item.type</li>
+		<li><label>Date Created: </label>$DateFormatUtils.format($item.createdDate, "yyyy/MM/dd h:mm a z")</li>
+    	<li><label>Subject/Keyword: </label>#foreach ($subject in $item.subjects)#if($velocityCount>1), #end$subject#end</li>
+    	<li><label>Description: </label>#foreach ($description in $item.descriptions)#if($velocityCount>1), #end$description#end#foreach ($abstract in $item.abstracts)#if($velocityCount>1), #end$abstract#end</li>
+		<li><label>Community: </label>#foreach ($community in $item.communities)#if($velocityCount>1), #end<a href="$community.handle">$community.title</a>#end</li>
+		<li><label>Collection: </label>#foreach ($collection in $item.collections)#if($velocityCount>1), #end<a href="$collection.handle">$collection.title</a>#end</li>
+    	<li><label>Permanent link to this page: </label><a href="$!item.handle">$!item.handle</a></li>
+	</ul>
+</p>

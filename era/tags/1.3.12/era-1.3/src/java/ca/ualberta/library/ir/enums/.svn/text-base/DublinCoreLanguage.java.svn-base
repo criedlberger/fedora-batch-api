@@ -1,0 +1,16 @@
+/**
+ * Piyapong Charoenwattana
+ * Project: era
+ * $Id$
+ */
+package ca.ualberta.library.ir.enums;
+
+/**
+ * The ItemLanguage class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum DublinCoreLanguage {
+	eng, fre, spa, chi, ger, other;
+}

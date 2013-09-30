@@ -1,0 +1,12 @@
+<%-- simple search box on navbar --%>
+<input type="hidden" id="_q" value='${fn:replace(actionBean.q, "'", "\\'")}' />
+<input type="hidden" id="_fq" value='${fn:replace(actionBean.fq, "'", "\\'")}' />
+<input type="hidden" id="_sort" value='${actionBean.sort}' />
+<div class="search_box">
+	<stripes:form action="/public/search" method="post">
+		<input type="text" name="q" id="q" class="search_text" value="${actionBean.query}" />
+		<input type="hidden" name="sort" value="sort.title asc" />
+		<stripes:hidden name="query" />
+		<stripes:image name="simple" class="search_submit" src="${ctx}/images/clickable.gif" />
+	</stripes:form>
+</div>

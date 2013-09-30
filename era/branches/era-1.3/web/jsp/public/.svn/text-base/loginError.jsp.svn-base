@@ -1,0 +1,25 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf" %>
+<stripes:layout-render name="/jsp/layout/standard.jsp" title="Login Error">
+
+    <stripes:layout-component name="contents">
+
+		<div class="full_box">
+			<div class="error_box">
+				<h2 class="global_error"><fmt:message key="login.error.header" /></h2>
+				<stripes:errors globalErrorsOnly="true" />
+				<br />
+				<div class="global_error">
+					<p><a href="${httpsServerUrl}${ctx}/public/login"><b>${httpsServerUrl}${ctx}/public/login</b></a></p>
+				</div>
+			</div>
+		</div>		
+
+	</stripes:layout-component>
+	
+</stripes:layout-render>	

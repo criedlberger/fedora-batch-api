@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/security/controller
+END
+ApplicationAccessControlManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/security/controller/ApplicationAccessControlManager.java
+END
+ObjectAccessControlInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/security/controller/ObjectAccessControlInterceptor.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/!svn/ver/5646/era/tags/1.3.12/era-1.3/src/java/ca/ualberta/library/ir/security/controller/package.html
+END

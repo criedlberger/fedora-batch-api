@@ -1,0 +1,1411 @@
+<?xml version="1.0"?>
+<!-- 
+	University of Alberta Libraries Information Technology Services 
+	**************************************************************************** 
+	Project: era 
+	Author: Piyapong Charoenwattana 
+	Version: $Revision: 5602 $ $Date: 2011-12-12 13:26:38 -0700 (Mon, 12 Dec 2011) 
+	$ $Id: input-forms.xml 5602 2012-10-05 18:48:09Z pcharoen $ 
+-->
+<input-forms>
+
+	<!-- The form-map maps collection handles to forms. DSpace does not -->
+	<!-- require that a collection's name be unique, even within a community . -->
+	<!-- DSpace does however insure that each collection's handle is unique. -->
+	<!-- Form-map provides the means to associate a unique collection name -->
+	<!-- with a form. The form-map also provides the special handle "default" -->
+	<!-- (which is never a collection), here mapped to "traditional". Any -->
+	<!-- collection which does not appear in this map will be associated with -->
+	<!-- the mapping for handle "default". -->
+	<form-map>
+
+		<!-- default: default form -->
+		<name-map id="default" item-type="default" form-name="default" />
+
+		<!-- thesis: Theses and Dissertations collection form -->
+		<name-map id="thesis" item-type="thesis" form-name="thesis" />
+
+		<!-- ser: Structure Engineering Report collection form -->
+		<name-map id="ser" item-type="ser" form-name="ser" />
+		
+		<!-- tr: Structure Engineering Report collection form -->
+		<name-map id="tr" item-type="tr" form-name="tr" />
+		
+	</form-map>
+
+	<!-- The form-definitions map lays out the detailed definition of all the -->
+	<!-- submission forms.Each separate form set has a unique name as an -->
+	<!-- attribute. This name matches one of the names in the form-map. One -->
+	<!-- named form set has the name "traditional"; as this name suggests, -->
+	<!-- it is the old style and is also the default, which gets used when -->
+	<!-- the specified collection has no correspondingly named form set. -->
+	<!-- -->
+	<!-- Each form set contains an ordered set of pages; each page defines -->
+	<!-- one submission metadata entry screen. Each page has an ordered list -->
+	<!-- of field definitions, Each field definition corresponds to one -->
+	<!-- metatdata entry (a so-called row), which has a DC element name, a -->
+	<!-- displayed label, a text string prompt which is called a hint , and -->
+	<!-- an input-type. Each field also may hold optional elements: DC -->
+	<!-- qualifier name, a repeatable flag, and a text string whose presence -->
+	<!-- serves as a 'this field is required' flag. -->
+	<!-- -->
+	<!-- Internationalization supported for label and hint: -->
+	<!-- The application will look up a message in resources.properties file -->
+	<!-- using field id. -->
+	<!-- -->
+	<!-- *Note: dc-element + dc-qualifier + attribute@name + attribute@value -->
+	<!-- have to be unique value. The application will use as a key -->
+	<!-- to find data and display on input form correctly -->
+
+	<!-- The id attribute(option) in label, hint and displayed-value tag will -->
+	<!-- look up a label in resources.propertiies instread of the tag value. -->
+	<!-- Ex: <label id="dc-type" /> -->
+	<!-- <hint id="dc-type.hint" /> -->
+	<form-definitions>
+
+		<!-- default form -->
+		<form name="default" enabled="true">
+			<!-- identifier from dublin core -->
+			<field>
+				<dc-element>dc:identifier</dc-element>
+				<input-type>hidden</input-type>
+				<label>Identifier</label>
+			</field>
+			<!-- auto-generated fields -->
+			<field>
+				<dc-element>dc:format</dc-element>
+				<attribute name="xsi:type" value="dcterms:IMT" />
+				<label>Format</label>
+				<input-type>hidden</input-type>
+			</field>
+			<field>
+				<dc-element>dcterms:extent</dc-element>
+				<label>Extent</label>
+				<input-type>hidden</input-type>
+			</field>
+			<!-- input fields -->
+			<field>
+				<dc-element>dc:type</dc-element>
+				<repeatable>false</repeatable>
+				<label>Type of Item</label>
+				<input-type value-pairs-name="default-types">dropdown</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:language</dc-element>
+				<attribute name="xsi:type" value="dcterms:ISO639-3" />
+				<label>Language</label>
+				<input-type value-pairs-name="default-languages">dropdown</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+				<value>eng</value>
+			</field>
+			<field>
+				<dc-element>dc:title</dc-element>
+				<repeatable>false</repeatable>
+				<label>Title or Caption</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:creator</dc-element>
+				<repeatable>true</repeatable>
+				<label>Author or Creator</label>
+				<input-type>text</input-type>
+				<hint>example: Doe, Jane B.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:contributor</dc-element>
+				<repeatable>true</repeatable>
+				<label>Additional Contributors</label>
+				<input-type>text</input-type>
+				<hint>example: Doe, John C.</hint>
+				<validate>
+					<regexp>,</regexp>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:subject</dc-element>
+				<repeatable>true</repeatable>
+				<display>3</display>
+				<label>Subject/Keyword</label>
+				<input-type>text</input-type>
+				<hint>Enter subjects or keywords that describe the item. These are the keywords that will be used when someone
+					searches for your item. Enter only one word or phrase per box.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<input-type>label</input-type>
+				<label>Is this item about:</label>
+			</field>
+			<field>
+				<dc-element>dcterms:temporal</dc-element>
+				<label>a time?</label>
+				<indent>true</indent>
+				<input-type>text</input-type>
+				<hint>examples: 2009/09/01 || 2003/2010 (a date range) || the Enlightenment</hint>
+			</field>
+			<field>
+				<dc-element>dcterms:spatial</dc-element>
+				<label>a place?</label>
+				<indent>true</indent>
+				<input-type>text</input-type>
+				<hint>example: Canada, Alberta, Edmonton</hint>
+			</field>
+			<field>
+				<dc-element>dc:description</dc-element>
+				<label>Description</label>
+				<input-type>textarea</input-type>
+				<hint>If your item has an abstract put it here.</hint>
+				<!-- <validate> -->
+				<!-- <maxlength>3072</maxlength> -->
+				<!-- </validate> -->
+			</field>
+			<field>
+				<dc-element>dcterms:isversionof</dc-element>
+				<label>Citation for previous publication</label>
+				<input-type>textarea</input-type>
+				<hint>If your item has been previously published, provide a citation.</hint>
+			</field>
+			<field>
+				<dc-element>dcterms:created</dc-element>
+				<label>Date Created</label>
+				<input-type>text</input-type>
+				<hint>example: 2009/09/01</hint>
+			</field>
+			<field>
+				<dc-element>dc:source</dc-element>
+				<label>Source</label>
+				<input-type>text</input-type>
+				<hint>Brief information about a physical item from which this item was derived.</hint>
+				<validate>
+					<maxlength>1024</maxlength>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:relation</dc-element>
+				<label>Link to related item</label>
+				<input-type>text</input-type>
+				<hint>must be a url - example: http://www.ualberta.ca</hint>
+				<validate>
+					<url>true</url>
+				</validate>
+			</field>
+			<field>
+				<dc-element>uploadfile</dc-element>
+				<input-type>file</input-type>
+				<repeatable>true</repeatable>
+			</field>
+		</form>
+
+		<!-- thesis form -->
+		<form name="thesis" enabled="true">
+			<!-- message in form message area -->
+			<field>
+				<dc-element>form-enabled-message</dc-element>
+				<input-type>message</input-type>
+				<value>
+					&lt;div class=&quot;thesis_message&quot;&gt;
+					Thesis submission deadline for Spring 2013 Convocation without Winter Term 2013 registration is January 8, 2013 at 4 pm.
+					&lt;br/&gt;
+					Thesis submission deadline for Spring 2013 Convocation with THES 910 registration in Winter Term 2013 is January 31, 2013 at 4 pm 
+					(only certain non-instructional fees are assessed).  FGSR will register you in THES 910 when your thesis has been successfully accepted.
+					&lt;br/&gt;&lt;br/&gt;
+					Please contact &lt;a href=&quot;mailto:grad.services@ualberta.ca?subject=Questions regarding thesis submission&quot;&gt;grad.services@ualberta.ca&lt;/a&gt; 
+					with questions regarding thesis submission. 
+					&lt;/div&gt;
+				</value>
+			</field>
+			<!-- submit deadline message -->
+			<field>
+				<dc-element>form-disabled-message</dc-element>
+				<input-type>message</input-type>
+				<value>
+					&lt;div class=&quot;thesis_message&quot;&gt;
+					Thesis submission deadline for Spring 2013 Convocation without Winter Term 2013 registration is January 8, 2013 at 4 pm.
+					&lt;br/&gt;
+					Thesis submission deadline for Spring 2013 Convocation with THES 910 registration in Winter Term 2013 is January 31, 2013 at 4 pm 
+					(only certain non-instructional fees are assessed).  FGSR will register you in THES 910 when your thesis has been successfully accepted.
+					&lt;br/&gt;&lt;br/&gt;
+					Please contact &lt;a href=&quot;mailto:grad.services@ualberta.ca?subject=Questions regarding thesis submission&quot;&gt;grad.services@ualberta.ca&lt;/a&gt; 
+					with questions regarding thesis submission. 
+					&lt;br/&gt;&lt;br/&gt;
+					Submission and re-submission is currently suspended until 9:00 a.m., October 2, 2012.
+					&lt;/div&gt;
+				</value>
+			</field>
+			<field>
+				<dc-element>form-enabled-footer</dc-element>
+				<input-type>message</input-type>
+				<value>
+					&lt;p class=&quot;regular&quot;&gt;If you are not ready to submit, please click on &quot;&lt;strong&gt;Save, I'll finish later
+					&lt;/strong&gt;&quot; button to save this form. The form will be saved to your account and you can log in later and complete your 
+					submission.&lt;/p&gt;
+				</value>
+			</field>
+			<field>
+				<dc-element>form-disabled-footer</dc-element>
+				<input-type>message</input-type>
+				<value>
+					&lt;div class=&quot;thesis_message&quot;&gt;
+					You will be able to submit again at 9:00 a.m. on October 2, 2012.. For now, save your work, so that you can return and submit when you are again permitted to proceed.
+					&lt;/div&gt;
+				</value>
+			</field>
+			<!-- identifier from dublin core -->
+			<field>
+				<dc-element>dc:identifier</dc-element>
+				<input-type>hidden</input-type>
+				<label>Identifier</label>
+			</field>
+			<!-- auto-generated fields -->
+			<field>
+				<dc-element>dc:format</dc-element>
+				<attribute name="xsi:type" value="dcterms:IMT" />
+				<label>Format</label>
+				<input-type>hidden</input-type>
+			</field>
+			<field>
+				<dc-element>dcterms:extent</dc-element>
+				<label>Extent</label>
+				<input-type>hidden</input-type>
+			</field>
+			<!-- item type hidden field -->
+			<field>
+				<dc-element>dc:type</dc-element>
+				<label>Type of Item</label>
+				<input-type>hidden</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+				<value>Thesis</value>
+			</field>
+			<!-- input fields -->
+			<field>
+				<dc-element>dc:creator</dc-element>
+				<repeatable>false</repeatable>
+				<label>Author</label>
+				<input-type>text</input-type>
+				<hint>Enter your last name, followed by a comma, then your first name and middle initial(s) using upper and lower
+					case. &lt;br /&gt;Example: Student, John Jr </hint>
+				<validate>
+					<required>true</required>
+					<regexp>,</regexp>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:title</dc-element>
+				<repeatable>false</repeatable>
+				<label>Title</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+				<hint> Enter the title of your thesis as it appears on your thesis title page. Do not put a period at the end of the
+					title. &lt;br /&gt;Example: Blue: How Alberta’s Tories Have Shaped Western Canadian Politics</hint>
+				<validate>
+					<required>true</required>
+					<maxlength>1024</maxlength>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dcterms:alternative</dc-element>
+				<repeatable>true</repeatable>
+				<label>Other Title(s)</label>
+				<input-type>text</input-type>
+				<hint>Enter the secondary/translated title of your thesis, if appropriate.</hint>
+				<validate>
+					<required>false</required>
+					<maxlength>1024</maxlength>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:language</dc-element>
+				<attribute name="xsi:type" value="dcterms:ISO639-3" />
+				<repeatable>false</repeatable>
+				<label>Language</label>
+				<input-type value-pairs-name="default-languages">dropdown</input-type>
+				<hint>Select the language in which your thesis is written.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:subject</dc-element>
+				<repeatable>true</repeatable>
+				<display>3</display>
+				<label>Subject Keyword(s)</label>
+				<input-type>text</input-type>
+				<hint>Enter keywords from your thesis title, chapter headings, etc. These are the keywords that will be used when
+					someone searches your thesis. Enter only one word or phrase per box.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dcterms:abstract</dc-element>
+				<repeatable>false</repeatable>
+				<label>Abstract</label>
+				<input-type>textarea</input-type>
+				<hint>Enter the abstract of your thesis (up to 150 words for a master’s thesis, up to 350 for a doctoral thesis).
+				</hint>
+				<validate>
+					<required>true</required>
+					<!-- <maxlength>3072</maxlength> -->
+				</validate>
+			</field>
+			<field>
+				<dc-element>dcterms:isversionof</dc-element>
+				<repeatable>true</repeatable>
+				<label>Citation for Previous Publication</label>
+				<input-type>textarea</input-type>
+				<hint>Enter a citation for any instance in which a portion of your thesis has been previously published or publicly
+					distributed. Enter only one citation per box.</hint>
+				<validate>
+					<required>false</required>
+					<maxlength>3072</maxlength>
+				</validate>
+			</field>
+			<field>
+				<dc-element>thesis:degree</dc-element>
+				<dc-qualifier>thesis:level</dc-qualifier>
+				<repeatable>false</repeatable>
+				<label>Degree Level</label>
+				<input-type value-pairs-name="thesis-degree-levels">dropdown</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>thesis:degree</dc-element>
+				<dc-qualifier>thesis:name</dc-qualifier>
+				<repeatable>false</repeatable>
+				<label>Degree</label>
+				<input-type value-pairs-name="thesis-degree-names">dropdown</input-type>
+				<hint>Choose your degree name</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<input-type>label</input-type>
+				<label>Department</label>
+			</field>
+			<field>
+				<input-type>label</input-type>
+				<label>
+					&lt;div style="font-weight: normal;"&gt;
+					If your degree is interdisciplinary, first choose your main
+					department, and then add the conjoint department.
+					&lt;br/&gt;&lt;br/&gt;
+					All other students, enter Department by
+					choosing from Main Department.
+					&lt;/div&gt; </label>
+			</field>
+			<field>
+				<dc-element>thesis:degree</dc-element>
+				<dc-qualifier>thesis:discipline</dc-qualifier>
+				<repeatable>true</repeatable>
+				<label>Main Department</label>
+				<input-type value-pairs-name="thesis-departments">dropdown</input-type>
+				<hint>Choose the name of your main department/academic unit exactly as it appears on your thesis title page.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<!-- grantor hidden field -->
+			<field>
+				<dc-element>thesis:degree</dc-element>
+				<dc-qualifier>thesis:grantor</dc-qualifier>
+				<label>Grantor</label>
+				<input-type>hidden</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+				<value>University of Alberta</value>
+			</field>
+			<field>
+				<dc-element>eraterms:specialization</dc-element>
+				<repeatable>false</repeatable>
+				<label>Specialization</label>
+				<input-type>text</input-type>
+				<hint>Enter your specialization (if appropriate)</hint>
+				<validate>
+					<required>false</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>eraterms:graduationdate</dc-element>
+				<repeatable>false</repeatable>
+				<label>Graduation Date</label>
+				<input-type value-pairs-name="thesis-graduation-dates">daterange_value</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>thesis:contributor</dc-element>
+				<attribute name="role" value="advisor" />
+				<repeatable>true</repeatable>
+				<label>Supervisor/Co-supervisor and their Department(s)</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+				<hint>Enter the name and department of your supervisor. Add additional boxes for co-supervisors as necessary.
+					&lt;br/&gt;e.g. Smith, John (Computing Science)</hint>
+				<validate>
+					<required>true</required>
+					<!-- <regexp>[,()]</regexp> -->
+				</validate>
+			</field>
+			<field>
+				<dc-element>thesis:contributor</dc-element>
+				<attribute name="role" value="committeemember" />
+				<repeatable>true</repeatable>
+				<display>5</display>
+				<label>Examining Committee Members and their Departments</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+				<hint>Enter the name and department of your examining committee members. Add boxes for all members. &lt;br/&gt;e.g.
+					Smith, John (Computing Science)</hint>
+				<validate>
+					<required>true</required>
+					<!-- <regexp>[,()]</regexp> -->
+				</validate>
+			</field>
+			<field>
+				<dc-element>uploadfile</dc-element>
+				<input-type>file</input-type>
+				<repeatable>false</repeatable>
+			</field>
+		</form>
+
+		<!-- Structural Engineering Reports form -->
+		<form name="ser" enabled="true">
+			<!-- auto-generated fields -->
+			<field>
+				<dc-element>dc:format</dc-element>
+				<attribute name="xsi:type" value="dcterms:IMT" />
+				<label>Format</label>
+				<input-type>hidden</input-type>
+			</field>
+			<field>
+				<dc-element>dcterms:extent</dc-element>
+				<label>Extent</label>
+				<input-type>hidden</input-type>
+			</field>
+			<!-- input fields -->
+			<field>
+				<dc-element>dcterms:identifier</dc-element>
+				<attribute name="xsi:type" value="eraterms:ser" />
+				<input-type>text</input-type>
+				<label>SER Number</label>
+				<hint>Enter a Structural Engineering Reports Number. example: SER123</hint>
+				<validate>
+					<required>true</required>
+					<regexp>SER[0-9]</regexp>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:type</dc-element>
+				<repeatable>false</repeatable>
+				<label>Type of Item</label>
+				<input-type value-pairs-name="default-types">dropdown</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:language</dc-element>
+				<attribute name="xsi:type" value="dcterms:ISO639-3" />
+				<label>Language</label>
+				<input-type value-pairs-name="default-languages">dropdown</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+				<value>eng</value>
+			</field>
+			<field>
+				<dc-element>dc:title</dc-element>
+				<repeatable>false</repeatable>
+				<label>Title or Caption</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:creator</dc-element>
+				<repeatable>true</repeatable>
+				<label>Author or Creator</label>
+				<input-type>text</input-type>
+				<hint>example: Doe, Jane B.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:contributor</dc-element>
+				<repeatable>true</repeatable>
+				<label>Additional Contributors</label>
+				<input-type>text</input-type>
+				<hint>example: Doe, John C.</hint>
+				<validate>
+					<regexp>,</regexp>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:subject</dc-element>
+				<repeatable>true</repeatable>
+				<label>Subject/Keyword</label>
+				<input-type>text</input-type>
+				<hint>Enter keywords from your thesis title, chapter headings, etc. These are the keywords that will be used when
+					someone searches your thesis. Enter only one word or phrase per box.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<input-type>label</input-type>
+				<label>Is this item about:</label>
+			</field>
+			<field>
+				<dc-element>dcterms:temporal</dc-element>
+				<label>a time?</label>
+				<indent>true</indent>
+				<input-type>text</input-type>
+				<hint>examples: 2009/09/01 || 2003/2010 (a date range) || the Enlightenment</hint>
+			</field>
+			<field>
+				<dc-element>dcterms:spatial</dc-element>
+				<label>a place?</label>
+				<indent>true</indent>
+				<input-type>text</input-type>
+				<hint>example: Canada, Alberta, Edmonton</hint>
+			</field>
+			<field>
+				<dc-element>dc:description</dc-element>
+				<label>Description</label>
+				<input-type>textarea</input-type>
+				<hint>If your item has an abstract put it here.</hint>
+				<!-- <validate> -->
+				<!-- <maxlength>3072</maxlength> -->
+				<!-- </validate> -->
+			</field>
+			<field>
+				<dc-element>dcterms:isversionof</dc-element>
+				<label>Citation for previous publication</label>
+				<input-type>textarea</input-type>
+				<hint>If your item has been previously published, provide a citation.</hint>
+			</field>
+			<field>
+				<dc-element>dcterms:created</dc-element>
+				<label>Date Created</label>
+				<input-type>text</input-type>
+				<hint>example: 2009/09/01</hint>
+			</field>
+			<field>
+				<dc-element>dc:source</dc-element>
+				<label>Source</label>
+				<input-type>text</input-type>
+				<hint>Brief information about a physical item from which this item was derived.</hint>
+				<validate>
+					<maxlength>1024</maxlength>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:relation</dc-element>
+				<label>Link to related item</label>
+				<input-type>text</input-type>
+				<hint>must be a url - example: http://www.ualberta.ca</hint>
+				<validate>
+					<url>true</url>
+				</validate>
+			</field>
+			<field>
+				<dc-element>uploadfile</dc-element>
+				<input-type>file</input-type>
+				<repeatable>true</repeatable>
+			</field>
+		</form>
+
+		<!-- Technical Reports form -->
+		<form name="tr" enabled="true">
+			<!-- auto-generated fields -->
+			<field>
+				<dc-element>dc:format</dc-element>
+				<attribute name="xsi:type" value="dcterms:IMT" />
+				<label>Format</label>
+				<input-type>hidden</input-type>
+			</field>
+			<field>
+				<dc-element>dcterms:extent</dc-element>
+				<label>Extent</label>
+				<input-type>hidden</input-type>
+			</field>
+			<!-- input fields -->
+			<field>
+				<dc-element>dc:date</dc-element>
+				<input-type>text</input-type>
+				<label>Year</label>
+				<hint>Enter a Year: 2008</hint>
+				<validate>
+					<required>true</required>
+					<regexp>^[12][0-9]{3}$</regexp>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dcterms:identifier</dc-element>
+				<attribute name="xsi:type" value="eraterms:trid" />
+				<input-type>text</input-type>
+				<label>Technical Report ID</label>
+				<hint>Enter a Technical Report ID. example: TR08-04</hint>
+				<validate>
+					<required>true</required>
+					<regexp>^TR[0-9][0-9]-[0-9][0-9]$</regexp>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:title</dc-element>
+				<repeatable>false</repeatable>
+				<label>Title or Caption</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:creator</dc-element>
+				<repeatable>true</repeatable>
+				<label>Author or Creator</label>
+				<input-type>text</input-type>
+				<hint>example: Doe, Jane B.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<field>
+				<dc-element>dc:description</dc-element>
+				<repeatable>true</repeatable>
+				<label>Description</label>
+				<input-type>textarea</input-type>
+				<hint>If your item has an abstract put it here.</hint>
+			</field>
+			<field>
+				<dc-element>dc:subject</dc-element>
+				<repeatable>true</repeatable>
+				<label>Subject/Keyword</label>
+				<input-type>text</input-type>
+				<hint>Enter keywords from your thesis title, chapter headings, etc. These are the keywords that will be used when
+					someone searches your thesis. Enter only one word or phrase per box.</hint>
+				<validate>
+					<required>true</required>
+				</validate>
+			</field>
+			<!-- item type hidden field -->
+			<field>
+				<dc-element>dc:type</dc-element>
+				<label>Type of Item</label>
+				<input-type>hidden</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+				<value>Report</value>
+			</field>
+			<field>
+				<dc-element>dc:language</dc-element>
+				<attribute name="xsi:type" value="dcterms:ISO639-3" />
+				<label>Language</label>
+				<input-type value-pairs-name="default-languages">dropdown</input-type>
+				<validate>
+					<required>true</required>
+				</validate>
+				<value>eng</value>
+			</field>
+			<field>
+				<dc-element>dc:rights</dc-element>
+				<repeatable>false</repeatable>
+				<label>Rights</label>
+				<input-type>text</input-type>
+				<style>width: 40em;</style>
+			</field>
+			<field>
+				<dc-element>uploadfile</dc-element>
+				<input-type>file</input-type>
+				<repeatable>true</repeatable>
+			</field>
+		</form>
+	</form-definitions>
+
+	<!-- form-value-pairs populate dropdown and qualdrop-value lists. -->
+	<!-- The form-value-pairs element holds child elements named 'value-pairs' -->
+	<!-- A 'value-pairs' element has a value-pairs-name and a dc-term -->
+	<!-- attribute. The dc-term attribute specifies which to which Dublin Core -->
+	<!-- Term this set of value-pairs applies. -->
+	<!-- Current dc-terms are: identifier-pairs, type-pairs, and -->
+	<!-- language_iso-pairs. The name attribute matches a name -->
+	<!-- in the form-map, above. -->
+	<!-- A value-pair contains one 'pair' for each value displayed in the list -->
+	<!-- Each pair contains a 'displayed-value' element and a 'stored-value' -->
+	<!-- element. A UI list displays the displayed-values, but the program -->
+	<!-- stores the associated stored-values in the database. -->
+	<!-- -->
+	<!-- Internationalization supported for displayed-value: -->
+	<!-- The application will look up A message in resources.properties file -->
+	<!-- using field id. -->
+	<form-value-pairs>
+		<value-pairs value-pairs-name="thesis-languages">
+			<pair>
+				<displayed-value>N/A</displayed-value>
+				<stored-value />
+			</pair>
+			<pair>
+				<displayed-value>English (United States)</displayed-value>
+				<stored-value>en_US</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>English</displayed-value>
+				<stored-value>en</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Spanish</displayed-value>
+				<stored-value>es</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>German</displayed-value>
+				<stored-value>de</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>French</displayed-value>
+				<stored-value>fr</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Italian</displayed-value>
+				<stored-value>it</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Japanese</displayed-value>
+				<stored-value>ja</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Chinese</displayed-value>
+				<stored-value>zh</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>(Other)</displayed-value>
+				<stored-value>other</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- thesis department list -->
+		<value-pairs value-pairs-name="thesis-departments">
+			<pair>
+				<displayed-value></displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Agricultural, Food, and Nutritional Science</displayed-value>
+				<stored-value>Department of Agricultural, Food, and Nutritional Science</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Anthropology</displayed-value>
+				<stored-value>Department of Anthropology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Art and Design</displayed-value>
+				<stored-value>Department of Art and Design</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Biochemistry</displayed-value>
+				<stored-value>Department of Biochemistry</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Biological Sciences</displayed-value>
+				<stored-value>Department of Biological Sciences</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Biomedical Engineering</displayed-value>
+				<stored-value>Department of Biomedical Engineering</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Business</displayed-value>
+				<stored-value>Faculty of Business</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Cell Biology</displayed-value>
+				<stored-value>Department of Cell Biology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Chemical and Materials Engineering</displayed-value>
+				<stored-value>Department of Chemical and Materials Engineering</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Chemistry</displayed-value>
+				<stored-value>Department of Chemistry</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Civil and Environmental Engineering</displayed-value>
+				<stored-value>Department of Civil and Environmental Engineering</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Comparative Literature</displayed-value>
+				<stored-value>Comparative Literature</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Computing Science</displayed-value>
+				<stored-value>Department of Computing Science</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Drama</displayed-value>
+				<stored-value>Department of Drama</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Earth and Atmospheric Sciences</displayed-value>
+				<stored-value>Department of Earth and Atmospheric Sciences</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of East Asian Studies</displayed-value>
+				<stored-value>Department of East Asian Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Economics</displayed-value>
+				<stored-value>Department of Economics</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Educational Policy Studies</displayed-value>
+				<stored-value>Department of Educational Policy Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Educational Psychology</displayed-value>
+				<stored-value>Department of Educational Psychology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Educational Studies</displayed-value>
+				<stored-value>Department of Educational Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Electrical and Computer Engineering</displayed-value>
+				<stored-value>Department of Electrical and Computer Engineering</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Elementary Education</displayed-value>
+				<stored-value>Department of Elementary Education</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of English and Film Studies</displayed-value>
+				<stored-value>Department of English and Film Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculté Saint-Jean</displayed-value>
+				<stored-value>Faculté Saint-Jean</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Extension</displayed-value>
+				<stored-value>Faculty of Extension</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Centre for Health Promotion Studies</displayed-value>
+				<stored-value>Centre for Health Promotion Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of History and Classics</displayed-value>
+				<stored-value>Department of History and Classics</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Human Ecology</displayed-value>
+				<stored-value>Department of Human Ecology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Humanities Computing</displayed-value>
+				<stored-value>Humanities Computing</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Law</displayed-value>
+				<stored-value>Faculty of Law</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>School of Library and Information Studies</displayed-value>
+				<stored-value>School of Library and Information Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Linguistics</displayed-value>
+				<stored-value>Department of Linguistics</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Mathematical and Statistical Sciences</displayed-value>
+				<stored-value>Department of Mathematical and Statistical Sciences</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Mechanical Engineering</displayed-value>
+				<stored-value>Department of Mechanical Engineering</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Medical Microbiology and Immunology</displayed-value>
+				<stored-value>Department of Medical Microbiology and Immunology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Anaesthesia and Pain Medicine</displayed-value>
+				<stored-value>Medical Sciences-Anaesthesia and Pain Medicine</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Biomedical Engineering</displayed-value>
+				<stored-value>Medical Sciences-Biomedical Engineering</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Dentistry</displayed-value>
+				<stored-value>Medical Sciences-Dentistry</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences- Laboratory Medicine and Pathology</displayed-value>
+				<stored-value>Medical Sciences- Laboratory Medicine and Pathology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Medical Genetics</displayed-value>
+				<stored-value>Medical Sciences-Medical Genetics</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences- Obstetrics and Gynecology</displayed-value>
+				<stored-value>Medical Sciences- Obstetrics and Gynecology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Ophthalmology</displayed-value>
+				<stored-value>Medical Sciences-Ophthalmology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Paediatrics</displayed-value>
+				<stored-value>Medical Sciences-Paediatrics</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medical Sciences-Radiology and Diagnostic Imaging</displayed-value>
+				<stored-value>Medical Sciences-Radiology and Diagnostic Imaging</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Medicine</displayed-value>
+				<stored-value>Department of Medicine</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Modern Languages and Cultural Studies</displayed-value>
+				<stored-value>Department of Modern Languages and Cultural Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Music</displayed-value>
+				<stored-value>Department of Music</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Native Studies</displayed-value>
+				<stored-value>Faculty of Native Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Centre for Neuroscience</displayed-value>
+				<stored-value>Centre for Neuroscience</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Nursing</displayed-value>
+				<stored-value>Faculty of Nursing</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Occupational Therapy</displayed-value>
+				<stored-value>Department of Occupational Therapy</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Office of Interdisciplinary Studies </displayed-value>
+				<stored-value>Office of Interdisciplinary Studies </stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Oncology</displayed-value>
+				<stored-value>Department of Oncology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Pharmacology</displayed-value>
+				<stored-value>Department of Pharmacology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Pharmacy and Pharmaceutical Sciences</displayed-value>
+				<stored-value>Faculty of Pharmacy and Pharmaceutical Sciences</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Philosophy</displayed-value>
+				<stored-value>Department of Philosophy</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Physical Education and Recreation</displayed-value>
+				<stored-value>Physical Education and Recreation</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Physical Therapy</displayed-value>
+				<stored-value>Department of Physical Therapy</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Physics</displayed-value>
+				<stored-value>Department of Physics</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Physical Therapy</displayed-value>
+				<stored-value>Department of Physical Therapy</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Physiology</displayed-value>
+				<stored-value>Department of Physiology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Political Science</displayed-value>
+				<stored-value>Department of Political Science</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Psychiatry</displayed-value>
+				<stored-value>Department of Psychiatry</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Psychology</displayed-value>
+				<stored-value>Department of Psychology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>School of Public Health Sciences</displayed-value>
+				<stored-value>School of Public Health Sciences</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Faculty of Rehabilitation Medicine</displayed-value>
+				<stored-value>Faculty of Rehabilitation Medicine</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Religious Studies</displayed-value>
+				<stored-value>Religious Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Renewable Resources</displayed-value>
+				<stored-value>Department of Renewable Resources</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Resource Economics and Environmental Sociology</displayed-value>
+				<stored-value>Department of Resource Economics and Environmental Sociology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Rural Economy</displayed-value>
+				<stored-value>Department of Rural Economy</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Secondary Education</displayed-value>
+				<stored-value>Department of Secondary Education</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Sociology</displayed-value>
+				<stored-value>Department of Sociology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Speech Pathology and Audiology</displayed-value>
+				<stored-value>Department of Speech Pathology and Audiology</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Department of Surgery</displayed-value>
+				<stored-value>Department of Surgery</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- thesis degree levels dropdown list -->
+		<value-pairs value-pairs-name="thesis-degree-levels">
+			<pair>
+				<displayed-value>Master's</displayed-value>
+				<stored-value>Master's</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Doctoral</displayed-value>
+				<stored-value>Doctoral</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- thesis degree names dropdown list -->
+		<value-pairs value-pairs-name="thesis-degree-names">
+			<pair>
+				<displayed-value></displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Arts</displayed-value>
+				<stored-value>Master of Arts</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Arts/Master of Library and Information Studies</displayed-value>
+				<stored-value>Master of Arts/Master of Library and Information Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Business Administration</displayed-value>
+				<stored-value>Master of Business Administration</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Education</displayed-value>
+				<stored-value>Master of Education</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Laws</displayed-value>
+				<stored-value>Master of Laws</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Library and Information Studies</displayed-value>
+				<stored-value>Master of Library and Information Studies</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Nursing</displayed-value>
+				<stored-value>Master of Nursing</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Master of Science</displayed-value>
+				<stored-value>Master of Science</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Doctor of Education</displayed-value>
+				<stored-value>Doctor of Education</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Doctor of Music</displayed-value>
+				<stored-value>Doctor of Music</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Doctor of Philosophy</displayed-value>
+				<stored-value>Doctor of Philosophy</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- these date-start and end values are in YYYY-MM-ddTHH:SS:ss format. -->
+		<value-pairs value-pairs-name="thesis-graduation-dates">
+			<!-- back date range -->
+			<pair>
+				<date-range>
+					<date-start>2009-08-22T00:00:00</date-start>
+					<date-end>2009-12-22T00:00:00</date-end>
+				</date-range>
+				<displayed-value>Fall 2009</displayed-value>
+				<stored-value>2009-11</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2010-01-01T00:00:00</date-start>
+					<date-end>2010-05-31T00:00:00</date-end>
+				</date-range>
+				<displayed-value>Spring 2010</displayed-value>
+				<stored-value>2010-06</stored-value>
+			</pair>
+			<!-- current form date range -->
+			<pair>
+				<date-range>
+					<date-start>2010-12-22T00:00:00</date-start>
+					<date-end>2011-03-22T00:00:00</date-end>
+				</date-range>
+				<displayed-value>Fall 2010</displayed-value>
+				<stored-value>2010-11</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2011-01-01T00:00:00</date-start>
+					<date-end>2011-05-31T00:00:00</date-end>
+				</date-range>
+				<displayed-value>Spring 2011</displayed-value>
+				<stored-value>2011-06</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2011-06-01T00:00:00</date-start>
+					<date-end>2011-11-30T00:00:00</date-end>
+				</date-range>
+				<displayed-value>Fall 2011</displayed-value>
+				<stored-value>2011-11</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2011-12-01T00:00:00</date-start>
+					<date-end>2012-04-09T08:59:59</date-end>
+				</date-range>
+				<displayed-value>Spring 2012</displayed-value>
+				<stored-value>2012-06</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2012-04-09T09:00:00</date-start>
+					<date-end>2012-08-28T16:00:00</date-end>
+				</date-range>
+				<displayed-value>Fall 2012</displayed-value>
+				<stored-value>2012-04</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2012-08-31T09:00:00</date-start>
+					<date-end>2012-09-28T16:00:00</date-end>
+				</date-range>
+				<displayed-value>Fall 2012</displayed-value>
+				<stored-value>2012-09</stored-value>
+			</pair>
+			<pair>
+				<date-range>
+					<date-start>2012-10-02T09:00:00</date-start>
+					<date-end>2013-04-02T16:00:00</date-end>
+				</date-range>
+				<displayed-value>Spring 2013</displayed-value>
+				<stored-value>2013-06</stored-value>
+			</pair>
+			
+		</value-pairs>
+
+		<!-- default item types value pairs -->
+		<value-pairs value-pairs-name="default-types">
+			<pair>
+				<displayed-value>Select</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Book</displayed-value>
+				<stored-value>Book</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Book Chapter</displayed-value>
+				<stored-value>BookChapter</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Conference/workshop Poster</displayed-value>
+				<stored-value>ConferenceWorkshopPoster</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Conference/workshop Presentation</displayed-value>
+				<stored-value>ConferenceWorkshopPresentation</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Dataset</displayed-value>
+				<stored-value>Dataset</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Journal Article (Draft-Submitted)</displayed-value>
+				<stored-value>JournalArticleDraftSubmitted</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Journal Article (Published)</displayed-value>
+				<stored-value>JournalArticlePublished</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Learning Object</displayed-value>
+				<stored-value>LearningObject</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Report</displayed-value>
+				<stored-value>Report</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Research Material</displayed-value>
+				<stored-value>ResearchMaterial</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Review</displayed-value>
+				<stored-value>Review</stored-value>
+			</pair>
+		</value-pairs>
+		
+		<!-- default item types value pairs for admin user -->
+		<value-pairs value-pairs-name="default-types-admin">
+			<pair>
+				<displayed-value>Select</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Book</displayed-value>
+				<stored-value>Book</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Book Chapter</displayed-value>
+				<stored-value>BookChapter</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Conference/workshop Poster</displayed-value>
+				<stored-value>ConferenceWorkshopPoster</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Conference/workshop Presentation</displayed-value>
+				<stored-value>ConferenceWorkshopPresentation</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Dataset</displayed-value>
+				<stored-value>Dataset</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Journal Article (Draft-Submitted)</displayed-value>
+				<stored-value>JournalArticleDraftSubmitted</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Journal Article (Published)</displayed-value>
+				<stored-value>JournalArticlePublished</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Learning Object</displayed-value>
+				<stored-value>LearningObject</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Report</displayed-value>
+				<stored-value>Report</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Research Material</displayed-value>
+				<stored-value>ResearchMaterial</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Review</displayed-value>
+				<stored-value>Review</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Thesis</displayed-value>
+				<stored-value>Thesis</stored-value>
+			</pair>
+		</value-pairs>
+		<value-pairs value-pairs-name="default-languages">
+			<pair>
+				<displayed-value>English</displayed-value>
+				<stored-value>eng</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>French</displayed-value>
+				<stored-value>fre</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Spanish</displayed-value>
+				<stored-value>spa</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Chinese</displayed-value>
+				<stored-value>chi</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>German</displayed-value>
+				<stored-value>ger</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Italian</displayed-value>
+				<stored-value>ita</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Russian</displayed-value>
+				<stored-value>rus</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Ukrainian</displayed-value>
+				<stored-value>ukr</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Japanese</displayed-value>
+				<stored-value>jpn</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>No linguistic content</displayed-value>
+				<stored-value>zxx</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Other</displayed-value>
+				<stored-value>other</stored-value>
+			</pair>
+		</value-pairs>
+	</form-value-pairs>
+</input-forms>

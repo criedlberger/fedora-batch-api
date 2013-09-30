@@ -1,0 +1,35 @@
+<!--  JavaScript Toolbox - Calendar Popup To Select Date -->
+<script type="text/javascript" src="${ctx}/js/CalendarPopup.js"></script>
+
+<!-- This prints out the default stylehseets used by the DIV style calendar.
+     Only needed if you are using the DIV style popup -->
+<script type="text/javascript" language="JavaScript">
+	document.write(getCalendarStyles());
+	var cal1x = new CalendarPopup('caldiv');
+	cal1x.showNavigationDropdowns();
+	cal1x.setYearSelectStartOffset(50);
+	cal1x.setReturnFunction('afterDateSelected');
+</script>
+
+<!--  This styles overwrites build-in styles -->
+<style type="text/css">
+.cpYearNavigation, .cpMonthNavigation {
+	text-align: left;
+}
+
+td.cpDayColumnHeader {
+	text-align: right;
+}
+
+.cpCurrentMonthDate, .cpOtherMonthDate, .cpCurrentDate {
+	text-align: right;
+	text-decoration: none;
+}
+</style>
+<%-- 
+				<script language="JavaScript" id="jscal1x">
+					var cal1x = new CalendarPopup("caldiv");
+					cal1x.showNavigationDropdowns();
+				</script>
+--%>
+				

@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain
+END
+Tag.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Tag.hbm.xml
+END
+Favorite.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Favorite.hbm.xml
+END
+Bookmark.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Bookmark.java
+END
+GroupPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/GroupPermission.java
+END
+Proquest.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Proquest.hbm.xml
+END
+Download.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Download.java
+END
+Subscription.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Subscription.hbm.xml
+END
+Transaction.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Transaction.hbm.xml
+END
+Tag.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Tag.java
+END
+Scheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Scheduler.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/User.java
+END
+Favorite.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Favorite.java
+END
+Handle.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Handle.hbm.xml
+END
+License.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/License.java
+END
+Register.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Register.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Message.java
+END
+Transaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Transaction.java
+END
+Handle.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Handle.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Group.java
+END
+Scheduler.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Scheduler.hbm.xml
+END
+Author.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Author.java
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/User.hbm.xml
+END
+License.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/License.hbm.xml
+END
+AuthorProfile.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/AuthorProfile.hbm.xml
+END
+Register.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Register.hbm.xml
+END
+Message.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Message.hbm.xml
+END
+UserPermission.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/UserPermission.hbm.xml
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/package.html
+END
+Group.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Group.hbm.xml
+END
+Proquest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Proquest.java
+END
+AuthorProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/AuthorProfile.java
+END
+Subscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Subscription.java
+END
+Author.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Author.hbm.xml
+END
+UserPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/UserPermission.java
+END
+Bookmark.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Bookmark.hbm.xml
+END
+GroupPermission.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/GroupPermission.hbm.xml
+END
+Download.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5449/era/trunk/src/hibernate/ca/ualberta/library/ir/domain/Download.hbm.xml
+END

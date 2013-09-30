@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject PID="oai:Identify" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ERA OAI Identify"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2009-11-28T23:55:40.524Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-11-01T19:38:43.415Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2009-11-28T23:55:40.524Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2009-11-28T23:55:40.524Z</audit:date>
+            <audit:justification>Created with Admin GUI "New Object" command</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>Identify.xml</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2009-11-28T23:56:18.166Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC3">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2009-12-24T17:52:44.820Z</audit:date>
+            <audit:justification>Ingested from local file P:\Piyapong\workspace\era\conf\oaiprovider\oai_Identify.xml</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC4">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>Identify.xml</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2009-12-24T18:22:45.502Z</audit:date>
+            <audit:justification>added correct oai base url</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC5">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>Identify.xml</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-01-05T19:26:40.851Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC6">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>Identify.xml</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-10-19T20:17:41.997Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC7">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyObject</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-11-01T16:45:37.632Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC8">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DC</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-11-01T16:45:55.508Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC9">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>Identify.xml</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-11-01T16:46:16.814Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC10">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>Identify.xml</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-11-01T19:38:43.415Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2009-11-28T23:55:40.524Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC1.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="384">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Fedora OAI Identify</dc:title>
+          <dc:identifier>oai:Identify</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-11-01T16:45:55.508Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.1" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="381">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>ERA OAI Identify</dc:title>
+          <dc:identifier>oai:Identify</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="Identify.xml" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2009-11-28T23:56:18.166Z" ID="Identify.xml.0" LABEL="Identify.xml"
+      MIMETYPE="text/xml" SIZE="1955">
+      <foxml:xmlContent>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+          <responseDate>2009-11-26T04:29:28Z</responseDate>
+          <request verb="Identify">http://era.library.ualberta.ca/fedora/oai</request>
+          <Identify>
+            <repositoryName>ERA: Education and Research Archive</repositoryName>
+            <baseURL>http://era.library.ualberta.ca/fedora/oai</baseURL>
+            <protocolVersion>2.0</protocolVersion>
+            <adminEmail>leah.vanderjagt@ualberta.ca</adminEmail>
+            <earliestDatestamp>2009-11-26T11:29:28Z</earliestDatestamp>
+            <deletedRecord>no</deletedRecord>
+            <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+            <description>
+              <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/           http://www.openarchives.org/OAI/2.0/friends.xsd">
+                <baseURL>http://memory.loc.gov/cgi-bin/oai2_0</baseURL>
+                <baseURL>http://arXiv.org/oai2</baseURL>
+              </friends>
+            </description>
+            <description>
+              <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier           http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+                <scheme>oai</scheme>
+                <repositoryIdentifier>era.library.ualberta.ca</repositoryIdentifier>
+                <delimiter>:</delimiter>
+                <sampleIdentifier>oai:era.library.ualberta.ca:uuid:7654</sampleIdentifier>
+              </oai-identifier>
+            </description>
+          </Identify>
+        </OAI-PMH>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2009-12-24T18:22:45.502Z" ID="Identify.xml.1" LABEL="Identify.xml"
+      MIMETYPE="text/xml" SIZE="1623">
+      <foxml:xmlContent>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+          <responseDate>2009-11-26T04:29:28Z</responseDate>
+          <request verb="Identify">http://era.library.ualberta.ca/oaiprovider/</request>
+          <Identify>
+            <repositoryName>ERA: Education and Research Archive</repositoryName>
+            <baseURL>http://era.library.ualberta.ca/oaiprovider/</baseURL>
+            <protocolVersion>2.0</protocolVersion>
+            <adminEmail>leah.vanderjagt@ualberta.ca</adminEmail>
+            <earliestDatestamp>2009-11-26T11:29:28Z</earliestDatestamp>
+            <deletedRecord>no</deletedRecord>
+            <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+            <description>
+              <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/ http://www.openarchives.org/OAI/2.0/friends.xsd">
+                <baseURL>http://memory.loc.gov/cgi-bin/oai2_0</baseURL>
+                <baseURL>http://arXiv.org/oai2</baseURL>
+              </friends>
+            </description>
+            <description>
+              <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+                <scheme>oai</scheme>
+                <repositoryIdentifier>era.library.ualberta.ca</repositoryIdentifier>
+                <delimiter>:</delimiter>
+                <sampleIdentifier>oai:era.library.ualberta.ca:uuid:7654</sampleIdentifier>
+              </oai-identifier>
+            </description>
+          </Identify>
+        </OAI-PMH>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-01-05T19:26:40.851Z" ID="Identify.xml.2" LABEL="Identify.xml"
+      MIMETYPE="text/xml" SIZE="1630">
+      <foxml:xmlContent>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+          <responseDate>2009-11-26T04:29:28Z</responseDate>
+          <request verb="Identify">http://era.library.ualberta.ca/oaiprovider/</request>
+          <Identify>
+            <repositoryName>ERA: Education and Research Archive</repositoryName>
+            <baseURL>http://era.library.ualberta.ca/oaiprovider/</baseURL>
+            <protocolVersion>2.0</protocolVersion>
+            <adminEmail>leah.vanderjagt@ualberta.ca</adminEmail>
+            <earliestDatestamp>2009-11-26T11:29:28Z</earliestDatestamp>
+            <deletedRecord>transient</deletedRecord>
+            <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+            <description>
+              <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/ http://www.openarchives.org/OAI/2.0/friends.xsd">
+                <baseURL>http://memory.loc.gov/cgi-bin/oai2_0</baseURL>
+                <baseURL>http://arXiv.org/oai2</baseURL>
+              </friends>
+            </description>
+            <description>
+              <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+                <scheme>oai</scheme>
+                <repositoryIdentifier>era.library.ualberta.ca</repositoryIdentifier>
+                <delimiter>:</delimiter>
+                <sampleIdentifier>oai:era.library.ualberta.ca:uuid:7654</sampleIdentifier>
+              </oai-identifier>
+            </description>
+          </Identify>
+        </OAI-PMH>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-10-19T20:17:41.997Z" ID="Identify.xml.3" LABEL="Identify.xml"
+      MIMETYPE="text/xml" SIZE="1324">
+      <foxml:xmlContent>
+        <Identify>
+          <repositoryName>ERA: Education and Research Archive</repositoryName>
+          <baseURL>http://era.library.ualberta.ca/fedora/oai</baseURL>
+          <protocolVersion>2.0</protocolVersion>
+          <adminEmail>leah.vanderjagt@ualberta.ca</adminEmail>
+          <earliestDatestamp>2009-11-26T11:29:28Z</earliestDatestamp>
+          <deletedRecord>no</deletedRecord>
+          <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+          <description>
+            <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/ http://www.openarchives.org/OAI/2.0/friends.xsd">
+              <baseURL>http://memory.loc.gov/cgi-bin/oai2_0</baseURL>
+              <baseURL>http://arXiv.org/oai2</baseURL>
+            </friends>
+          </description>
+          <description>
+            <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+              <scheme>oai</scheme>
+              <repositoryIdentifier>era.library.ualberta.ca</repositoryIdentifier>
+              <delimiter>:</delimiter>
+              <sampleIdentifier>oai:era.library.ualberta.ca:uuid:7654</sampleIdentifier>
+            </oai-identifier>
+          </description>
+        </Identify>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-11-01T16:46:16.814Z" ID="Identify.xml.4" LABEL="Identify.xml"
+      MIMETYPE="text/xml" SIZE="1325">
+      <foxml:xmlContent>
+        <Identify>
+          <repositoryName>ERA: Education and Research Archive</repositoryName>
+          <baseURL>http://era.library.ualberta.ca/oaiprovider</baseURL>
+          <protocolVersion>2.0</protocolVersion>
+          <adminEmail>leah.vanderjagt@ualberta.ca</adminEmail>
+          <earliestDatestamp>2009-11-26T11:29:28Z</earliestDatestamp>
+          <deletedRecord>no</deletedRecord>
+          <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+          <description>
+            <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/ http://www.openarchives.org/OAI/2.0/friends.xsd">
+              <baseURL>http://memory.loc.gov/cgi-bin/oai2_0</baseURL>
+              <baseURL>http://arXiv.org/oai2</baseURL>
+            </friends>
+          </description>
+          <description>
+            <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+              <scheme>oai</scheme>
+              <repositoryIdentifier>era.library.ualberta.ca</repositoryIdentifier>
+              <delimiter>:</delimiter>
+              <sampleIdentifier>oai:era.library.ualberta.ca:uuid:7654</sampleIdentifier>
+            </oai-identifier>
+          </description>
+        </Identify>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-11-01T19:38:43.415Z" ID="Identify.xml.5" LABEL="Identify.xml"
+      MIMETYPE="text/xml" SIZE="1357">
+      <foxml:xmlContent>
+        <Identify>
+          <repositoryName>ERA: Education and Research Archive</repositoryName>
+          <baseURL>http://era.library.ualberta.ca/oaiprovider</baseURL>
+          <protocolVersion>2.0</protocolVersion>
+          <adminEmail>leah.vanderjagt@ualberta.ca</adminEmail>
+          <earliestDatestamp>2009-11-26T11:29:28Z</earliestDatestamp>
+          <deletedRecord>no</deletedRecord>
+          <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+          <description>
+            <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/ http://www.openarchives.org/OAI/2.0/friends.xsd">
+              <baseURL>http://memory.loc.gov/cgi-bin/oai2_0</baseURL>
+              <baseURL>http://arXiv.org/oai2</baseURL>
+            </friends>
+          </description>
+          <description>
+            <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+              <scheme>oai</scheme>
+              <repositoryIdentifier>era.library.ualberta.ca</repositoryIdentifier>
+              <delimiter>:</delimiter>
+              <sampleIdentifier>oai:era.library.ualberta.ca:uuid:0090ad44-be74-4569-8e21-01849b14c095</sampleIdentifier>
+            </oai-identifier>
+          </description>
+        </Identify>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

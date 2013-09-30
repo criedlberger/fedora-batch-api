@@ -1,0 +1,27 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: era
+ * $Id$
+ */
+
+package ca.ualberta.library.ir.enums;
+
+/**
+ * The AccessType class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum AccessType {
+	PUBLIC, CCID_PROTECTED, NOONE;
+
+	/**
+	 * The getValue method is used in JSP page.
+	 * 
+	 * @return
+	 */
+	public int getValue() {
+		return this.ordinal();
+	}
+}

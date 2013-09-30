@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform
+END
+Model.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Model.java
+END
+InputType.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/InputType.java
+END
+Form.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Form.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Attribute.java
+END
+InputForms.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/InputForms.java
+END
+jaxb.index
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/jaxb.index
+END
+ValuePairs.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/ValuePairs.java
+END
+InputFormsXmlBinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/InputFormsXmlBinder.java
+END
+NameMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/NameMap.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/package.html
+END
+Label.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Label.java
+END
+Field.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Field.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/package-info.java
+END
+Validate.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Validate.java
+END
+DateRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/DateRange.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/Pair.java
+END
+InputTypeValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/InputTypeValue.java
+END
+schema1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5615/era/tags/2.0.0/src/java/ca/ualberta/library/ir/model/inputform/schema1.xsd
+END

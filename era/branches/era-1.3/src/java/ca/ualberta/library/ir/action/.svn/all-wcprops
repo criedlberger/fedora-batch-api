@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/5628/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action
+END
+TagActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/TagActionBean.java
+END
+IndexBuilderActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/IndexBuilderActionBean.java
+END
+UserActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/UserActionBean.java
+END
+FavoriteActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/FavoriteActionBean.java
+END
+SolrActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SolrActionBean.java
+END
+MaintenanceActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MaintenanceActionBean.java
+END
+ResearcherActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ResearcherActionBean.java
+END
+MessageActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MessageActionBean.java
+END
+ApprovalActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ApprovalActionBean.java
+END
+RegisterActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/RegisterActionBean.java
+END
+SubscriptionNotifierActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SubscriptionNotifierActionBean.java
+END
+DatastreamActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/DatastreamActionBean.java
+END
+ViewCollectionActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ViewCollectionActionBean.java
+END
+HomeActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/HomeActionBean.java
+END
+ViewItemActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ViewItemActionBean.java
+END
+SaveDownloadThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SaveDownloadThread.java
+END
+StatisticsActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/StatisticsActionBean.java
+END
+MyInformationActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MyInformationActionBean.java
+END
+GroupActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/GroupActionBean.java
+END
+UserActivationActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/UserActivationActionBean.java
+END
+ActivationActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ActivationActionBean.java
+END
+AuthorActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/AuthorActionBean.java
+END
+MyAccountActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MyAccountActionBean.java
+END
+FeedActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/FeedActionBean.java
+END
+EmbargoedPublisherActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/EmbargoedPublisherActionBean.java
+END
+MyProfileActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MyProfileActionBean.java
+END
+LoginActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/LoginActionBean.java
+END
+ApplicationActionBeanContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ApplicationActionBeanContext.java
+END
+ReadActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ReadActionBean.java
+END
+ViewCommunityActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ViewCommunityActionBean.java
+END
+LanguageActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/LanguageActionBean.java
+END
+CommunityActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/CommunityActionBean.java
+END
+SubscriptionActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SubscriptionActionBean.java
+END
+ActionConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5628/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ActionConstants.java
+END
+ProquestUploadActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ProquestUploadActionBean.java
+END
+AdminActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/AdminActionBean.java
+END
+CartActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/CartActionBean.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/package.html
+END
+CollectionActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/CollectionActionBean.java
+END
+MediaPlayerActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MediaPlayerActionBean.java
+END
+AccountActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/AccountActionBean.java
+END
+ItemActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ItemActionBean.java
+END
+SearchBaseActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SearchBaseActionBean.java
+END
+BrowseActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/BrowseActionBean.java
+END
+MetadataValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/MetadataValidator.java
+END
+PasswordActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/PasswordActionBean.java
+END
+SubmitActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SubmitActionBean.java
+END
+GroupPermissionActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/GroupPermissionActionBean.java
+END
+BookmarkActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/BookmarkActionBean.java
+END
+CheckoutActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/CheckoutActionBean.java
+END
+SearchActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/SearchActionBean.java
+END
+DepositActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/DepositActionBean.java
+END
+ActionBeanThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/ActionBeanThread.java
+END
+LogoutActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/LogoutActionBean.java
+END
+BaseActionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5628/era/branches/era-1.3/src/java/ca/ualberta/library/ir/action/BaseActionBean.java
+END

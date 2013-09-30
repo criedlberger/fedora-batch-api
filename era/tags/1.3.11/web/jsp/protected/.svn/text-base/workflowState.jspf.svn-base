@@ -1,0 +1,10 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<stripes:option value=""><fmt:message key="WorkflowState.All" /></stripes:option>
+<stripes:option value="Submit"><fmt:message key="WorkflowState.Submit" /></stripes:option>
+<stripes:option value="Review"><fmt:message key="WorkflowState.Review" /></stripes:option>
+<stripes:option value="Reject"><fmt:message key="WorkflowState.Reject" /></stripes:option>

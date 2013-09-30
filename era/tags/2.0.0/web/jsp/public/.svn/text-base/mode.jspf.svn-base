@@ -1,0 +1,25 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<c:choose>
+	<c:when test="${fn:startsWith(event,'create') || fn:startsWith(event, 'preCreate')}">
+		<c:set var="modeNavbar" value="${navbarDeposit}" />
+	</c:when>
+	<c:when test="${empty actionBean.mode}">
+		<fmt:message key="mode.home.title" var="modeTitle" />
+		<c:set var="modeNavbar" value="${navbarHome}" />
+	</c:when>
+	<%-- 
+	<c:when test="${actionBean.mode == 'myaccount'}">
+		<fmt:message key="mode.myaccount.title" var="modeTitle" />
+		<c:set var="modeNavbar" value="${navbarMyAccount}" />
+	</c:when>
+	<c:when test="${actionBean.mode == 'admin'}">
+		<fmt:message key="mode.admin.title" var="modeTitle" />
+		<c:set var="modeNavbar" value="${navbarAdmin}" />
+	</c:when>
+	--%>
+</c:choose>

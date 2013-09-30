@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7-Sep-2011 10:44:40 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Download" table="download">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="ca.ualberta.library.ir.domain.User" fetch="select" foreign-key="fk_download">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <property name="pid" type="string">
+            <column name="pid" length="64" not-null="true" />
+        </property>
+        <property name="collectionPids" type="string">
+            <column name="collection_pids" length="65535" />
+        </property>
+        <property name="dsId" type="string">
+            <column name="ds_id" length="64" />
+        </property>
+        <property name="downloadedDate" type="timestamp">
+            <column name="downloaded_date" length="19" not-null="true" />
+        </property>
+        <property name="ip" type="string">
+            <column name="ip" length="24" />
+        </property>
+        <property name="userAgent" type="string">
+        	<column name="user_agent" length="1024"  />
+        </property>
+    </class>
+</hibernate-mapping>

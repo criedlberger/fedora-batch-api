@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /public/browse/
+Disallow: /public/search/
+Disallow: /public/login
+Disallow: /public/account/
+Disallow: /action/
+Sitemap: http://era.library.ualberta.ca/sitemap/sitemap-index.xml

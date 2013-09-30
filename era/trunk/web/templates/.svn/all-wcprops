@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/repos/!svn/ver/5585/era/trunk/web/templates
+END
+feed_collection.html_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/feed_collection.html_en.vm
+END
+feed_item.html_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/feed_item.html_en.vm
+END
+activation.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/activation.text_en.vm
+END
+password.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/password.text_en.vm
+END
+submit.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/submit.text_en.vm
+END
+facebook_item.html_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/facebook_item.html_en.vm
+END
+deposit.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/deposit.text_en.vm
+END
+reject.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/reject.text_en.vm
+END
+feed_author_header.html_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/feed_author_header.html_en.vm
+END
+username.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/username.text_en.vm
+END
+archive.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/archive.text_en.vm
+END
+proquest.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/proquest.text_en.vm
+END
+subscription.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/subscription.text_en.vm
+END
+register.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/register.text_en.vm
+END
+embargoed.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/embargoed.text_en.vm
+END
+feed_community.html_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/5585/era/trunk/web/templates/feed_community.html_en.vm
+END
+facebook_item.text_en.vm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/5427/era/trunk/web/templates/facebook_item.text_en.vm
+END

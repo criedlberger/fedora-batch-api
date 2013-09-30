@@ -1,0 +1,13 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf" %>
+<c:forEach items="${actionBean.messages}" var="message">
+	<ul class="admin_message ${message.type == 0 ? 'system' : 'admin'}">
+		<li>${message.message}</li>
+	</ul>
+</c:forEach>
+ 

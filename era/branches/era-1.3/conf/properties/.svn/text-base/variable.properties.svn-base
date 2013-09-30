@@ -1,0 +1,62 @@
+#------------------------------------------------------------------------------
+# application.properties template variables
+# $Id$
+# Project: ERA: Education and Research Archive
+# Author: Piyapong Charoenwattana
+# Version: $Revision$ $Date$
+#------------------------------------------------------------------------------
+
+# application temp path
+${app.tmp.path}	= 
+
+# Server URLs
+${http.server.url}	= 
+${https.server.url}	= 
+
+# Jdbc properties 
+${jdbc.url}			= 
+${jdbc.username}	= 
+${jdbc.password}	= 
+
+# hibernate properties
+${hibernate.default_schema}	= 
+
+# fedora service properties
+${fedora.host}		= 
+${fedora.port}		= 
+${fedora.username}	= 
+${fedora.password}	= 
+
+# solr service properties
+${solr.host}	= 
+${solr.port}	= 
+${solr.service}	= 
+
+# JMS properties
+${jms.broker.url}	= 
+
+# FedoraGSearch service properties
+${gsearch.service.url}	= 
+${gsearch.username}		= 
+${gsearch.password}		= 
+
+# handle system
+${handle.ir.prefix}	= 
+
+# LDAP properties
+${ldap.provider.url}	= 
+
+# mail sender 
+${mail.output}	= 
+
+
+# Mail admin
+${mail.bcc}	= 
+${mail.embargoed.bcc} = 
+
+# Proquest Upload properties
+${proquest.ftp.host}		= 
+${proquest.ftp.username}	= 
+${proquest.ftp.password}	= 
+${proquest.email}			= 
+

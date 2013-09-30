@@ -1,0 +1,37 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<div class="itemlist_info">
+	<h2><a href="${ctx}/public/view/item/${result['PID']}" class="result_title">${result['dc.title'][0]}</a></h2>
+	<c:if test="${not empty result['dc.creator'][0]}">
+		<p class="result_author"><strong><fmt:message key="by" />${' '} </strong> ${result['dc.creator'][0]}</p>
+	</c:if> 
+	<c:choose>
+		<c:when test="${not empty result['dc.description']}">
+			<c:set var="description" value="${result['dc.description'][0]}" />
+		</c:when>
+		<c:otherwise>
+			<c:set var="description" value="${result['dcterms.abstract'][0]}" />
+		</c:otherwise>
+	</c:choose>
+	<p class="result_subject">${fnx:trim(description, 120)}</p>
+	<c:if test="${not empty result['era.comments'] && event != 'items'}">
+		<p class="result_others"><stripes:label for="admin.review.comments" />: ${fnx:trim(result['era.comments'], 60)}</p>
+	</c:if>
+</div>
+<div class="itemlist_collection">
+	<stripes:label for="item.submittingTo" /><br />
+	<stripes:label for="community.label" />:
+	<c:forEach items="${result['rel.isMemberOf']}" var="pid" varStatus="sts">${sts.index > 0 ? ', ' : ''}<a href="${ctx}/public/view/community/${pid}"><ir:community pid="${pid}" /></a></c:forEach>
+	<c:if test="${not empty result['rel.isMemberOfCollection']}">
+	<br /><stripes:label for="collection.label" />: 
+	<c:forEach items="${result['rel.isMemberOfCollection']}" var="pid" varStatus="sts">${sts.index > 0 ? ', ' : ''}<a href="${ctx}/public/view/collection/${pid}"><ir:collection pid="${pid}" /></a></c:forEach>
+	</c:if>
+	<c:if test="${not empty result['thesis.degree.discipline']}">
+	<br /><stripes:label for="department.label" />:
+	<c:forEach items="${result['thesis.degree.discipline']}" var="dept" varStatus="sts">${sts.index > 0 ? ', ' : ''}<a href='${ctx}/public/search?fq=facet.department:"${dept}"'>${dept}</a></c:forEach>
+	</c:if>
+</div>

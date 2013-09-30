@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject PID="era-service:metadata" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ERA Metadata Service Definition"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2010-07-21T17:02:05.463Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2012-08-20T16:35:22.235Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2010-07-21T17:02:05.463Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-07-21T17:02:05.463Z</audit:date>
+            <audit:justification>Created with Admin GUI "New Object" command</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-07-21T17:02:38.472Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC3">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>DC2MODS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-07-21T17:03:33.977Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC4">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DC2MODS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-10-18T22:19:53.992Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC5">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>DC2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-10-18T22:21:19.463Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC6">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-10-18T22:24:22.751Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC7">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-10-18T22:32:41.686Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC8">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-10-19T18:45:52.361Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC9">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DC2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:08:36.439Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC10">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:36:02.822Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC11">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:36:56.356Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC12">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:37:09.554Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC13">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:37:20.411Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=DCQ2ETDMS-XSL), versions ranging from 2010-12-07T13:36:02.822Z to 2010-12-07T13:36:02.822Z.  This resulted in the permanent removal of 1 datastream version(s) (2010-12-07T13:36:02.822Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC14">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>DC2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:37:38.245Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=DC2ETDMS-XSL), versions ranging from 2010-10-18T16:21:19.463Z to 2010-12-07T13:08:36.439Z.  This resulted in the permanent removal of 2 datastream version(s) (2010-10-18T16:21:19.463Z, 2010-12-07T13:08:36.439Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC15">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T20:38:29.223Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC16">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>DC2MODS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T22:25:18.287Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=DC2MODS-XSL), versions ranging from 2010-07-21T11:03:33.977Z to 2010-10-18T16:19:53.992Z.  This resulted in the permanent removal of 2 datastream version(s) (2010-07-21T11:03:33.977Z, 2010-10-18T16:19:53.992Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC17">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T22:27:27.513Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC18">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T22:27:49.641Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC19">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T22:28:00.433Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=DCQ2DC-XSL), versions ranging from 2010-12-07T13:36:56.356Z to 2010-12-07T13:36:56.356Z.  This resulted in the permanent removal of 1 datastream version(s) (2010-12-07T13:36:56.356Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC20">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-07T22:28:14.459Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=DCQ2ETDMS-XSL), versions ranging from 2010-12-07T13:37:09.554Z to 2010-12-07T13:37:09.554Z.  This resulted in the permanent removal of 1 datastream version(s) (2010-12-07T13:37:09.554Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC21">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-20T23:23:29.893Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC22">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-12-20T23:23:51.633Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC23">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-24T23:36:49.228Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC24">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-25T17:22:16.311Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC25">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-25T19:13:57.498Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC26">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-28T23:06:05.067Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC27">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T17:24:04.903Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC28">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:05:44.535Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC29">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:20:57.586Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC30">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>LICENSE-XML</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:41:31.153Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC31">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>PUBLISHER-XML</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:45:13.459Z</audit:date>
+            <audit:justification>DatastreamsPane generated this logMessage.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC32">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>LICENSE-XML</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:45:27.471Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=LICENSE-XML), versions ranging from 2011-01-31T11:41:31.153Z to 2011-01-31T11:41:31.153Z.  This resulted in the permanent removal of 1 datastream version(s) (2011-01-31T11:41:31.153Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC33">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>PUBLISHER-XML</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:55:58.942Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=PUBLISHER-XML), versions ranging from 2011-01-31T11:45:13.459Z to 2011-01-31T11:45:13.459Z.  This resulted in the permanent removal of 1 datastream version(s) (2011-01-31T11:45:13.459Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC34">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T18:57:42.465Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC35">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T19:18:25.329Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC36">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T19:22:46.057Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC37">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T19:24:16.386Z</audit:date>
+            <audit:justification>DatastreamPane generated this logMessage. . . . Purged datastream (ID=DCQ2DC-XSL), versions ranging from 2011-01-31T12:22:46.057Z to 2011-01-31T12:22:46.057Z.  This resulted in the permanent removal of 1 datastream version(s) (2011-01-31T12:22:46.057Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC38">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T19:24:28.297Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC39">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T20:01:13.297Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC40">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2DC-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-01-31T20:01:24.582Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC41">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2011-07-21T15:25:42.702Z</audit:date>
+            <audit:justification>Ingested from local file P:\Piyapong\workspace\era\conf\fedora\services\era-service_metadata.xml</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC42">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2012-08-14T22:41:14.697Z</audit:date>
+            <audit:justification>Fixes to stylesheet, especially to date handling</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC43">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2012-08-17T22:38:19.645Z</audit:date>
+            <audit:justification>updated dcq2etdms.xsl</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC44">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DCQ2ETDMS-XSL</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2012-08-20T16:35:22.235Z</audit:date>
+            <audit:justification>Handle irregular dates from Proquest theses</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="RELS-EXT" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-07-21T17:02:05.594Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT1.0" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="369">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/era-service:metadata">
+            <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDefinition-3.0"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="METHODMAP" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-07-21T17:02:05.594Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" ID="METHODMAP1.0" LABEL="Abstract Method Map"
+      MIMETYPE="text/xml" SIZE="1005">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="Fedora MethodMap for SDef" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <comment xmlns="info:fedora/fedora-system:def/comment#">
+            This METHODMAP datastream is included as a starting point to
+              assist in the creation of a service definition. The METHODMAP
+              should define the methods and method parameters for this
+              service definition.
+            For more information about service definitions, see:
+              http://fedora-commons.org/confluence/x/dgBI.
+            For examples of completed service definition objects, see the demonstration
+              objects included with your Fedora distribution, such as:
+              demo:1, demo:12, demo: 19, and demo:27.
+            For more information about the demonstration objects, see:
+              http://fedora-commons.org/confluence/x/AwFI.
+          </comment>
+          <fmm:Method operationName="changeme"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-07-21T17:02:38.472Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" ID="METHODMAP.1" LABEL="Abstract Method Map"
+      MIMETYPE="text/xml" SIZE="277">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="Fedora MethodMap for Metadata Service" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method operationName="dc2mods"/>
+          <fmm:Method operationName="dc2mods-transform"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-10-18T22:24:22.751Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" ID="METHODMAP.2" LABEL="Abstract Method Map"
+      MIMETYPE="text/xml" SIZE="409">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="Fedora MethodMap for Metadata Service" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method operationName="dc2mods"/>
+          <fmm:Method operationName="dc2mods-transform"/>
+          <fmm:Method operationName="dc2etdms"/>
+          <fmm:Method operationName="dc2etdms-transform"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-10-18T22:32:41.686Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" ID="METHODMAP.3" LABEL="Abstract Method Map"
+      MIMETYPE="text/xml" SIZE="268">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="Fedora MethodMap for Metadata Service" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method operationName="dc2mods"/>
+          <fmm:Method operationName="dc2etdms"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-10-19T18:45:52.361Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" ID="METHODMAP.4" LABEL="Abstract Method Map"
+      MIMETYPE="text/xml" SIZE="265">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="Fedora MethodMap for Metadata Service" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method operationName="dc2mods"/>
+          <fmm:Method operationName="etdms"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-12-07T20:38:29.223Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" ID="METHODMAP.5" LABEL="Abstract Method Map"
+      MIMETYPE="text/xml" SIZE="260">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="Fedora MethodMap for Metadata Service" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method operationName="dc"/>
+          <fmm:Method operationName="etdms"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-07-21T17:02:05.463Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC1.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="404">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>ERA Metadata Service Definition</dc:title>
+          <dc:identifier>era-service:metadata</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DCQ2ETDMS-XSL" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-12-07T22:27:27.513Z" ID="DCQ2ETDMS-XSL.2" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="1975">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="etdms" version="1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|eraterms:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree|thesis:degree/*">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:attribute name="role">
+                <xsl:value-of select="@role"/>
+              </xsl:attribute>
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-12-20T23:23:51.633Z" ID="DCQ2ETDMS-XSL.3" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="2002">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc etdms" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|eraterms:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree|thesis:degree/*">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:attribute name="role">
+                <xsl:value-of select="@role"/>
+              </xsl:attribute>
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-24T23:36:49.228Z" ID="DCQ2ETDMS-XSL.4" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4009">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc etdms" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-25T17:22:16.311Z" ID="DCQ2ETDMS-XSL.5" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4062">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-25T19:13:57.498Z" ID="DCQ2ETDMS-XSL.6" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="3997">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-28T23:06:05.067Z" ID="DCQ2ETDMS-XSL.7" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4306">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="rights"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:element name="rights">
+              <xsl:value-of select="$rights"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T17:24:04.903Z" ID="DCQ2ETDMS-XSL.8" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4316">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="rights"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:element name="rights">
+              <xsl:value-of select="document($rights)"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T18:05:44.535Z" ID="DCQ2ETDMS-XSL.9" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4326">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:element name="rights">
+              <xsl:value-of select="document($license)/license"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T18:20:57.586Z" ID="DCQ2ETDMS-XSL.10" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4352">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:element name="rights">
+              <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T18:57:42.465Z" ID="DCQ2ETDMS-XSL.11" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4352">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:element name="rights">
+              <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T20:01:13.297Z" ID="DCQ2ETDMS-XSL.12" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4453">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd">
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="thesis:contributor"/>
+              <xsl:apply-templates select="dcterms:dateaccepted"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="thesis:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license:')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="thesis:name"/>
+              <xsl:apply-templates select="thesis:level"/>
+              <xsl:apply-templates select="thesis:discipline"/>
+              <xsl:apply-templates select="thesis:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="thesis:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|thesis:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2012-08-14T22:41:14.697Z" ID="DCQ2ETDMS-XSL.13" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="4687">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:variable name="baddatechars">[]"'c</xsl:variable>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_etdms:thesis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd</xsl:text>
+              </xsl:attribute>
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="oai_etdms:contributor"/>
+              <xsl:apply-templates select="eraterms:graduationdate | dc:date"/>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="dcterms:identifier[starts-with(., 'http://hdl.handle.net')] |                      dc:identifier[starts-with(., 'http://hdl.handle.net')]"/>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="oai_etdms:degree"/>
+            </oai_etdms:thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license:')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="eraterms:graduationdate | dc:date">
+            <xsl:element name="date">
+              <xsl:value-of select="translate(., $baddatechars, '')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="oai_etdms:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="oai_etdms:name"/>
+              <xsl:apply-templates select="oai_etdms:level"/>
+              <xsl:apply-templates select="oai_etdms:discipline"/>
+              <xsl:apply-templates select="oai_etdms:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="oai_etdms:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:type">
+            <xsl:element name="{local-name()}">
+              <xsl:choose>
+                <xsl:when test=". = 'thesis'">Thesis</xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="."/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|oai_etdms:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2012-08-17T22:38:19.645Z" ID="DCQ2ETDMS-XSL.14" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="6014">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc oai_etdms" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:variable name="baddatechars">[]"'c</xsl:variable>
+          <xsl:variable name="handle" select="//dcterms:identifier[starts-with(., 'http://hdl.handle.net')] |          //dc:identifier[starts-with(., 'http://hdl.handle.net')]"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <thesis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd</xsl:text>
+              </xsl:attribute>
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="oai_etdms:contributor"/>
+              <xsl:choose>
+                <xsl:when test="eraterms:graduationdate">
+                  <xsl:apply-templates select="eraterms:graduationdate"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:apply-templates select="dc:date"/>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="$handle"/>
+              <xsl:apply-templates select="dcterms:identifier[starts-with(., 'uuid:')] |                  dc:identifier[starts-with(., 'uuid:')]"/>
+              <identifier>
+                <xsl:text>TC-AEU-</xsl:text>
+                <xsl:choose>
+                  <xsl:when test="contains($handle, 'era.')">
+                    <xsl:value-of select="number(substring-after($handle, 'era.')) + 2000"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="substring-after($handle, '10048/')"/>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </identifier>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="oai_etdms:degree"/>
+            </thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license:')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="eraterms:graduationdate | dc:date">
+            <xsl:element name="date">
+              <xsl:value-of select="translate(., $baddatechars, '')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="oai_etdms:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="oai_etdms:name"/>
+              <xsl:apply-templates select="oai_etdms:level"/>
+              <xsl:apply-templates select="oai_etdms:discipline"/>
+              <xsl:apply-templates select="oai_etdms:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="oai_etdms:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:type">
+            <xsl:element name="{local-name()}">
+              <xsl:choose>
+                <xsl:when test=". = 'thesis'">Thesis</xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="."/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:identifier[starts-with(., 'uuid:')] |          dc:identifier[starts-with(., 'uuid:')]">
+            <identifier>
+              <xsl:text>https://era.library.ualberta.ca/public/datastream/get/uuid%3A</xsl:text>
+              <xsl:value-of select="substring-after(., 'uuid:')"/>
+              <xsl:text>/DS1</xsl:text>
+            </identifier>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|oai_etdms:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2012-08-20T16:35:22.235Z" ID="DCQ2ETDMS-XSL.15" LABEL="DCQ to ETDMS StyleSheet"
+      MIMETYPE="text/xml" SIZE="6789">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dc dcterms eraterms oai_dc oai_etdms" version="1.0"
+          xmlns="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:oai_etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:variable name="baddatechars">[]"'c</xsl:variable>
+          <xsl:variable name="handle" select="//dcterms:identifier[starts-with(., 'http://hdl.handle.net')] |          //dc:identifier[starts-with(., 'http://hdl.handle.net')]"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <thesis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>http://www.ndltd.org/standards/metadata/etdms/1.0/ http://www.ndltd.org/standards/metadata/etdms/1.0/etdms.xsd</xsl:text>
+              </xsl:attribute>
+              <xsl:apply-templates select="dc:title"/>
+              <xsl:apply-templates select="dc:creator"/>
+              <xsl:apply-templates select="dc:subject"/>
+              <xsl:apply-templates select="dc:description"/>
+              <xsl:apply-templates select="dcterms:abstract"/>
+              <xsl:call-template name="publisher"/>
+              <xsl:apply-templates select="oai_etdms:contributor"/>
+              <xsl:choose>
+                <xsl:when test="eraterms:graduationdate">
+                  <xsl:apply-templates select="eraterms:graduationdate"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:apply-templates select="dc:date"/>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:apply-templates select="dc:type"/>
+              <xsl:apply-templates select="dc:format"/>
+              <xsl:apply-templates select="dcterms:extent"/>
+              <xsl:apply-templates select="$handle"/>
+              <xsl:apply-templates select="dcterms:identifier[starts-with(., 'uuid:')] |                  dc:identifier[starts-with(., 'uuid:')]"/>
+              <identifier>
+                <xsl:text>TC-AEU-</xsl:text>
+                <xsl:choose>
+                  <xsl:when test="contains($handle, 'era.')">
+                    <xsl:value-of select="number(substring-after($handle, 'era.')) + 2000"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="substring-after($handle, '10048/')"/>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </identifier>
+              <xsl:apply-templates select="dc:language"/>
+              <xsl:call-template name="rights"/>
+              <xsl:apply-templates select="oai_etdms:degree"/>
+            </thesis>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license:')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dcterms:abstract">
+            <xsl:element name="description">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:extent">
+            <xsl:element name="format">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:dateaccepted">
+            <xsl:element name="date">
+              <xsl:value-of select="substring-before(., 'T')"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="eraterms:graduationdate | dc:date">
+            <xsl:element name="date">
+              <xsl:variable name="rawdate" select="normalize-space(translate(., $baddatechars, ''))"/>
+              <xsl:variable name="pattern" select="translate($rawdate, '0123456789', '€€€€€€€€€€')"/>
+              <xsl:choose>
+                <xsl:when test="$pattern='€€€€' or $pattern='€€€€-€€' or $pattern='€€€€-€€-€€'">
+                  <xsl:value-of select="$rawdate"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:variable name="badchars" select="translate($pattern, '€', '')"/>
+                  <xsl:value-of select="substring(normalize-space(translate($rawdate, $badchars, '')), 1, 4)"/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="oai_etdms:degree">
+            <xsl:element name="{local-name()}">
+              <xsl:apply-templates select="oai_etdms:name"/>
+              <xsl:apply-templates select="oai_etdms:level"/>
+              <xsl:apply-templates select="oai_etdms:discipline"/>
+              <xsl:apply-templates select="oai_etdms:grantor"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="oai_etdms:contributor">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dc:type">
+            <xsl:element name="{local-name()}">
+              <xsl:choose>
+                <xsl:when test=". = 'thesis'">Thesis</xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="."/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="dcterms:identifier[starts-with(., 'uuid:')] |          dc:identifier[starts-with(., 'uuid:')]">
+            <identifier>
+              <xsl:text>https://era.library.ualberta.ca/public/datastream/get/uuid%3A</xsl:text>
+              <xsl:value-of select="substring-after(., 'uuid:')"/>
+              <xsl:text>/DS1</xsl:text>
+            </identifier>
+          </xsl:template>
+          <xsl:template match="dc:*|dcterms:*|oai_etdms:*">
+            <xsl:element name="{local-name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DCQ2DC-XSL" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-12-07T22:27:49.641Z" ID="DCQ2DC-XSL.1" LABEL="DCQ to DC StyleSheet"
+      MIMETYPE="text/xml" SIZE="1222">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="etdms" version="1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/" xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+              <xsl:apply-templates/>
+            </oai_dc:dc>
+          </xsl:template>
+          <xsl:template match="dc:*">
+            <xsl:element name="{name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-12-20T23:23:29.893Z" ID="DCQ2DC-XSL.2" LABEL="DCQ to DC StyleSheet"
+      MIMETYPE="text/xml" SIZE="1239">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dcterms eraterms etdms" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+              <xsl:apply-templates/>
+            </oai_dc:dc>
+          </xsl:template>
+          <xsl:template match="dc:*">
+            <xsl:element name="{name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T19:18:25.329Z" ID="DCQ2DC-XSL.3" LABEL="DCQ to DC StyleSheet"
+      MIMETYPE="text/xml" SIZE="1694">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dcterms eraterms etdms" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+              <xsl:apply-templates/>
+              <xsl:call-template name="rights"/>
+            </oai_dc:dc>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dc:*">
+            <xsl:element name="{name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T19:24:28.297Z" ID="DCQ2DC-XSL.4" LABEL="DCQ to DC StyleSheet"
+      MIMETYPE="text/xml" SIZE="2018">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dcterms eraterms etdms" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+              <xsl:apply-templates/>
+              <xsl:call-template name="publisher"/>
+              <xsl:call-template name="rights"/>
+            </oai_dc:dc>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dc:*">
+            <xsl:element name="{name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2011-01-31T20:01:24.582Z" ID="DCQ2DC-XSL.5" LABEL="DCQ to DC StyleSheet"
+      MIMETYPE="text/xml" SIZE="2019">
+      <foxml:xmlContent>
+        <xsl:stylesheet exclude-result-prefixes="dcterms eraterms etdms" version="1.0"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+          xmlns:eraterms="http://era.library.ualberta.ca/eraterms"
+          xmlns:etdms="http://www.ndltd.org/standards/metadata/etdms/1.0/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:thesis="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output encoding="utf-8" indent="yes" method="xml" omit-xml-declaration="yes"/>
+          <xsl:strip-space elements="*"/>
+          <xsl:param name="publisher"/>
+          <xsl:param name="license"/>
+          <xsl:template match="/oai_dc:dc|/dc">
+            <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+              <xsl:apply-templates/>
+              <xsl:call-template name="publisher"/>
+              <xsl:call-template name="rights"/>
+            </oai_dc:dc>
+          </xsl:template>
+          <xsl:template name="publisher">
+            <xsl:element name="publisher">
+              <xsl:value-of select="$publisher"/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template name="rights">
+            <xsl:if test="contains($license, 'era-license:')">
+              <xsl:element name="rights">
+                <xsl:value-of select="document(concat($license, '-XML'))/license"/>
+              </xsl:element>
+            </xsl:if>
+          </xsl:template>
+          <xsl:template match="dc:*">
+            <xsl:element name="{name()}">
+              <xsl:value-of select="."/>
+            </xsl:element>
+          </xsl:template>
+          <xsl:template match="*"/>
+        </xsl:stylesheet>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

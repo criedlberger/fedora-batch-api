@@ -1,0 +1,21 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir
+ * $Id$
+ */
+package ca.ualberta.library.ir.enums;
+
+/**
+ * The SubscriptionType class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca">Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum SubscriptionType {
+	COMMUNITY, COLLECTION, RESEARCHER, TASK;
+
+	public int getValue() {
+		return this.ordinal();
+	}
+}

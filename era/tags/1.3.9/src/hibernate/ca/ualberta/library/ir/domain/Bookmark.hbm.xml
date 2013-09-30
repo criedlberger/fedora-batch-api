@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4-Jul-2008 10:10:03 PM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Bookmark" table="bookmark">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="ca.ualberta.library.ir.domain.User" fetch="select" lazy="false" foreign-key="fk_bookmark">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <property name="pid" type="string">
+            <column name="pid" length="64" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" not-null="true" />
+        </property>
+        <property name="notes" type="string">
+            <column name="notes" length="65535" />
+        </property>
+        <property name="donotShare" type="boolean">
+            <column name="donot_share" not-null="true" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="created_date" length="19" not-null="true" />
+        </property>
+        <set name="tags" inverse="true" cascade="all,delete-orphan" lazy="false" order-by="id">
+            <key>
+                <column name="bookmark_id" not-null="true" />
+            </key>
+            <one-to-many class="ca.ualberta.library.ir.domain.Tag" />
+        </set>
+    </class>
+</hibernate-mapping>

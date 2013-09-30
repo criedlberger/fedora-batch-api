@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31-Jul-2009 3:44:06 PM by Hibernate Tools 3.2.4.CR1 -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.Favorite" table="favorite">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="ca.ualberta.library.ir.domain.User" lazy="false" fetch="select" foreign-key="fk_favorite">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <property name="pid" type="string">
+            <column name="pid" length="64" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

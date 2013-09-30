@@ -1,0 +1,25 @@
+<!--
+   $HeadURL: https://code.library.ualberta.ca/svn/repos/era/trunk/web/jsp/public/mode.jspf $
+   $Id: mode.jspf 5427 2012-07-12 20:30:12Z pcharoen $
+   $Revision: 5427 $ $Date: 2012-07-12 14:30:12 -0600 (Thu, 12 Jul 2012) $
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<c:choose>
+	<c:when test="${fn:startsWith(event,'create') || fn:startsWith(event, 'preCreate')}">
+		<c:set var="modeNavbar" value="${navbarDeposit}" />
+	</c:when>
+	<c:when test="${empty actionBean.mode}">
+		<fmt:message key="mode.home.title" var="modeTitle" />
+		<c:set var="modeNavbar" value="${navbarHome}" />
+	</c:when>
+	<%-- 
+	<c:when test="${actionBean.mode == 'myaccount'}">
+		<fmt:message key="mode.myaccount.title" var="modeTitle" />
+		<c:set var="modeNavbar" value="${navbarMyAccount}" />
+	</c:when>
+	<c:when test="${actionBean.mode == 'admin'}">
+		<fmt:message key="mode.admin.title" var="modeTitle" />
+		<c:set var="modeNavbar" value="${navbarAdmin}" />
+	</c:when>
+	--%>
+</c:choose>

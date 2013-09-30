@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/5612/era/trunk/src/java/ca/ualberta/library/ir/fedora/security
+END
+TrustingSSLSocketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/fedora/security/TrustingSSLSocketFactory.java
+END
+FilterXmlUserfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5612/era/trunk/src/java/ca/ualberta/library/ir/fedora/security/FilterXmlUserfile.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/5430/era/trunk/src/java/ca/ualberta/library/ir/fedora/security/package.html
+END

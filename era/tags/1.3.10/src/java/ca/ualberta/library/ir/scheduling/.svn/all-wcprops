@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling
+END
+EmbargoedItemPublisher.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/EmbargoedItemPublisher.java
+END
+SubscriptionNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/SubscriptionNotifier.java
+END
+FacebookPublisher.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/FacebookPublisher.java
+END
+ProquestUpload.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/ProquestUpload.java
+END
+Schedule.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/Schedule.java
+END
+InputFormsLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/InputFormsLoader.java
+END
+IndexBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/IndexBuilder.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/5560/era/tags/1.3.10/src/java/ca/ualberta/library/ir/scheduling/package.html
+END

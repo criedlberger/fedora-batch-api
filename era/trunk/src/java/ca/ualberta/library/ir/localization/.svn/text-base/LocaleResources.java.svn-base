@@ -1,0 +1,46 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir-2.0
+ * $Id$
+ */
+package ca.ualberta.library.ir.localization;
+
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.ResourceBundle;
+
+/**
+ * The LocaleResources class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca>Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public class LocaleResources {
+	public static final String BASE_NAME = "resources";
+	private static final Map<String, ResourceBundle> resourcesMap;
+
+	static {
+		resourcesMap = new HashMap<String, ResourceBundle>();
+		resourcesMap.put("en", ResourceBundle.getBundle(BASE_NAME, Locale.ENGLISH));
+		resourcesMap.put("fr", ResourceBundle.getBundle(BASE_NAME, Locale.FRENCH));
+		resourcesMap.put("th", ResourceBundle.getBundle(BASE_NAME, new Locale("th", "TH")));
+	}
+
+	/**
+	 * The LocaleResources class constructor.
+	 */
+	public LocaleResources() {
+		super();
+	}
+
+	public static ResourceBundle getResourceBundle() {
+		return ResourceBundle.getBundle(BASE_NAME);
+	}
+
+	public static ResourceBundle getResourceBundle(String language) {
+		return resourcesMap.get(language);
+	}
+
+}

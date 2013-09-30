@@ -1,0 +1,15 @@
+## Username Request Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: username.text_en.vm 5603 2012-10-05 18:51:26Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $url:	Login URL.
+## $user:	User object contains fields: firstName, lastName, email.
+## $admin:	Admin email address.
+
+Hi $user.firstName! Welcome to ERA: Education and Research Archive.
+
+Your username is $user.username. Click on $url to login.
+
+Thank you for using ERA: Education and Research Archive. If you have any questions or comments, or if you require technical assistance, please contact $admin.
+

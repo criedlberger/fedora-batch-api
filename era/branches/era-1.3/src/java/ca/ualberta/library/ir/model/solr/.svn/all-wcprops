@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr
+END
+Favorite.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Favorite.java
+END
+Model.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Model.java
+END
+License.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/License.java
+END
+Community.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Community.java
+END
+Subscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Subscription.java
+END
+TagCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/TagCount.java
+END
+Bookmark.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Bookmark.java
+END
+Collection.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Collection.java
+END
+ContentModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/ContentModel.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/Item.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/5605/era/branches/era-1.3/src/java/ca/ualberta/library/ir/model/solr/package.html
+END

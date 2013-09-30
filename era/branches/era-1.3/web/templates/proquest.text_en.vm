@@ -1,0 +1,26 @@
+## Proquest Upload Email Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: proquest.text_en.vm 5427 2012-07-12 20:30:12Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $files:	Uploadeds files.
+## $admin:	Admin email address.
+##
+## pq_email="dissepubl@il.proquest.com lkreutzer@il.proquest.com"
+## lib_email="eraadmi@ualberta.ca"
+## email="${pq_email} ${lib_email}"
+## subj="UALIB - ProQuest Upload"
+
+ERA: Education and Research Archive
+University of Alberta Libraries
+
+Files uploaded:
+
+#foreach ($file in $files)
+$file
+#end
+
+Number of files: $files.size()
+
+Thank you. If you have any questions or comments, please contact $admin.
+

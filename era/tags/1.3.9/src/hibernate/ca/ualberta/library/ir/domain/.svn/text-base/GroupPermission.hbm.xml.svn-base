@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4-Jul-2008 10:10:03 PM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="ca.ualberta.library.ir.domain.GroupPermission" table="group_permission">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="group" class="ca.ualberta.library.ir.domain.Group" fetch="select" foreign-key="fk_group_permission">
+            <column name="group_id" not-null="true" />
+        </many-to-one>
+        <property name="permission" type="string">
+            <column name="permission" length="64" not-null="true" />
+        </property>
+        <property name="allowed" type="boolean">
+            <column name="allowed" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

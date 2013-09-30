@@ -1,0 +1,15 @@
+#------------------------------------------------------------------------------
+# Ant Build Script Properties
+# $Id: build.properties 1225 2012-08-21 20:39:41Z pcharoen $
+# Project: ERA: Education and Research Archive
+# Author: Piyapong Charoenwattana
+# Version: $Revision: 1225 $ $Date: 2012-08-21 14:39:41 -0600 (Tue, 21 Aug 2012) $
+#------------------------------------------------------------------------------
+
+# replace project.dir value with the path to your working dirctory 
+project.dir = P:/Piyapong/workspace/era-svn
+lib = lib
+web.lib = web/WEB-INF/lib
+web.classes = web/WEB-INF/classes
+build = build
+conf = conf

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	$Id: era-functions.tld 5448 2012-07-19 16:00:13Z pcharoen $
+	University of Alberta Libraries 
+	ERA: Education and Research Archive 
+	Author: Piyapong Charoenwattana
+-->
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>ERA Functions</description>
+	<display-name>ERA Functions</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>fnx</short-name>
+	<uri>http://era.library.ualberta.ca/jsp/functions</uri>
+	
+	<function>
+		<description>
+			Trims an input string by searching for the first space after the limit
+			and add ellipses at the end if the input string length longer than the 
+			specified length.
+		</description>
+		<name>trim</name>
+		<function-class>ca.ualberta.library.era.function.Functions</function-class>
+		<function-signature>java.lang.String trim(java.lang.String, int)</function-signature>
+		<example>
+      		${fnx:trim(title, 100)}
+    	</example>
+	</function>
+
+	<function>
+		<description>
+			Trims an input string to the specified length and add ellipses at the end 
+			if the input string length longer than the specified length.
+		</description>
+		<name>trimf</name>
+		<function-class>ca.ualberta.library.era.function.Functions</function-class>
+		<function-signature>java.lang.String trimf(java.lang.String, int)</function-signature>
+		<example>
+      		${fnx:trimf(title, 100)}
+    	</example>
+	</function>
+
+	<function>
+		<description>
+			Escapes the characters in a String using HTML entities using 
+			Apache Commons Lang library, StringEscapeUtils.
+		</description>
+		<name>escapeHtml</name>
+		<function-class>ca.ualberta.library.era.function.Functions</function-class>
+		<function-signature>java.lang.String escapeHtml(java.lang.String)</function-signature>
+		<example>
+      		${fnx:escapeHtml(string)}
+    	</example>
+	</function>
+
+	<function>
+		<description>
+			Escapes the characters in a String using XML entities using 
+			Apache Commons Lang library, StringEscapeUtils.
+		</description>
+		<name>escapeXml</name>
+		<function-class>ca.ualberta.library.era.function.Functions</function-class>
+		<function-signature>java.lang.String escapeXml(java.lang.String)</function-signature>
+		<example>
+      		${fnx:escapeXml(string)}
+    	</example>
+	</function>
+
+	<function>
+		<description>
+			Utility class for HTML form encoding. This class contains static methods for converting 
+			a String to the	application/x-www-form-urlencoded MIME format.
+		</description>
+		<name>encodeUrl</name>
+		<function-class>ca.ualberta.library.era.function.Functions</function-class>
+		<function-signature>java.lang.String encodeUrl(java.lang.String)</function-signature>
+		<example>
+      		${fnx:encodeUrl(url)}
+    	</example>
+	</function>
+</taglib>

@@ -1,0 +1,22 @@
+## Author Feed Template
+## Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+## $Id: feed_author_header.html_en.vm 5615 2012-10-16 18:20:47Z pcharoen $
+## ---------------------------------------------------------------------
+## Template Variables
+## $user:		User object.
+## $author:		Author object.
+## $picture:	Picture URL.
+## $handle:		Handle URL.
+<p>
+	#if($picture)<img src="$picture" />#end
+	<ul>
+    	<li><label>Description: </label>$!author.description</li>
+    	<li><label>Institution: </label>$!author.institution</li>
+		<li><label>Contact: </label>$!author.contact</li>
+    	<li><label>Date Created: </label>$DateFormatUtils.format($author.createdDate, "yyyy/MM/dd h:mm a z")</li>
+    	<li><label>Date Updated: </label>$DateFormatUtils.format($author.modifiedDate, "yyyy/MM/dd h:mm a z")</li>
+    	<li><label>Permanent link to this page: </label><a href="$!handle">$!handle</a></li>
+	</ul>
+	<br />
+	Recent documents in $user.firstName, $user.lastName Personal Researcher Page
+</p>

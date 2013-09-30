@@ -1,0 +1,50 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir
+ * $Id$
+ */
+package ca.ualberta.library.ir.exception;
+
+/**
+ * The FedoraAPIException class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca">Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public class FedoraAPIException extends Exception {
+
+	private static final long serialVersionUID = -3900747178212576353L;
+
+	/**
+	 * The FedoraAPIException class constructor.
+	 */
+	public FedoraAPIException() {
+	}
+
+	/**
+	 * The FedoraAPIException class constructor.
+	 * @param message
+	 */
+	public FedoraAPIException(String message) {
+		super(message);
+	}
+
+	/**
+	 * The FedoraAPIException class constructor.
+	 * @param cause
+	 */
+	public FedoraAPIException(Throwable cause) {
+		super(cause);
+	}
+
+	/**
+	 * The FedoraAPIException class constructor.
+	 * @param message
+	 * @param cause
+	 */
+	public FedoraAPIException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+}

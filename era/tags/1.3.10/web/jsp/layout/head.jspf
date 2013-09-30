@@ -1,0 +1,44 @@
+	<%@ page import="java.net.InetAddress" %>
+	<fmt:message key="application.title" var="appTitle" />
+	<title>${fn:startsWith(actionBean.urlBinding, '/public/view/item') ? 'ERA: ' : 'ERA: UofA - '}${title}</title>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="author" content="University of Alberta Libraries, Information Technology Services, Piyapong Charoenwattana" />
+	<meta name="keywords" content="university of alberta, u of a, era, education and research archive, institutional repository, digital repository, digital archive, database, download, article, image, video, data, presentation, research, researcher, archive, institution, repository, fedora, digital object, preservation" />
+	<c:if test="${fn:startsWith(actionBean.urlBinding, '/public/view/item') && not empty actionBean.metaDescription}">
+	<meta name="description" content="${fnx:escapeHtml(actionBean.metaDescription)}" />
+	</c:if>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="${ctx}/js/prototype.js"></script>
+	<script type="text/javascript" src="${ctx}/js/scriptaculous.js?load=builder,effects,controls"></script>
+	<script type="text/javascript" src="${ctx}/js/protoload.js"></script>
+	<script type="text/javascript" src="${ctx}/js/cookiejar.js"></script>
+	<script type="text/javascript" src="${ctx}/js/commons_js.jsp"></script>
+	<script type="text/javascript" src="${ctx}/js/modalbox.js"></script>
+	<script type="text/javascript" src="${ctx}/js/slideshow.js"></script>
+	<script type="text/javascript" src="${ctx}/js/popup.js"></script>
+	<script type="text/javascript" src="${ctx}/js/application.js"></script>
+
+	<!-- stylesheets -->
+	<link rel="shortcut icon" href="${ctx}/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="${ctx}/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="${ctx}/css/protoload.css" />
+	<link rel="stylesheet" type="text/css" href="${ctx}/css/modalbox.css" />
+	<link rel="stylesheet" type="text/css" href="${ctx}/css/popup.css" />
+
+	<!-- feeds -->
+	<link rel="alternate" type="application/rss+xml" title="<fmt:message key="feed.item.title" />"
+		href="${httpServerUrl}${ctx}/public/feed/item/${feedType}" />
+	<link rel="alternate" type="application/rss+xml" title="<fmt:message key="feed.collection.title" />"
+		href="${httpServerUrl}${ctx}/public/feed/collection/${feedType}" />
+	<link rel="alternate" type="application/rss+xml" title="<fmt:message key="feed.community.title" />"
+		href="${httpServerUrl}${ctx}/public/feed/community/${feedType}" />
+	<c:if test="${not empty context.user}">
+		<link rel="alternate" type="application/rss+xml" title="<fmt:message key="feed.subscription.title" />"
+			href="${ctx}/public/feed/subscription/${feedType}/${context.user.username}" />
+	</c:if>
+
+	<!-- Google verification, added for wshi, 2012-03-21 <%= InetAddress.getLocalHost().getHostAddress() %> -->
+	<meta name="google-site-verification" content="wzEER6aZaaOyEe7RefkCS8iYsRWBQIXMJR-ziLuZr-Q" />	
+	

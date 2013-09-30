@@ -1,0 +1,24 @@
+<!--
+   $HeadURL$
+   $Id$
+   $Revision$ $Date$
+   Author: Piyapong Charoenwattana (piyapong.charoenwattana@ualberta.ca)
+-->
+<%@ include file="/jsp/layout/taglibs.jspf"%>
+<div class="itemlist morelikethis" style="background-color: #E6EBF4 !important;">
+<ol>
+	<c:forEach items="${actionBean.transactions}" var="trans" varStatus="status">
+		<li class="record">
+		<div class="itemlist_info" style="font-weight: bold; width: 12em;"><fmt:formatDate pattern="${actionBean.dateFormat}"
+			value="${trans.workflowDate}" /></div>
+		<div class="itemlist_collection" style="width: 20em;"><stripes:label for="WorkflowState.${trans.workflowState}" />${' '}<fmt:message key="by" />${' '}<br />
+		<a href="mailto:${trans.user.email}">${trans.user.firstName}${' '}${trans.user.lastName}</a><br />
+		</div>
+		<div class="itemlist_actions" style="width: 30em;">
+			<stripes:label for="admin.review.comments" />: ${fnx:trim(trans.comments, 256)}
+		</div>
+		</li>
+	</c:forEach>
+</ol>
+</div>
+<br style="clear: both;" />

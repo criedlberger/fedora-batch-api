@@ -1,0 +1,33 @@
+/**
+ * University of Alberta Libraries
+ * Information Technology Services
+ * Project: ir-2.0
+ * $Id$
+ */
+package ca.ualberta.library.ir.enums;
+
+import ca.ualberta.library.ir.action.ActionConstants;
+
+/**
+ * The DatastreamID class.
+ * 
+ * @author <a href="mailto:piyapong.charoenwattana@ualberta.ca">Piyapong Charoenwattana</a>
+ * @version $Revision$ $Date$
+ */
+public enum DatastreamID {
+	DS, // Documents (Prefix: DS1, DS2, ...)
+	DC, // Dublin Core Metadata
+	DCQ, // Dublin Core Qualified Metadata
+	RELS_EXT, // Relationships
+	LICENSE, // License
+	THUMBNAIL, // Thumbnail Image
+	POLICY; // XACML Policy
+
+	@Override
+	public String toString() {
+		if (this.equals(DCQ)) {
+			return ActionConstants.metadataId;
+		}
+		return super.toString().replace('_', '-');
+	}
+}
