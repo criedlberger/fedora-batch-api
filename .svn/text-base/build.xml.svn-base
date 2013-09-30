@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="fedora" default="archive">
+	<description>Fedora APIM</description>
+
+	<property name="lib" location="lib" />
+	<property name="build" location="build" />
+
+	<!-- project classpath -->
+	<path id="project.classpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="build/classes" />
+		<pathelement location="src" />
+	</path>
+
+	<target name="init" >
+		<mkdir dir="build/classes"/>
+		<mkdir dir="dist"/>
+	</target>
+
+	<!-- compile project -->
+	<target name="compile" depends="init">
+		<echo message="compiling java classes..." />
+		<javac srcdir="src" destdir="build/classes" classpathref="project.classpath"/>
+	</target>
+
+	<!-- build archive -->
+	<target name="archive" depends="compile">
+		<jar destfile="dist/fedora-apim.jar" basedir="build/classes"/>
+		<!-- copy file="dist/fedora-apim.jar" todir="/ut/lib" --> 
+	</target>
+
+	<!-- clean build and distributon path -->
+	<target name="clean" depends="init">
+		<delete dir="build"/>
+		<delete dir="dist"/>
+	</target>
+
+</project>
+	

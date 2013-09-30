@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/repos/!svn/ver/5762/fedora-batch-api
+END
+mySql.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/!svn/ver/5759/fedora-batch-api/mySql.properties
+END
+handle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/!svn/ver/5759/fedora-batch-api/handle.properties
+END
+admpriv.bin
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repos/!svn/ver/5759/fedora-batch-api/admpriv.bin
+END
+managed.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repos/!svn/ver/5759/fedora-batch-api/managed.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/repos/!svn/ver/5759/fedora-batch-api/build.xml
+END

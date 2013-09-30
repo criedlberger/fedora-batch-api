@@ -1,0 +1,4 @@
+userName=webdb
+password=we6-Ace5s
+databaseURL=jdbc:mysql://arsenal.library.ualberta.ca:3306/era
+mySqlClass=com.mysql.jdbc.Driver
